@@ -2,6 +2,41 @@
 <!-- Created with Jaspersoft Studio version 6.15.0.final using JasperReports Library version 6.15.0-dd49bfb94918336b8321d5507193f0169ead4e95  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="BunkerDeliveryNote" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="eb177862-c851-44f7-af6e-77ba8ad8fb93">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="bdnNumber" class="java.lang.String"/>
+	<parameter name="vesselGrt" class="java.lang.String"/>
+	<parameter name="grossTonnage" class="java.lang.String"/>
+	<parameter name="nextPort" class="java.lang.String"/>
+	<parameter name="viscosity" class="java.lang.String"/>
+	<parameter name="density" class="java.lang.String"/>
+	<parameter name="waterContentPercentage" class="java.lang.String"/>
+	<parameter name="flashPointCelsius" class="java.lang.String"/>
+	<parameter name="sulphurContentPercentage" class="java.lang.String"/>
+	<parameter name="sulphurContentLimit" class="java.lang.String"/>
+	<parameter name="limitValue" class="java.lang.String"/>
+	<parameter name="remark" class="java.lang.String"/>
+	<parameter name="vesselSeal" class="java.lang.String"/>
+	<parameter name="bunkerTankerSeal" class="java.lang.String"/>
+	<parameter name="SurveyorSeal" class="java.lang.String"/>
+	<parameter name="vesselCounterSeal" class="java.lang.String"/>
+	<parameter name="bunkerTankerCounterSeal" class="java.lang.String"/>
+	<parameter name="surveyorCounterSeal" class="java.lang.String"/>
+	<parameter name="isMSDSReceived" class="java.lang.String"/>
+	<parameter name="satisfactionLevel" class="java.lang.String"/>
+	<parameter name="etdAt" class="java.lang.String"/>
+	<parameter name="vesselsName" class="java.lang.String"/>
+	<parameter name="sbNo" class="java.lang.String"/>
+	<parameter name="vesselsIMOno" class="java.lang.String"/>
+	<parameter name="ownerOperator" class="java.lang.String"/>
+	<parameter name="alongsideVessel" class="java.lang.String"/>
+	<parameter name="commencedPumingAt" class="java.lang.String"/>
+	<parameter name="completedPumpingAt" class="java.lang.String"/>
+	<parameter name="productName" class="java.lang.String"/>
+	<parameter name="metricTonsDelivered" class="java.lang.String"/>
+	<parameter name="port" class="java.lang.String"/>
+	<parameter name="deliveryLocation" class="java.lang.String"/>
+	<parameter name="bunkerMeteringTicketNumber" class="java.lang.String"/>
+	<parameter name="bunkerTankersName" class="java.lang.String"/>
+	<parameter name="dateBDN" class="java.lang.String"/>
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
@@ -1022,6 +1057,10 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
+				<textField>
+					<reportElement x="62" y="117" width="158" height="12" uuid="af73baed-e067-474a-b186-7832199226d0"/>
+					<textFieldExpression><![CDATA[$P{remark}]]></textFieldExpression>
+				</textField>
 			</frame>
 			<staticText>
 				<reportElement x="280" y="480" width="272" height="255" uuid="aa9e5ca5-0c72-42f5-8bca-8acfd01aaa2e"/>
@@ -1029,8 +1068,108 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<text><![CDATA[Static Text]]></text>
+				<text><![CDATA[]]></text>
 			</staticText>
+			<textField>
+				<reportElement x="433" y="41" width="100" height="20" uuid="bb05173a-1284-4ec9-bde6-910cee2fd416"/>
+				<textFieldExpression><![CDATA[$P{bdnNumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="150" y="420" width="120" height="30" uuid="cd42d6cc-4cc4-451a-9ead-635b1ff62ed1"/>
+				<textFieldExpression><![CDATA[$P{waterContentPercentage}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="420" y="363" width="113" height="17" uuid="7ec9d29e-e0c9-431a-aacf-f3c28ca6b669"/>
+				<textFieldExpression><![CDATA[$P{flashPointCelsius}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="420" y="380" width="124" height="30" uuid="71458959-1b49-4ee1-9233-773dc7403dca"/>
+				<textFieldExpression><![CDATA[$P{sulphurContentPercentage}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="501" width="30" height="10" uuid="1acff286-3189-451a-879d-ef847429b71b"/>
+				<textFieldExpression><![CDATA[$P{limitValue}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="461" y="291" width="90" height="20" uuid="f33715e2-cd38-422e-92b2-83a0f195eab4"/>
+				<textFieldExpression><![CDATA[$P{nextPort}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="151" y="380" width="79" height="20" uuid="092afb7f-a8ce-4524-92d5-cad9bf459de2"/>
+				<textFieldExpression><![CDATA[$P{viscosity}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="151" y="404" width="100" height="20" uuid="cb507d78-4512-4572-ace3-f44e70cf4b4e"/>
+				<textFieldExpression><![CDATA[$P{density}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="261" width="76" height="19" uuid="5643f391-ee24-455e-b1e2-4959872ac1b3"/>
+				<textFieldExpression><![CDATA[$P{etdAt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="140" width="100" height="20" uuid="e5b02689-e283-421f-9670-7c0b4b0c9529"/>
+				<textFieldExpression><![CDATA[$P{vesselsName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="444" y="570" width="104" height="20" uuid="b82a4e91-a680-4e4d-9d9f-ea41bbc990b2"/>
+				<textFieldExpression><![CDATA[$P{isMSDSReceived}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="201" width="90" height="20" uuid="bd6f0b6a-d68f-4e0f-bb86-1744a94b9a01"/>
+				<textFieldExpression><![CDATA[$P{sbNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="461" y="202" width="100" height="18" uuid="a8198c3e-0aae-4faa-af8b-9912f227661c"/>
+				<textFieldExpression><![CDATA[$P{vesselGrt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="172" width="100" height="17" uuid="ad671292-5136-4ac5-a7eb-75ad650cb055"/>
+				<textFieldExpression><![CDATA[$P{vesselsIMOno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="461" y="233" width="99" height="18" uuid="d98b2950-9558-4698-a2d4-6ba2417bfc4d"/>
+				<textFieldExpression><![CDATA[$P{ownerOperator}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="233" width="100" height="18" uuid="9a066eae-85c6-41ca-9e57-245538567a34"/>
+				<textFieldExpression><![CDATA[$P{alongsideVessel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="262" width="100" height="28" uuid="6b30a25c-038a-4ebc-a87e-c55ea415179f"/>
+				<textFieldExpression><![CDATA[$P{commencedPumingAt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="293" width="100" height="30" uuid="3e6f2add-d0a6-4d69-a67a-cc85ed6c4c24"/>
+				<textFieldExpression><![CDATA[$P{completedPumpingAt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="151" y="363" width="100" height="30" uuid="00b25208-f50a-4100-b6f9-be14704f0415"/>
+				<textFieldExpression><![CDATA[$P{productName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="420" y="410" width="124" height="30" uuid="02ee3b2b-6b35-44aa-8c65-b22e46973905"/>
+				<textFieldExpression><![CDATA[$P{metricTonsDelivered}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="181" y="115" width="79" height="16" uuid="7e331375-38ef-496f-94f3-e93fdba0a2a1"/>
+				<textFieldExpression><![CDATA[$P{port}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="142" width="100" height="18" uuid="4d14ad03-6dad-4b55-b94f-fa5a22e0aa6c"/>
+				<textFieldExpression><![CDATA[$P{deliveryLocation}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="461" y="80" width="100" height="30" uuid="02fd4710-cd36-4345-91b9-967353992c40"/>
+				<textFieldExpression><![CDATA[$P{bunkerMeteringTicketNumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="177" width="100" height="30" uuid="f55117d1-3f99-4c07-82b0-97cee055b41e"/>
+				<textFieldExpression><![CDATA[$P{bunkerTankersName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="112" width="100" height="16" uuid="b349d697-32cb-451c-96b0-c8b8a02b88a2"/>
+				<textFieldExpression><![CDATA[$P{dateBDN}]]></textFieldExpression>
+			</textField>
 		</band>
 	</title>
 	<pageFooter>
