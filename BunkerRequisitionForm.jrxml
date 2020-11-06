@@ -278,7 +278,7 @@ ISO 12185]]></text>
 		</band>
 	</title>
 	<columnFooter>
-		<band height="469" splitType="Stretch">
+		<band height="523" splitType="Stretch">
 			<staticText>
 				<reportElement isPrintRepeatedValues="false" x="1" y="2" width="489" height="18" isPrintInFirstWholeBand="true" uuid="72de1932-e57e-4853-8e63-90d207b5d737"/>
 				<textElement>
@@ -713,7 +713,4 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 			</textField>
 		</band>
 	</columnFooter>
-	<pageFooter>
-		<band height="54" splitType="Stretch"/>
-	</pageFooter>
 </jasperReport>

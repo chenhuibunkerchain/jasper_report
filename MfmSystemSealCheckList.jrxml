@@ -78,7 +78,7 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="640" splitType="Stretch">
+		<band height="802" splitType="Stretch">
 			<staticText>
 				<reportElement x="137" y="1" width="280" height="19" uuid="322430b0-89a4-4617-a882-784e021cd414"/>
 				<textElement textAlignment="Center"/>
@@ -2183,21 +2183,21 @@ After Delivery intact]]></text>
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="380" width="70" height="10" uuid="485a02b6-2d98-419a-8182-d0015fa5ec8f"/>
+				<reportElement x="0" y="430" width="70" height="10" uuid="485a02b6-2d98-419a-8182-d0015fa5ec8f"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="8" isUnderline="true"/>
 				</textElement>
 				<text><![CDATA[DECLARATION]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="390" width="280" height="10" uuid="32ea6960-d734-497b-9506-0b2dddada17d"/>
+				<reportElement x="0" y="440" width="280" height="10" uuid="32ea6960-d734-497b-9506-0b2dddada17d"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="8" isUnderline="false"/>
 				</textElement>
 				<text><![CDATA[We, the undersigned have jointly checked all items on this checklist.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="410" width="280" height="10" uuid="684d88a8-c85f-4bdb-921a-6441f70691f7"/>
+				<reportElement x="0" y="460" width="280" height="10" uuid="684d88a8-c85f-4bdb-921a-6441f70691f7"/>
 				<box>
 					<topPen lineWidth="0.25"/>
 					<leftPen lineWidth="0.25"/>
@@ -2210,7 +2210,7 @@ After Delivery intact]]></text>
 				<text><![CDATA[Section A - Before Delivery]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="280" y="410" width="270" height="10" uuid="b8bc7944-fa3d-4644-b5e2-cbec87dd2470"/>
+				<reportElement x="280" y="460" width="270" height="10" uuid="b8bc7944-fa3d-4644-b5e2-cbec87dd2470"/>
 				<box>
 					<topPen lineWidth="0.25"/>
 					<leftPen lineWidth="0.25"/>
@@ -2223,49 +2223,49 @@ After Delivery intact]]></text>
 				<text><![CDATA[Section B - After Delivery]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="450" width="280" height="10" uuid="b7d325ff-3691-4891-9a77-f668617276a9"/>
+				<reportElement x="0" y="500" width="280" height="10" uuid="b7d325ff-3691-4891-9a77-f668617276a9"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="8" isUnderline="false"/>
 				</textElement>
 				<text><![CDATA[Signature of Chief Engineer / Vessel stamp:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="280" y="450" width="270" height="10" uuid="97441344-608f-404f-93b0-0426b6987549"/>
+				<reportElement x="280" y="500" width="270" height="10" uuid="97441344-608f-404f-93b0-0426b6987549"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="8" isUnderline="false"/>
 				</textElement>
 				<text><![CDATA[Signature of Chief Engineer / Vessel stamp:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="460" width="280" height="10" uuid="03d1c3ab-56ef-44a0-9a0b-fc3b54af9c27"/>
+				<reportElement x="0" y="510" width="280" height="10" uuid="03d1c3ab-56ef-44a0-9a0b-fc3b54af9c27"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="8" isUnderline="false"/>
 				</textElement>
 				<text><![CDATA[Name:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="470" width="280" height="10" uuid="f138e92e-3ab6-4afb-accb-4f7814b7c26e"/>
+				<reportElement x="0" y="520" width="280" height="10" uuid="f138e92e-3ab6-4afb-accb-4f7814b7c26e"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="8" isUnderline="false"/>
 				</textElement>
 				<text><![CDATA[Date / Time:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="280" y="460" width="270" height="10" uuid="d9332722-b1d8-473a-ae68-a4aeb120a454"/>
+				<reportElement x="280" y="510" width="270" height="10" uuid="d9332722-b1d8-473a-ae68-a4aeb120a454"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="8" isUnderline="false"/>
 				</textElement>
 				<text><![CDATA[Name:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="280" y="470" width="270" height="10" uuid="6242b5c5-3bbe-41be-9166-84aac894c19b"/>
+				<reportElement x="280" y="520" width="270" height="10" uuid="6242b5c5-3bbe-41be-9166-84aac894c19b"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="8" isUnderline="false"/>
 				</textElement>
 				<text><![CDATA[Date / Time:]]></text>
 			</staticText>
 			<frame>
-				<reportElement x="0" y="420" width="280" height="60" uuid="e2224383-88e8-492b-92ae-fab48530e0c4"/>
+				<reportElement x="0" y="470" width="280" height="60" uuid="e2224383-88e8-492b-92ae-fab48530e0c4"/>
 				<box>
 					<topPen lineWidth="0.25"/>
 					<leftPen lineWidth="0.25"/>
@@ -2274,7 +2274,7 @@ After Delivery intact]]></text>
 				</box>
 			</frame>
 			<frame>
-				<reportElement x="280" y="420" width="270" height="60" uuid="91d07e21-1bf5-432f-8479-62178ecea5a6"/>
+				<reportElement x="280" y="470" width="270" height="60" uuid="91d07e21-1bf5-432f-8479-62178ecea5a6"/>
 				<box>
 					<topPen lineWidth="0.25"/>
 					<leftPen lineWidth="0.25"/>
@@ -2283,49 +2283,49 @@ After Delivery intact]]></text>
 				</box>
 			</frame>
 			<staticText>
-				<reportElement x="0" y="510" width="280" height="10" uuid="332796d9-acc2-4512-8b79-5eebb8e528a7"/>
+				<reportElement x="0" y="560" width="280" height="10" uuid="332796d9-acc2-4512-8b79-5eebb8e528a7"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="8" isUnderline="false"/>
 				</textElement>
 				<text><![CDATA[Signature of Cargo Officer / Bunker Tanker's stamp:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="280" y="510" width="270" height="10" uuid="3170affd-8014-4335-b2b6-cf50d903404b"/>
+				<reportElement x="280" y="560" width="270" height="10" uuid="3170affd-8014-4335-b2b6-cf50d903404b"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="8" isUnderline="false"/>
 				</textElement>
 				<text><![CDATA[Signature of Cargo Officer / Bunker Tanker's stamp:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="520" width="280" height="10" uuid="520c6418-cf80-4a6d-a2a7-c0f39a475c38"/>
+				<reportElement x="0" y="570" width="280" height="10" uuid="520c6418-cf80-4a6d-a2a7-c0f39a475c38"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="8" isUnderline="false"/>
 				</textElement>
 				<text><![CDATA[Name:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="530" width="280" height="10" uuid="faad0377-1162-4df2-99f5-46e0cbff82cd"/>
+				<reportElement x="0" y="580" width="280" height="10" uuid="faad0377-1162-4df2-99f5-46e0cbff82cd"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="8" isUnderline="false"/>
 				</textElement>
 				<text><![CDATA[Date / Time:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="280" y="520" width="270" height="10" uuid="190c1372-8b90-47a7-bb9b-6071289b978d"/>
+				<reportElement x="280" y="570" width="270" height="10" uuid="190c1372-8b90-47a7-bb9b-6071289b978d"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="8" isUnderline="false"/>
 				</textElement>
 				<text><![CDATA[Name:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="280" y="530" width="270" height="10" uuid="4319a12e-e980-43f9-b477-43d0e7b98bfe"/>
+				<reportElement x="280" y="580" width="270" height="10" uuid="4319a12e-e980-43f9-b477-43d0e7b98bfe"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="8" isUnderline="false"/>
 				</textElement>
 				<text><![CDATA[Date / Time:]]></text>
 			</staticText>
 			<frame>
-				<reportElement x="0" y="480" width="280" height="60" uuid="524666b7-c818-4486-91b7-5338822e80f8"/>
+				<reportElement x="0" y="530" width="280" height="60" uuid="524666b7-c818-4486-91b7-5338822e80f8"/>
 				<box>
 					<topPen lineWidth="0.25"/>
 					<leftPen lineWidth="0.25"/>
@@ -2334,7 +2334,7 @@ After Delivery intact]]></text>
 				</box>
 			</frame>
 			<frame>
-				<reportElement x="280" y="480" width="270" height="60" uuid="fe4adc03-4440-4797-a551-5258a9f48dd0"/>
+				<reportElement x="280" y="530" width="270" height="60" uuid="fe4adc03-4440-4797-a551-5258a9f48dd0"/>
 				<box>
 					<topPen lineWidth="0.25"/>
 					<leftPen lineWidth="0.25"/>
@@ -2343,49 +2343,49 @@ After Delivery intact]]></text>
 				</box>
 			</frame>
 			<staticText>
-				<reportElement x="0" y="570" width="280" height="10" uuid="3191a7ab-1a4f-4769-90be-f95f959400ee"/>
+				<reportElement x="0" y="620" width="280" height="10" uuid="3191a7ab-1a4f-4769-90be-f95f959400ee"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="8" isUnderline="false"/>
 				</textElement>
 				<text><![CDATA[Signature of Bunker Surveyor (when engaged)/ Company stamp:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="280" y="570" width="270" height="10" uuid="eb7bb050-c142-4d70-ae2c-4dba7bfc873e"/>
+				<reportElement x="280" y="620" width="270" height="10" uuid="eb7bb050-c142-4d70-ae2c-4dba7bfc873e"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="8" isUnderline="false"/>
 				</textElement>
 				<text><![CDATA[Signature of Bunker Surveyor / Company stamp:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="580" width="280" height="10" uuid="9e711dd8-6e0a-4b83-b159-15e744174076"/>
+				<reportElement x="0" y="630" width="280" height="10" uuid="9e711dd8-6e0a-4b83-b159-15e744174076"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="8" isUnderline="false"/>
 				</textElement>
 				<text><![CDATA[Name:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="590" width="280" height="10" uuid="34bc44e3-3571-42d4-af70-5135c9c2bdb5"/>
+				<reportElement x="0" y="640" width="280" height="10" uuid="34bc44e3-3571-42d4-af70-5135c9c2bdb5"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="8" isUnderline="false"/>
 				</textElement>
 				<text><![CDATA[Date / Time:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="280" y="580" width="270" height="10" uuid="80aa4b77-7e12-464b-907b-93f44151bfa7"/>
+				<reportElement x="280" y="630" width="270" height="10" uuid="80aa4b77-7e12-464b-907b-93f44151bfa7"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="8" isUnderline="false"/>
 				</textElement>
 				<text><![CDATA[Name:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="280" y="590" width="270" height="10" uuid="8341c208-9cf8-40ea-b55c-ecc19794e808"/>
+				<reportElement x="280" y="640" width="270" height="10" uuid="8341c208-9cf8-40ea-b55c-ecc19794e808"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="8" isUnderline="false"/>
 				</textElement>
 				<text><![CDATA[Date / Time:]]></text>
 			</staticText>
 			<frame>
-				<reportElement x="0" y="540" width="280" height="60" uuid="db498276-174d-4e77-8520-f4bf0fe28ff6"/>
+				<reportElement x="0" y="590" width="280" height="60" uuid="db498276-174d-4e77-8520-f4bf0fe28ff6"/>
 				<box>
 					<topPen lineWidth="0.25"/>
 					<leftPen lineWidth="0.25"/>
@@ -2394,7 +2394,7 @@ After Delivery intact]]></text>
 				</box>
 			</frame>
 			<frame>
-				<reportElement x="280" y="540" width="270" height="60" uuid="5ebb38c6-0ef9-43ad-b951-d24c18ff8f08"/>
+				<reportElement x="280" y="590" width="270" height="60" uuid="5ebb38c6-0ef9-43ad-b951-d24c18ff8f08"/>
 				<box>
 					<topPen lineWidth="0.25"/>
 					<leftPen lineWidth="0.25"/>
@@ -2403,14 +2403,14 @@ After Delivery intact]]></text>
 				</box>
 			</frame>
 			<staticText>
-				<reportElement x="0" y="620" width="280" height="10" uuid="099c5d0c-d9cf-496f-8735-3c2dc3c54c82"/>
+				<reportElement x="0" y="670" width="280" height="10" uuid="099c5d0c-d9cf-496f-8735-3c2dc3c54c82"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="8" isUnderline="false"/>
 				</textElement>
 				<text><![CDATA[*        Please refer to document *Seal Verification Report for M/T:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="380" y="620" width="100" height="10" uuid="27ff9075-d504-4efb-8782-14e9c3d33b67"/>
+				<reportElement x="380" y="670" width="100" height="10" uuid="27ff9075-d504-4efb-8782-14e9c3d33b67"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="8" isUnderline="false"/>
 				</textElement>
@@ -3110,7 +3110,4 @@ After Delivery intact]]></text>
 			</textField>
 		</band>
 	</title>
-	<pageFooter>
-		<band height="50"/>
-	</pageFooter>
 </jasperReport>

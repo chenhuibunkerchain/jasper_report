@@ -44,7 +44,7 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="748" splitType="Stretch">
+		<band height="802" splitType="Stretch">
 			<staticText>
 				<reportElement x="192" y="10" width="170" height="20" uuid="8eeea4f6-069d-44b3-8921-50d98c8b7785"/>
 				<textElement textAlignment="Center">
@@ -1172,7 +1172,4 @@
 			</textField>
 		</band>
 	</title>
-	<pageFooter>
-		<band height="54" splitType="Stretch"/>
-	</pageFooter>
 </jasperReport>
