@@ -37,6 +37,7 @@
 	<parameter name="bunkerMeteringTicketNumber" class="java.lang.String"/>
 	<parameter name="bunkerTankersName" class="java.lang.String"/>
 	<parameter name="dateBDN" class="java.lang.String"/>
+	<parameter name="satisfy" class="java.lang.Integer"/>
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
@@ -45,6 +46,31 @@
 	</background>
 	<title>
 		<band height="802" splitType="Stretch">
+			<ellipse>
+				<reportElement x="510" y="605" width="15" height="15" uuid="4345e644-2a80-489b-a8d5-5e124a1e9d1c">
+					<printWhenExpression><![CDATA[$P{satisfy}==5]]></printWhenExpression>
+				</reportElement>
+			</ellipse>
+			<ellipse>
+				<reportElement x="450" y="605" width="15" height="15" uuid="a6d924fa-4cb2-4c3f-86ce-597dda38f1be">
+					<printWhenExpression><![CDATA[$P{satisfy}==4]]></printWhenExpression>
+				</reportElement>
+			</ellipse>
+			<ellipse>
+				<reportElement x="402" y="605" width="15" height="15" uuid="ef3cfa72-774e-4145-8ca0-abb6593e8f25">
+					<printWhenExpression><![CDATA[$P{satisfy}==3]]></printWhenExpression>
+				</reportElement>
+			</ellipse>
+			<ellipse>
+				<reportElement x="357" y="605" width="15" height="15" uuid="8febc775-c541-4bb2-8bec-06a26dfa3a07">
+					<printWhenExpression><![CDATA[$P{satisfy}==2]]></printWhenExpression>
+				</reportElement>
+			</ellipse>
+			<ellipse>
+				<reportElement x="312" y="605" width="15" height="15" uuid="dc7946bc-f503-4f91-b0bd-77fbce835248">
+					<printWhenExpression><![CDATA[$P{satisfy}==1]]></printWhenExpression>
+				</reportElement>
+			</ellipse>
 			<staticText>
 				<reportElement x="192" y="10" width="170" height="20" uuid="8eeea4f6-069d-44b3-8921-50d98c8b7785"/>
 				<textElement textAlignment="Center">
