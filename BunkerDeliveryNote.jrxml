@@ -15,9 +15,13 @@
 	<parameter name="limitValue" class="java.lang.String"/>
 	<parameter name="remark" class="java.lang.String"/>
 	<parameter name="vesselSeal" class="java.lang.String"/>
+	<parameter name="vesselSeal2" class="java.lang.String"/>
+	<parameter name="otherSeal" class="java.lang.String"/>
+	<parameter name="otherCounterSeal" class="java.lang.String"/>
 	<parameter name="bunkerTankerSeal" class="java.lang.String"/>
 	<parameter name="SurveyorSeal" class="java.lang.String"/>
 	<parameter name="vesselCounterSeal" class="java.lang.String"/>
+	<parameter name="vesselCounterSeal2" class="java.lang.String"/>
 	<parameter name="bunkerTankerCounterSeal" class="java.lang.String"/>
 	<parameter name="surveyorCounterSeal" class="java.lang.String"/>
 	<parameter name="isMSDSReceived" class="java.lang.String"/>
@@ -1195,6 +1199,76 @@
 			<textField>
 				<reportElement x="460" y="112" width="100" height="16" uuid="b349d697-32cb-451c-96b0-c8b8a02b88a2"/>
 				<textFieldExpression><![CDATA[$P{dateBDN}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="337" y="491" width="72" height="8" uuid="53aebb7e-6bf8-40b5-a4bd-04c66ae57b48"/>
+				<textElement>
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{vesselSeal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="337" y="502" width="72" height="10" uuid="36217fc1-4477-43db-b96f-e0b2cf19d42a"/>
+				<textElement>
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{vesselCounterSeal2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="445" y="491" width="74" height="8" uuid="ed0a8d68-b6a2-411c-8282-8b506197e635"/>
+				<textElement>
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{vesselCounterSeal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="445" y="502" width="74" height="8" uuid="1c086f7b-25bb-41d7-9883-6dcc0e5800fb"/>
+				<textElement>
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{vesselCounterSeal2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="337" y="530" width="74" height="10" uuid="4eba917c-2080-4298-9642-fa00b4b3d70c"/>
+				<textElement>
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{bunkerTankerSeal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="445" y="530" width="98" height="10" uuid="ce8699e9-8d38-4538-abcc-8d80d1aad5f6"/>
+				<textElement>
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{bunkerTankerCounterSeal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="445" y="541" width="98" height="10" uuid="e9c78ddd-947b-4e2b-a25e-598f87719c79"/>
+				<textElement>
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{surveyorCounterSeal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="337" y="541" width="74" height="8" uuid="30996bc7-943c-4a13-8c41-2102ed06393e"/>
+				<textElement>
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{SurveyorSeal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="337" y="551" width="74" height="8" uuid="d808a978-a711-4e04-8e79-b094365ee8b2"/>
+				<textElement>
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{otherSeal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="445" y="551" width="98" height="8" uuid="479fcdc6-255a-465c-86a4-c4acd22d8897"/>
+				<textElement>
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{otherCounterSeal}]]></textFieldExpression>
 			</textField>
 		</band>
 	</title>
