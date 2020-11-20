@@ -1,0 +1,1059 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="BunkeringPredeliverySafetyChecklist_1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c2405fe2-8f84-4a1a-a652-4ee3eb026a4d">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="vesselsName" class="java.lang.String"/>
+	<parameter name="vesselsIMOno" class="java.lang.String"/>
+	<parameter name="vesselsLocation" class="java.lang.String"/>
+	<parameter name="date" class="java.lang.String"/>
+	<parameter name="bunkerTankers" class="java.lang.String"/>
+	<parameter name="agent" class="java.lang.String"/>
+	<parameter name="port" class="java.lang.String"/>
+	<parameter name="r1_bunker" class="java.lang.Boolean"/>
+	<parameter name="r2_bunker" class="java.lang.Boolean"/>
+	<parameter name="r3_bunker" class="java.lang.Boolean"/>
+	<parameter name="r4_bunker" class="java.lang.Boolean"/>
+	<parameter name="r5_bunker" class="java.lang.Boolean"/>
+	<parameter name="r6_bunker" class="java.lang.Boolean"/>
+	<parameter name="r7_bunker" class="java.lang.Boolean"/>
+	<parameter name="r8_bunker" class="java.lang.Boolean"/>
+	<parameter name="r9_bunker" class="java.lang.Boolean"/>
+	<parameter name="r10_bunker" class="java.lang.Boolean"/>
+	<parameter name="r11_bunker" class="java.lang.Boolean"/>
+	<parameter name="r1_vessel" class="java.lang.Boolean"/>
+	<parameter name="r2_vessel" class="java.lang.Boolean"/>
+	<parameter name="r3_vessel" class="java.lang.Boolean"/>
+	<parameter name="r4_vessel" class="java.lang.Boolean"/>
+	<parameter name="r5_vessel" class="java.lang.Boolean"/>
+	<parameter name="r6_vessel" class="java.lang.Boolean"/>
+	<parameter name="r7_vessel" class="java.lang.Boolean"/>
+	<parameter name="r8_vessel" class="java.lang.Boolean"/>
+	<parameter name="r9_vessel" class="java.lang.Boolean"/>
+	<parameter name="r10_vessel" class="java.lang.Boolean"/>
+	<parameter name="r11_vessel" class="java.lang.Boolean"/>
+	<parameter name="r1_remark" class="java.lang.String"/>
+	<parameter name="r2_remark" class="java.lang.String"/>
+	<parameter name="r3_remark" class="java.lang.String"/>
+	<parameter name="r4_remark" class="java.lang.String"/>
+	<parameter name="r5_remark" class="java.lang.String"/>
+	<parameter name="r6_remark" class="java.lang.String"/>
+	<parameter name="r7_remark" class="java.lang.String"/>
+	<parameter name="r8_remark" class="java.lang.String"/>
+	<parameter name="r9_remark" class="java.lang.String"/>
+	<parameter name="r10_remark" class="java.lang.String"/>
+	<parameter name="r11_remark" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="802" splitType="Stretch">
+			<staticText>
+				<reportElement x="120" y="20" width="330" height="30" uuid="52bb751f-1874-4936-bba6-e98ac02abaff"/>
+				<textElement textAlignment="Center">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Bunkering pre-delivery safety checklist]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="61" width="100" height="19" uuid="26be0885-d084-4fc1-affe-8717b5dd504a"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Vessel's name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="80" width="100" height="18" uuid="1b26f045-0153-485b-8393-a72b2d841b79"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Vessel IMO No.:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="98" width="100" height="14" uuid="537247d3-0126-4f10-8137-88c91215a964"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Vessel's location:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="324" y="61" width="111" height="19" uuid="1e73dadf-368e-4fa7-b54d-386a01ea2e73"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Bunker tanker's name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="324" y="80" width="111" height="20" uuid="5effa4cf-a8fd-4633-b1dc-07415131f494"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Agent:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="324" y="100" width="111" height="19" uuid="6d6d93cb-4c43-470a-b55a-f0cf04a94944"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Port:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="112" width="100" height="19" uuid="85c605c4-3659-4e13-800e-7066d0e5a57e"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="70" y="140" width="421" height="50" uuid="430caa91-4300-42f4-8633-66df57c42ff5"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[All questions should be jointly answered by the cargo officer and the chief engineer by clearly initialing in the appropriate box, unless both parties agree to a "N.A." entry. A copy of the completed checklist should be retained by both the bunker tanker and the vessel.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="193" width="40" height="30" uuid="d7b51912-0a9f-48e8-9759-4f251f838ae0"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="56" y="193" width="173" height="30" uuid="c59c5afa-4c7c-4375-aaa6-d2102eeaab69"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Items to be checked]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="229" y="193" width="110" height="30" uuid="6537387e-1e56-417e-81c8-fe53adc16bd5"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Bunker tanker]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="339" y="193" width="96" height="30" uuid="6d89da5e-7497-4ea2-93be-0d85fa28d29f"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Vessel]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="435" y="193" width="110" height="30" uuid="67692548-d398-4095-9292-437e38b45744"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Remarks]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="223" width="40" height="30" uuid="0cb5181f-bcab-4bd7-8e15-44d39caf1233"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="56" y="223" width="173" height="30" uuid="2fa5717d-1365-4d98-bb52-2fab14f85621"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Is the vessel securely moored?]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="229" y="223" width="110" height="30" uuid="eaeff857-410d-4bb7-bc76-a18eb2ea807e"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="339" y="223" width="96" height="30" uuid="81ed576b-82af-41ee-9531-ae654fa0bbea"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="435" y="223" width="110" height="30" uuid="dadef40f-07b9-4bb7-a02d-f083f45c9354"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="253" width="40" height="30" uuid="86180822-b32a-491a-bdf6-47948fd56577"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="56" y="253" width="173" height="30" uuid="b4469a8b-001a-4898-8ee9-c862b7666070"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Is the vessel ready to move under its own power?]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="229" y="253" width="110" height="30" uuid="98a2a1df-f401-4554-9a81-79b3e21ead7a"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="339" y="253" width="96" height="30" uuid="fc844c32-4bfe-4ebd-b867-ad0dad8d14f8"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="435" y="253" width="110" height="30" uuid="c89a0f85-ce49-449e-9d8e-8db036aec1b9"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="283" width="40" height="30" uuid="426603f2-e1c6-4d9a-9d50-d7e0f9215c5f"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[3]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="56" y="283" width="173" height="30" uuid="f794983c-f3dc-41fb-bda0-55b66a7d6b56"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Has the maximum line pressure been agreed upon?]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="229" y="283" width="110" height="30" uuid="79aa131d-694b-4875-9b7f-da9435c9cb58"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="339" y="283" width="96" height="30" uuid="4c8894f2-5a1c-421d-94c9-177e8b05dd2e"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="435" y="283" width="110" height="30" uuid="0a343b66-f193-4c7f-9f0e-74c51b643945"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="313" width="40" height="107" uuid="f3938bc6-51c1-41db-aa16-f6b946342f17"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[4]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="56" y="313" width="173" height="107" uuid="9b6e8b72-cd6c-4cc2-8e55-0a8e712bb483"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Has the vessel pre-loading plan, transfer sequence, rates, and volumes to be delivered been agreed upon?
+State sequence and rates]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="229" y="313" width="110" height="107" uuid="3b364eff-5f6d-4cb9-8118-aab86b126d97"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="339" y="313" width="96" height="107" uuid="6aeb832d-3c9e-4c2b-96ff-56de665c6956"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="435" y="313" width="110" height="107" uuid="d2a97e2f-5815-4e86-b6bd-3ba16affd986"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="420" width="40" height="50" uuid="80f7e61a-8292-4243-b0ed-e94ca305c8cc"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[5]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="56" y="420" width="173" height="50" uuid="0f876fda-5623-4b2e-98e3-84b98bc28817"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Has the notice period required for completion of transfer been agreed upon?]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="229" y="420" width="110" height="50" uuid="76480aad-ba09-4e29-90f4-7994032f123f"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="339" y="420" width="96" height="50" uuid="a31917e3-fcec-4a81-bf87-b4191b2b6092"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="435" y="420" width="110" height="50" uuid="5f368529-32d4-4728-a84a-77134e4cc46d"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="470" width="40" height="50" uuid="03aed5c3-8c66-4585-8a7b-d0fb56c75acc"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[6]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="56" y="470" width="173" height="50" uuid="67e02275-a3d9-4f3e-b70c-4d68147c9e3f"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Has the procedure for draining delivery hoses on completion of transfer been agreed upon?]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="229" y="470" width="110" height="50" uuid="edbf98fe-f08a-4eb6-8023-46fdca633c06"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="339" y="470" width="96" height="50" uuid="dc7e7713-4d8e-4b95-888a-b7501d517366"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="435" y="470" width="110" height="50" uuid="7a069a5b-a974-47dc-9ab9-ec281c25022d"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="520" width="40" height="50" uuid="ae768098-a7e2-4f0b-bd24-97a956d193c9"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[7]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="56" y="520" width="173" height="50" uuid="e5234a52-88e0-4180-b813-cfa050d54bb2"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Are transfer hoses in good condition, and properly rigged with all flange holes fully bolted?]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="229" y="520" width="110" height="50" uuid="a89535cd-4c8b-4652-95be-85b246f56c39"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="339" y="520" width="96" height="50" uuid="bd028ca7-762e-4bd0-b561-e80a6ec696ce"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="435" y="520" width="110" height="50" uuid="776dd78a-7e43-42c6-88f1-87e86c9e8b75"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="570" width="40" height="50" uuid="f6c4ae36-3c4a-47e6-b1a5-7fef24b9954f"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[8]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="56" y="570" width="173" height="50" uuid="8f3b6037-b57e-4a51-b716-f3e6a4e77293"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Is a person in constant attendance at both the delivery and receiving hose connections?]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="229" y="570" width="110" height="50" uuid="600f51e7-8127-41ab-8c07-d3cde233ab5d"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="339" y="570" width="96" height="50" uuid="03333e90-e571-450d-bbba-b7118d3ce7c8"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="435" y="570" width="110" height="50" uuid="c0658d22-0484-4626-b2e5-a7e12d3812b8"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="620" width="40" height="30" uuid="c9f06b3e-bf51-4a5d-bb67-e249a3dc13ee"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[9]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="56" y="620" width="173" height="30" uuid="ece0e03b-bdd3-483d-824a-64829b243156"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Are all bunker tank lids closed?]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="229" y="620" width="110" height="30" uuid="4c9ab700-1542-4fc5-bf26-3cfd62c8045e"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="339" y="620" width="96" height="30" uuid="a7468092-94f3-483d-9e24-f85a5439f4f6"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="435" y="620" width="110" height="30" uuid="4bdd844e-4b8c-40d5-a089-df8ffe791cb3"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="650" width="40" height="30" uuid="c2560720-6c97-45b5-b585-148edd32a36d"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[10]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="56" y="650" width="173" height="30" uuid="386b6243-903e-4c29-a579-86c34fbb9dcf"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Are unused delivery connections blanked?]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="229" y="650" width="110" height="30" uuid="83ba73d0-ecca-4e5a-9171-557dc4d45d42"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="339" y="650" width="96" height="30" uuid="a64331a6-8d7e-4703-9c7c-ce664d131ad9"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="435" y="650" width="110" height="30" uuid="2aa1d3bc-fcdf-4410-92b3-28fa5a87e4e9"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="680" width="40" height="30" uuid="df7804e7-4cc6-4b20-a8af-3733f2b2dc84"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[11]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="56" y="680" width="173" height="30" uuid="446f00b1-be06-4315-aa89-bf098a16fa9f"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Are required delivery warning notices in position?]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="229" y="680" width="110" height="30" uuid="56c40c3b-b622-43a0-b7c6-e2f72380da59"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="339" y="680" width="96" height="30" uuid="20fecf6f-e177-48d4-85c2-27db18b5fe25"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="435" y="680" width="110" height="30" uuid="0500bea3-5c4b-452d-ba20-bafb9404bb50"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="180" y="60" width="100" height="20" uuid="4acdd4ee-56dd-4cb2-b47f-489bd201cb6f"/>
+				<textFieldExpression><![CDATA[$P{vesselsName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="80" width="100" height="18" uuid="b87e1be4-88f8-4e32-adc7-b351b00672c8"/>
+				<textFieldExpression><![CDATA[$P{vesselsIMOno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="98" width="100" height="14" uuid="b793c118-4e8e-4bb5-bf34-6bfb65794e00"/>
+				<textFieldExpression><![CDATA[$P{vesselsLocation}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="435" y="61" width="100" height="19" uuid="b3c79e39-f329-45c3-a781-bd92aadc25bd"/>
+				<textFieldExpression><![CDATA[$P{bunkerTankers}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="435" y="80" width="100" height="20" uuid="9ec6894e-6d8e-4400-a9bb-1c68d10df866"/>
+				<textFieldExpression><![CDATA[$P{agent}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="112" width="100" height="19" uuid="85c719aa-2e2f-40b5-ad6f-b3fa008c9a11"/>
+				<textFieldExpression><![CDATA[$P{date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="435" y="100" width="100" height="19" uuid="5e349f66-a668-48f7-80c8-5d73b71cb69b"/>
+				<textFieldExpression><![CDATA[$P{port}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="234" y="223" width="100" height="30" uuid="314e3330-3e17-4fb4-b989-1048018ba52e"/>
+				<textFieldExpression><![CDATA[$P{r1_bunker}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="234" y="253" width="100" height="30" uuid="9c89c55b-3272-47a5-9cf5-03c409e42c6a"/>
+				<textFieldExpression><![CDATA[$P{r2_bunker}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="234" y="283" width="100" height="30" uuid="70298855-1394-4ee5-b80c-ec795a33c8f6"/>
+				<textFieldExpression><![CDATA[$P{r3_bunker}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="234" y="313" width="100" height="30" uuid="31017233-f5df-4385-90da-42c702d9688f"/>
+				<textFieldExpression><![CDATA[$P{r4_bunker}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="235" y="420" width="100" height="30" uuid="7210d3a2-302d-4b45-b54f-ecec410b7acc"/>
+				<textFieldExpression><![CDATA[$P{r5_bunker}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="235" y="470" width="100" height="30" uuid="8bbc9ef3-0f7b-414e-b2f3-381eb6e752af"/>
+				<textFieldExpression><![CDATA[$P{r6_bunker}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="234" y="530" width="90" height="30" uuid="cc9b7190-7c08-4fd6-856e-18def5621e01"/>
+				<textFieldExpression><![CDATA[$P{r7_bunker}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="235" y="580" width="89" height="30" uuid="6a86e1d9-7146-4e28-9610-b63ad9b141ee"/>
+				<textFieldExpression><![CDATA[$P{r8_bunker}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="234" y="620" width="90" height="30" uuid="5e6e2a8e-aaa5-4079-86ec-d152ef1c3ee4"/>
+				<textFieldExpression><![CDATA[$P{r9_bunker}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="234" y="650" width="90" height="30" uuid="c31063cf-15df-42ce-ac0b-3bb45e9e641e"/>
+				<textFieldExpression><![CDATA[$P{r10_bunker}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="235" y="680" width="89" height="30" uuid="d235258c-c1a9-4b52-90c4-cd68e90b71de"/>
+				<textFieldExpression><![CDATA[$P{r11_bunker}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="355" y="223" width="64" height="30" uuid="d9afb226-7fe3-4d2e-b007-d961f8f63994"/>
+				<textFieldExpression><![CDATA[$P{r1_vessel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="355" y="253" width="64" height="17" uuid="892aee3f-c20d-4d41-8b0b-ae0f84e82f77"/>
+				<textFieldExpression><![CDATA[$P{r2_vessel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="355" y="283" width="64" height="30" uuid="afeb59b6-01cf-4fbd-bac4-3381edbadb13"/>
+				<textFieldExpression><![CDATA[$P{r3_vessel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="355" y="315" width="64" height="30" uuid="d3b8c3bd-ee2d-4df3-92e6-18c5f65c8e1a"/>
+				<textFieldExpression><![CDATA[$P{r4_vessel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="355" y="420" width="64" height="30" uuid="3f020ca9-85fe-42a5-aec2-9b3d77ad2c96"/>
+				<textFieldExpression><![CDATA[$P{r5_vessel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="355" y="470" width="64" height="30" uuid="e2b85c7d-1ccc-4f48-a10a-b9b9804644df"/>
+				<textFieldExpression><![CDATA[$P{r6_vessel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="355" y="530" width="64" height="30" uuid="9aa48f27-fbde-4d66-91fb-679ea8eb2cfb"/>
+				<textFieldExpression><![CDATA[$P{r7_vessel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="355" y="581" width="64" height="20" uuid="b14fd321-c203-4819-84de-596875d10a43"/>
+				<textFieldExpression><![CDATA[$P{r8_vessel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="355" y="624" width="64" height="20" uuid="46f79f13-279d-45dc-918d-e1b57e849d87"/>
+				<textFieldExpression><![CDATA[$P{r9_vessel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="355" y="656" width="71" height="20" uuid="8ab46185-c233-4876-a444-eb144c1569a3"/>
+				<textFieldExpression><![CDATA[$P{r10_vessel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="355" y="684" width="70" height="20" uuid="2ceb0572-2062-408d-a015-c83e52f4f0d6"/>
+				<textFieldExpression><![CDATA[$P{r11_vessel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="440" y="223" width="100" height="30" uuid="d2f001f1-abe3-47cc-ba8d-4115cedee8df"/>
+				<textFieldExpression><![CDATA[$P{r1_remark}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="440" y="253" width="100" height="30" uuid="7c5a29fe-972d-43fe-9cf3-1c833650c00a"/>
+				<textFieldExpression><![CDATA[$P{r2_remark}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="440" y="283" width="100" height="30" uuid="10ed9953-d727-4554-9ec3-d1efeca3c757"/>
+				<textFieldExpression><![CDATA[$P{r3_remark}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="440" y="313" width="100" height="30" uuid="d079b77f-69c0-44fc-890b-676ea3d73cc0"/>
+				<textFieldExpression><![CDATA[$P{r4_remark}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="440" y="420" width="100" height="30" uuid="694d197c-043d-4338-af04-d0e95a9aae7f"/>
+				<textFieldExpression><![CDATA[$P{r5_remark}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="440" y="470" width="100" height="30" uuid="07d51ffe-d8e4-4d12-85da-d53f5a1ab887"/>
+				<textFieldExpression><![CDATA[$P{r6_remark}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="440" y="530" width="100" height="30" uuid="4c191882-a642-4957-bc47-d5e04a94efc8"/>
+				<textFieldExpression><![CDATA[$P{r7_remark}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="442" y="580" width="98" height="30" uuid="c0681d30-dd88-4bd8-8500-9553d5017337"/>
+				<textFieldExpression><![CDATA[$P{r8_remark}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="442" y="620" width="98" height="30" uuid="b63ca413-bc56-4c86-80bd-d6a3b91e0479"/>
+				<textFieldExpression><![CDATA[$P{r9_remark}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="442" y="652" width="98" height="25" uuid="5ca2ae29-f1d9-44f4-a06b-d531ddaabf46"/>
+				<textFieldExpression><![CDATA[$P{r10_remark}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="442" y="683" width="98" height="21" uuid="c9e028e6-3d04-4c48-a81d-93a01ce882e2"/>
+				<textFieldExpression><![CDATA[$P{r11_remark}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+</jasperReport>
