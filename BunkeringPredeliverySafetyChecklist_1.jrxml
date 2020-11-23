@@ -924,91 +924,91 @@ State sequence and rates]]></text>
 			</textField>
 			<textField>
 				<reportElement x="234" y="223" width="100" height="30" uuid="314e3330-3e17-4fb4-b989-1048018ba52e"/>
-				<textFieldExpression><![CDATA[$P{r1_bunker}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[(($P{r1_bunker} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="234" y="253" width="100" height="30" uuid="9c89c55b-3272-47a5-9cf5-03c409e42c6a"/>
-				<textFieldExpression><![CDATA[$P{r2_bunker}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[(($P{r2_bunker} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="234" y="283" width="100" height="30" uuid="70298855-1394-4ee5-b80c-ec795a33c8f6"/>
-				<textFieldExpression><![CDATA[$P{r3_bunker}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[(($P{r3_bunker} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="234" y="313" width="100" height="30" uuid="31017233-f5df-4385-90da-42c702d9688f"/>
-				<textFieldExpression><![CDATA[$P{r4_bunker}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[(($P{r4_bunker} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="235" y="420" width="100" height="30" uuid="7210d3a2-302d-4b45-b54f-ecec410b7acc"/>
-				<textFieldExpression><![CDATA[$P{r5_bunker}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[(($P{r5_bunker} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="235" y="470" width="100" height="30" uuid="8bbc9ef3-0f7b-414e-b2f3-381eb6e752af"/>
-				<textFieldExpression><![CDATA[$P{r6_bunker}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[(($P{r6_bunker} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="234" y="530" width="90" height="30" uuid="cc9b7190-7c08-4fd6-856e-18def5621e01"/>
-				<textFieldExpression><![CDATA[$P{r7_bunker}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[(($P{r7_bunker} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="235" y="580" width="89" height="30" uuid="6a86e1d9-7146-4e28-9610-b63ad9b141ee"/>
-				<textFieldExpression><![CDATA[$P{r8_bunker}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[(($P{r8_bunker} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="234" y="620" width="90" height="30" uuid="5e6e2a8e-aaa5-4079-86ec-d152ef1c3ee4"/>
-				<textFieldExpression><![CDATA[$P{r9_bunker}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[(($P{r9_bunker} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="234" y="650" width="90" height="30" uuid="c31063cf-15df-42ce-ac0b-3bb45e9e641e"/>
-				<textFieldExpression><![CDATA[$P{r10_bunker}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[(($P{r10_bunker} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="235" y="680" width="89" height="30" uuid="d235258c-c1a9-4b52-90c4-cd68e90b71de"/>
-				<textFieldExpression><![CDATA[$P{r11_bunker}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[(($P{r11_bunker} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="355" y="223" width="64" height="30" uuid="d9afb226-7fe3-4d2e-b007-d961f8f63994"/>
-				<textFieldExpression><![CDATA[$P{r1_vessel}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[(($P{r1_vessel} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="355" y="253" width="64" height="17" uuid="892aee3f-c20d-4d41-8b0b-ae0f84e82f77"/>
-				<textFieldExpression><![CDATA[$P{r2_vessel}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[(($P{r2_vessel} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="355" y="283" width="64" height="30" uuid="afeb59b6-01cf-4fbd-bac4-3381edbadb13"/>
-				<textFieldExpression><![CDATA[$P{r3_vessel}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[(($P{r3_vessel} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="355" y="315" width="64" height="30" uuid="d3b8c3bd-ee2d-4df3-92e6-18c5f65c8e1a"/>
-				<textFieldExpression><![CDATA[$P{r4_vessel}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[(($P{r4_vessel} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="355" y="420" width="64" height="30" uuid="3f020ca9-85fe-42a5-aec2-9b3d77ad2c96"/>
-				<textFieldExpression><![CDATA[$P{r5_vessel}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[(($P{r5_vessel} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="355" y="470" width="64" height="30" uuid="e2b85c7d-1ccc-4f48-a10a-b9b9804644df"/>
-				<textFieldExpression><![CDATA[$P{r6_vessel}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[(($P{r6_vessel} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="355" y="530" width="64" height="30" uuid="9aa48f27-fbde-4d66-91fb-679ea8eb2cfb"/>
-				<textFieldExpression><![CDATA[$P{r7_vessel}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[(($P{r7_vessel} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="355" y="581" width="64" height="20" uuid="b14fd321-c203-4819-84de-596875d10a43"/>
-				<textFieldExpression><![CDATA[$P{r8_vessel}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[(($P{r8_vessel} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="355" y="624" width="64" height="20" uuid="46f79f13-279d-45dc-918d-e1b57e849d87"/>
-				<textFieldExpression><![CDATA[$P{r9_vessel}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[(($P{r9_vessel} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="355" y="656" width="71" height="20" uuid="8ab46185-c233-4876-a444-eb144c1569a3"/>
-				<textFieldExpression><![CDATA[$P{r10_vessel}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[(($P{r10_vessel} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="355" y="684" width="70" height="20" uuid="2ceb0572-2062-408d-a015-c83e52f4f0d6"/>
-				<textFieldExpression><![CDATA[$P{r11_vessel}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[(($P{r11_vessel} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="440" y="223" width="100" height="30" uuid="d2f001f1-abe3-47cc-ba8d-4115cedee8df"/>
