@@ -42,6 +42,10 @@
 	<parameter name="r9_remark" class="java.lang.String"/>
 	<parameter name="r10_remark" class="java.lang.String"/>
 	<parameter name="r11_remark" class="java.lang.String"/>
+	<parameter name="grade" class="java.lang.String"/>
+	<parameter name="initialRate" class="java.lang.String"/>
+	<parameter name="maxRate" class="java.lang.String"/>
+	<parameter name="toppingRate" class="java.lang.String"/>
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
@@ -1053,6 +1057,117 @@ State sequence and rates]]></text>
 			<textField>
 				<reportElement x="442" y="683" width="98" height="21" uuid="c9e028e6-3d04-4c48-a81d-93a01ce882e2"/>
 				<textFieldExpression><![CDATA[$P{r11_remark}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="60" y="365" width="40" height="30" uuid="0e47e680-7e00-48f6-aed1-51e57ccf9731"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<text><![CDATA[Grade]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="365" width="30" height="30" uuid="02a9eb21-26a7-4a85-aa81-b440a148bf95"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Initial rate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="130" y="365" width="30" height="30" uuid="c569d3be-1749-4ab8-b39b-a305d0a2411d"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Max rate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="365" width="40" height="30" uuid="9b91e904-90ec-4108-9df1-bb31d5e3f634"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Topping rate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="395" width="40" height="15" uuid="883724de-4ea0-434c-954b-9d6c3f2e9bde"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="395" width="30" height="15" uuid="7ed09816-1daa-41ea-adba-bc1ada3f75fd"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="130" y="395" width="30" height="15" uuid="e8cacc64-1a6b-4d95-99aa-6e3b1e571170"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="395" width="40" height="15" uuid="93fe3fa7-89aa-4df0-9e01-1d9efccc34b5"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="60" y="395" width="40" height="15" uuid="fcc24aca-c73c-4407-96b8-813b7bab1177"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{grade}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="102" y="395" width="26" height="15" uuid="1e7d5bda-74e0-4bd1-9aed-f95b87690f2a"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{initialRate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="133" y="395" width="24" height="15" uuid="b404339c-406d-471d-9c53-4f8a8e71ef3a"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{maxRate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="162" y="395" width="36" height="15" uuid="c924ce13-da8a-411a-b476-19f365120bd1"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{toppingRate}]]></textFieldExpression>
 			</textField>
 		</band>
 	</title>
