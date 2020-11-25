@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.15.0.final using JasperReports Library version 6.15.0-dd49bfb94918336b8321d5507193f0169ead4e95  -->
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="BargeNoteOfProtest" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3b38df51-d110-4360-8929-000475aa43a7">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<parameter name="receivedTonnes" class="java.lang.String"/>
@@ -25,7 +25,7 @@
 	<title>
 		<band height="802" splitType="Stretch">
 			<staticText>
-				<reportElement x="172" y="4" width="210" height="30" uuid="d627cb48-e142-4e57-8e48-b8a921ca5e8d"/>
+				<reportElement x="172" y="4" width="210" height="26" uuid="d627cb48-e142-4e57-8e48-b8a921ca5e8d"/>
 				<textElement textAlignment="Center">
 					<font size="12" isBold="true"/>
 				</textElement>
@@ -170,7 +170,7 @@
 				<text><![CDATA[wish to verify that]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="299" y="230" width="82" height="20" uuid="1006ed9b-61af-4743-8564-6e0e0a20c995"/>
+				<reportElement x="287" y="230" width="82" height="20" uuid="1006ed9b-61af-4743-8564-6e0e0a20c995"/>
 				<box>
 					<bottomPen lineWidth="1.0"/>
 				</box>
@@ -204,14 +204,14 @@
 				<text><![CDATA[(Product) were ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="1" y="190" width="308" height="20" uuid="d1607955-ca57-4380-a7c7-044c2cd08183"/>
+				<reportElement x="1" y="190" width="278" height="20" uuid="d1607955-ca57-4380-a7c7-044c2cd08183"/>
 				<textElement>
 					<font size="12"/>
 				</textElement>
 				<text><![CDATA[delivered to your vessel by my bunker transfer from]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="309" y="190" width="82" height="20" uuid="d07dd04d-5eda-4e92-85c5-8cea3b68440e"/>
+				<reportElement x="289" y="190" width="82" height="20" uuid="d07dd04d-5eda-4e92-85c5-8cea3b68440e"/>
 				<box>
 					<bottomPen lineWidth="1.0"/>
 				</box>
@@ -221,14 +221,14 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="395" y="190" width="58" height="20" uuid="59a78fb3-60ce-4981-9e1f-7f131b26198f"/>
+				<reportElement x="378" y="190" width="58" height="20" uuid="59a78fb3-60ce-4981-9e1f-7f131b26198f"/>
 				<textElement>
 					<font size="12"/>
 				</textElement>
 				<text><![CDATA[(time) on ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="451" y="190" width="82" height="20" uuid="f2996f73-836c-4b46-8625-922b247e5136"/>
+				<reportElement x="440" y="190" width="82" height="20" uuid="f2996f73-836c-4b46-8625-922b247e5136"/>
 				<box>
 					<bottomPen lineWidth="1.0"/>
 				</box>
@@ -238,14 +238,14 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="536" y="190" width="28" height="20" uuid="5530e444-ab0b-4f44-bbd7-c5fea275b413"/>
+				<reportElement x="528" y="192" width="28" height="20" uuid="5530e444-ab0b-4f44-bbd7-c5fea275b413"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
 				<text><![CDATA[(Date).]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="1" y="230" width="294" height="20" uuid="b378d7aa-817e-4ce5-a3fc-9c5572b4396f"/>
+				<reportElement x="1" y="230" width="278" height="20" uuid="b378d7aa-817e-4ce5-a3fc-9c5572b4396f"/>
 				<textElement>
 					<font size="12"/>
 				</textElement>
@@ -430,7 +430,9 @@ Email Address: bsd@mpa.gov.sg
 				<text><![CDATA[Date / Time]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="299" y="230" width="100" height="30" uuid="35fca2e9-0867-446c-81d3-39fe3e2c907e"/>
+				<reportElement x="287" y="231" width="94" height="15" uuid="35fca2e9-0867-446c-81d3-39fe3e2c907e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
 				<textFieldExpression><![CDATA[$P{receivedTonnes}]]></textFieldExpression>
 			</textField>
 			<textField>
@@ -438,7 +440,9 @@ Email Address: bsd@mpa.gov.sg
 				<textFieldExpression><![CDATA[$P{ref}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="50" y="170" width="70" height="20" uuid="8dae339b-3901-4916-97a6-b2450f500b3e"/>
+				<reportElement x="44" y="173" width="70" height="15" uuid="8dae339b-3901-4916-97a6-b2450f500b3e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
 				<textFieldExpression><![CDATA[$P{sbNo}]]></textFieldExpression>
 			</textField>
 			<staticText>
@@ -459,23 +463,33 @@ Email Address: bsd@mpa.gov.sg
 				<text><![CDATA[tonnes of]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="262" y="150" width="148" height="20" uuid="5a16c82b-df7b-4c8c-b964-64b01dd0523e"/>
+				<reportElement x="253" y="152" width="148" height="15" uuid="5a16c82b-df7b-4c8c-b964-64b01dd0523e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
 				<textFieldExpression><![CDATA[$P{nameOfBunkerTanker}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="232" y="170" width="78" height="20" uuid="c26c7f10-d4a8-4f7d-ab46-f4bfcaf5f55f"/>
+				<reportElement x="232" y="172" width="78" height="15" uuid="c26c7f10-d4a8-4f7d-ab46-f4bfcaf5f55f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
 				<textFieldExpression><![CDATA[$P{tonnesOfProduct}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="381" y="170" width="68" height="20" uuid="227c027e-0499-4bf7-bb41-c0a84aa129bf"/>
+				<reportElement x="378" y="172" width="68" height="15" uuid="227c027e-0499-4bf7-bb41-c0a84aa129bf">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
 				<textFieldExpression><![CDATA[$P{productName}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="314" y="190" width="66" height="20" uuid="d4be5209-5181-441a-ad9b-54b9b7a8ac2d"/>
+				<reportElement x="295" y="192" width="66" height="15" uuid="d4be5209-5181-441a-ad9b-54b9b7a8ac2d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
 				<textFieldExpression><![CDATA[$P{fromTime}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="460" y="190" width="64" height="20" uuid="958a6624-3f52-432e-b83c-6932a0fbe06a"/>
+				<reportElement x="448" y="192" width="64" height="15" uuid="958a6624-3f52-432e-b83c-6932a0fbe06a">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
 				<textFieldExpression><![CDATA[$P{fromDate}]]></textFieldExpression>
 			</textField>
 			<textField>
@@ -491,7 +505,9 @@ Email Address: bsd@mpa.gov.sg
 				<textFieldExpression><![CDATA[$P{datetimeAcknowledged}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="160" y="70" width="238" height="20" uuid="73846787-7ab1-4e57-8219-031f3d8512ca"/>
+				<reportElement x="137" y="72" width="238" height="15" uuid="73846787-7ab1-4e57-8219-031f3d8512ca">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
 				<textFieldExpression><![CDATA[$P{nameOfVesselReceivingBunkers}]]></textFieldExpression>
 			</textField>
 			<textField>
@@ -499,7 +515,9 @@ Email Address: bsd@mpa.gov.sg
 				<textFieldExpression><![CDATA[$P{dateBargeNoteProtest}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="374" y="130" width="146" height="20" uuid="f192bdc0-396a-4049-9061-369c901a7a60"/>
+				<reportElement x="374" y="132" width="146" height="15" uuid="f192bdc0-396a-4049-9061-369c901a7a60">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
 				<textFieldExpression><![CDATA[$P{dateOperationsOn}]]></textFieldExpression>
 			</textField>
 		</band>
