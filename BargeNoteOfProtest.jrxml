@@ -429,17 +429,17 @@ Email Address: bsd@mpa.gov.sg
 				</textElement>
 				<text><![CDATA[Date / Time]]></text>
 			</staticText>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="287" y="231" width="94" height="15" uuid="35fca2e9-0867-446c-81d3-39fe3e2c907e">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$P{receivedTonnes}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="90" y="52" width="100" height="18" uuid="2630d190-985d-45f3-9443-4d1d3cb4b3b3"/>
 				<textFieldExpression><![CDATA[$P{ref}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="44" y="173" width="70" height="15" uuid="8dae339b-3901-4916-97a6-b2450f500b3e">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -462,59 +462,59 @@ Email Address: bsd@mpa.gov.sg
 				</textElement>
 				<text><![CDATA[tonnes of]]></text>
 			</staticText>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="253" y="152" width="148" height="15" uuid="5a16c82b-df7b-4c8c-b964-64b01dd0523e">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$P{nameOfBunkerTanker}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="232" y="172" width="78" height="15" uuid="c26c7f10-d4a8-4f7d-ab46-f4bfcaf5f55f">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$P{tonnesOfProduct}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="378" y="172" width="68" height="15" uuid="227c027e-0499-4bf7-bb41-c0a84aa129bf">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$P{productName}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="295" y="192" width="66" height="15" uuid="d4be5209-5181-441a-ad9b-54b9b7a8ac2d">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$P{fromTime}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="448" y="192" width="64" height="15" uuid="958a6624-3f52-432e-b83c-6932a0fbe06a">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$P{fromDate}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="200" y="431" width="142" height="18" uuid="4db572a9-2f7f-4f2f-91d1-d4bf8c36aee0"/>
 				<textFieldExpression><![CDATA[$P{fullNameCargoOfficer}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="117" y="708" width="142" height="20" uuid="0dfe1fc6-a52e-44fd-9a1c-00f1f5f2cfc6"/>
 				<textFieldExpression><![CDATA[$P{fullNameChiefEngineer}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="421" y="708" width="140" height="20" uuid="13d45ef4-4578-4d52-a9da-f5143326f5bc"/>
 				<textFieldExpression><![CDATA[$P{datetimeAcknowledged}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="137" y="72" width="238" height="15" uuid="73846787-7ab1-4e57-8219-031f3d8512ca">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$P{nameOfVesselReceivingBunkers}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="90" y="31" width="168" height="20" uuid="20356c9e-d1b7-4a22-8f18-5aa23f073745"/>
 				<textFieldExpression><![CDATA[$P{dateBargeNoteProtest}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="374" y="132" width="146" height="15" uuid="f192bdc0-396a-4049-9061-369c901a7a60">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>

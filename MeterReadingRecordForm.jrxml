@@ -822,47 +822,47 @@
 				</textElement>
 				<text><![CDATA[Name in full:]]></text>
 			</staticText>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="390" y="160" width="150" height="15" uuid="ed7c9747-2b3e-456b-aae5-dc755afe9d43">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$P{needleValveSealNumber}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="423" y="60" width="134" height="20" uuid="b2f3a543-afe1-44c0-a21b-9f02021f0269"/>
 				<textFieldExpression><![CDATA[$P{meterSerialNumber}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="140" y="161" width="132" height="15" uuid="aecf1de7-26bd-43d9-8f64-a32f3f454423">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$P{samplingContainerSealNumber}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="230" y="180" width="220" height="20" uuid="0cb75cfe-7308-49ec-a661-24d862bbfbc1"/>
 				<textFieldExpression><![CDATA[$P{vesselHasSufficientTankSpaceForPurging}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="90" y="200" width="270" height="20" uuid="77734145-a1f0-4ad3-8003-7e265c0e241b"/>
 				<textFieldExpression><![CDATA[$P{remark}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="190" y="130" width="82" height="20" uuid="c42fd07a-72cd-44ee-8d55-daa0d41dbac4"/>
 				<textFieldExpression><![CDATA[$P{mtA}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="478" y="130" width="66" height="20" uuid="4a7e293b-85d0-4d52-b9cf-9e0bb25f11ff"/>
 				<textFieldExpression><![CDATA[$P{mtX}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="190" y="460" width="82" height="20" uuid="5cad27d1-568f-4955-abc2-12c69e457d62"/>
 				<textFieldExpression><![CDATA[$P{mtB}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="475" y="460" width="68" height="20" uuid="4cd2bef9-a4b5-47e3-a612-38de51460b46"/>
 				<textFieldExpression><![CDATA[$P{mtY}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="64" y="312" width="114" height="15" uuid="374607e7-7c28-4c24-a332-2f5df32911cf">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -871,7 +871,7 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$P{cargoOfficerSignedAtBeforeDelivery}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="243" y="312" width="127" height="15" uuid="9d71fdc7-8c1c-4f06-b2f9-1d3679e62a8b">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -880,7 +880,7 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$P{chiefEngineerSignedAtBeforeDelivery}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="441" y="311" width="114" height="15" uuid="d33b4fe4-ebad-4b89-9701-a8366d73e6b8">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -889,45 +889,45 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$P{surveyorSignedAtBeforeDelivery}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="65" y="610" width="104" height="20" uuid="563f426c-b57d-4de3-bc48-a8e75c11afcb">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$P{cargoOfficerSignedAtAfterDelivery}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="248" y="610" width="122" height="20" uuid="476a1001-5c29-42b7-a544-cec7431f8b57">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$P{chiefEngineerSignedAtAfterDelivery}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="447" y="610" width="100" height="20" uuid="ffb4bc61-13da-477a-a42f-9611660cf0aa">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$P{surveyorSignedAtAfterDelivery}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="423" y="80" width="134" height="30" uuid="b993784f-fd9d-4771-a85b-565dc397772b"/>
 				<textFieldExpression><![CDATA[$P{bunkerMeterTicketNumber}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="423" y="40" width="120" height="19" uuid="f1b316c1-f04d-4bc1-8b36-e0b562f129ca"/>
 				<textFieldExpression><![CDATA[$P{sbNo}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="140" y="41" width="132" height="19" uuid="7bf98770-0c26-4815-a055-7df8b58a9de5"/>
 				<textFieldExpression><![CDATA[$P{bunkerTankersName}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="140" y="60" width="120" height="19" uuid="1cc3ccee-a986-49e6-9251-edf1be60cca0"/>
 				<textFieldExpression><![CDATA[$P{vesselsName}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="140" y="80" width="100" height="19" uuid="7dfbe475-0fc4-4ea4-a153-6ea3977959ef"/>
 				<textFieldExpression><![CDATA[$P{bdnNo}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="64" y="292" width="104" height="15" uuid="30a900cc-73a3-42a6-90ab-f21ce1943351">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -936,25 +936,25 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$P{fullNameCargoOfficerBefore}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="248" y="590" width="122" height="20" uuid="e39d7d35-7aff-4e49-bf9b-21357678b7ac">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$P{fullNameChiefEngineerAfter}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="447" y="590" width="100" height="20" uuid="1d62f50b-f4da-4632-bfc0-ecf3299df49b">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$P{fullNameSurvyorAfter}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="65" y="590" width="104" height="20" uuid="a5ee77e4-4f39-45a7-8286-8f5e1afb53a7">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$P{fullNameCargoOfficerAfter}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="243" y="291" width="122" height="15" uuid="da4c0739-cda3-43a3-afac-f5d408d7935c">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -963,7 +963,7 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$P{fullNameChiefEngineerBefore}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="441" y="292" width="100" height="15" uuid="589cb049-60e8-4bf2-8a5d-395630a69367">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -972,7 +972,7 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$P{fullNameSurvyorBefore}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="190" y="496" width="70" height="19" uuid="84ee3978-d511-46ab-b53c-92c970321bb1"/>
 				<textFieldExpression><![CDATA[$P{mtFinal}]]></textFieldExpression>
 			</textField>

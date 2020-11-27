@@ -1293,233 +1293,233 @@ Time:]]></text>
 				<reportElement x="429" y="460" width="100" height="20" uuid="44520ac9-509e-40b1-89b9-08971f1acbcd"/>
 				<text><![CDATA[State no. of persons:]]></text>
 			</staticText>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="434" y="70" width="100" height="40" uuid="bab0a244-d67e-44c9-b371-36147dacbfd2"/>
 				<textFieldExpression><![CDATA[$P{r12_remark}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="434" y="130" width="100" height="20" uuid="70efb162-9356-4384-aee3-44921130c87f"/>
 				<textFieldExpression><![CDATA[$P{r13_remark}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="434" y="161" width="100" height="20" uuid="6759f304-295e-47f9-9548-d6c51a93ca90"/>
 				<textFieldExpression><![CDATA[$P{r14_remark}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="434" y="190" width="100" height="20" uuid="1599a116-250b-4460-a568-5034c9f67445"/>
 				<textFieldExpression><![CDATA[$P{r15_remark}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="434" y="220" width="100" height="20" uuid="cf2db6db-ae69-491b-a62b-c018ff1a790a"/>
 				<textFieldExpression><![CDATA[$P{r16_remark}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="434" y="254" width="100" height="30" uuid="f023c1d7-38a2-4233-9ee9-3f8573578011"/>
 				<textFieldExpression><![CDATA[$P{r17_remark}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="434" y="293" width="100" height="20" uuid="a42fa437-e6fe-4c5d-b861-f8349f0c6196"/>
 				<textFieldExpression><![CDATA[$P{r18_remark}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="434" y="324" width="100" height="20" uuid="76d0c735-8496-4e40-9992-340bf18af02b"/>
 				<textFieldExpression><![CDATA[$P{r19_remark}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="434" y="355" width="100" height="30" uuid="96a8b510-650d-4543-8bc7-27bf1904e305"/>
 				<textFieldExpression><![CDATA[$P{r20_remark}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="433" y="407" width="100" height="20" uuid="2cbc6beb-cb98-409a-9c48-4784307fa935"/>
 				<textFieldExpression><![CDATA[$P{r21_remark}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="432" y="440" width="100" height="18" uuid="d99c023a-d84d-4cef-aea5-ad1f9ad8250a"/>
 				<textFieldExpression><![CDATA[$P{r22_remark}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="432" y="477" width="100" height="18" uuid="4c2b324d-83b8-47f1-a536-fe332a993936"/>
 				<textFieldExpression><![CDATA[$P{r23_remark}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="432" y="503" width="100" height="30" uuid="f94425e3-5dc0-46a9-b536-19aab1a0c9f5"/>
 				<textFieldExpression><![CDATA[$P{r24_remark}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="433" y="541" width="98" height="20" uuid="05b40baa-b2c0-4633-bdb6-e1759a78b645"/>
 				<textFieldExpression><![CDATA[$P{r25_remark}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="433" y="575" width="99" height="30" uuid="d8e38e1e-f832-448c-a8a5-31d7df4d5315"/>
 				<textFieldExpression><![CDATA[$P{r26_remark}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="228" y="75" width="100" height="30" uuid="e1e928eb-b2db-47c3-a6fd-e924b573f997"/>
 				<textFieldExpression><![CDATA[(($P{r12_bunker} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="228" y="134" width="100" height="20" uuid="9acda0cd-6b4f-4d54-bc13-07abdd4c190a"/>
 				<textFieldExpression><![CDATA[(($P{r13_bunker} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="228" y="162" width="100" height="20" uuid="35e7f4a7-6edd-4c4b-be31-658dac8d9ada"/>
 				<textFieldExpression><![CDATA[(($P{r14_bunker} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="228" y="194" width="100" height="20" uuid="ad080a3d-aba8-433d-ae16-ace6f7ad30ac"/>
 				<textFieldExpression><![CDATA[(($P{r15_bunker} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="229" y="224" width="100" height="20" uuid="8d289e09-527f-4d3b-bf0b-780fc4f75bdb"/>
 				<textFieldExpression><![CDATA[(($P{r16_bunker} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="229" y="254" width="100" height="20" uuid="5e76e9fd-ad97-4a91-8c9d-33365701d9fb"/>
 				<textFieldExpression><![CDATA[(($P{r17_bunker} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="229" y="296" width="100" height="20" uuid="e113b27d-b5c1-4b4f-abac-fccb4b9a5f19"/>
 				<textFieldExpression><![CDATA[(($P{r18_bunker} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="229" y="325" width="100" height="20" uuid="4edfb02c-8e4d-47d6-b7d4-1b49dd2e021d"/>
 				<textFieldExpression><![CDATA[(($P{r19_bunker} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="229" y="355" width="100" height="20" uuid="88947482-54e6-4875-b4c3-842126c60b62"/>
 				<textFieldExpression><![CDATA[(($P{r20_bunker} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="229" y="396" width="100" height="20" uuid="ac97e4e1-4c86-43cc-8be4-985eda01b1c4"/>
 				<textFieldExpression><![CDATA[(($P{r21_bunker} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="229" y="434" width="100" height="20" uuid="6a785463-fa21-4d02-945f-4a6203e03a93"/>
 				<textFieldExpression><![CDATA[(($P{r22_bunker} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="229" y="468" width="100" height="20" uuid="f22ae0f3-d610-4931-afd2-919cba9d4264"/>
 				<textFieldExpression><![CDATA[(($P{r23_bunker} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="229" y="504" width="100" height="20" uuid="848b3a6d-c039-4dfb-bf9c-6cc942055de5"/>
 				<textFieldExpression><![CDATA[(($P{r24_bunker} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="229" y="541" width="100" height="20" uuid="63509522-2bec-477a-a960-eeb886f6e473"/>
 				<textFieldExpression><![CDATA[(($P{r25_bunker} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="229" y="575" width="100" height="20" uuid="9e4090c1-53dc-4338-b63d-d74340457b30"/>
 				<textFieldExpression><![CDATA[(($P{r26_bunker} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="341" y="75" width="80" height="30" uuid="d562d1e9-9c43-4118-977a-140c6c6d79cb"/>
 				<textFieldExpression><![CDATA[(($P{r12_vessel} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="341" y="134" width="80" height="22" uuid="ecb15d4a-314c-431f-933b-e95a8b88b38c"/>
 				<textFieldExpression><![CDATA[(($P{r13_vessel} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="341" y="161" width="80" height="22" uuid="6fc81ef5-c08a-4e67-b3bc-0c2b7134e19b"/>
 				<textFieldExpression><![CDATA[(($P{r14_vessel} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="341" y="193" width="80" height="22" uuid="1f72846b-b912-40fe-81f7-c79e9944aabe"/>
 				<textFieldExpression><![CDATA[(($P{r15_vessel} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="341" y="223" width="80" height="22" uuid="d76c2cb1-fda6-4003-b164-c98cba8f83a2"/>
 				<textFieldExpression><![CDATA[(($P{r16_vessel} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="341" y="254" width="80" height="22" uuid="1f0aef3f-6eec-428d-9c3e-37ad7868a997"/>
 				<textFieldExpression><![CDATA[(($P{r17_vessel} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="341" y="295" width="80" height="22" uuid="889966a0-a6d2-4bb3-8099-d5112e3a329c"/>
 				<textFieldExpression><![CDATA[(($P{r18_vessel} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="341" y="325" width="80" height="22" uuid="bd260da2-c86a-464e-a812-12e0f85fdabb"/>
 				<textFieldExpression><![CDATA[(($P{r19_vessel} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="341" y="355" width="80" height="22" uuid="8ca57cae-d66d-42d2-a74d-a01f8a285bbc"/>
 				<textFieldExpression><![CDATA[(($P{r20_vessel} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="341" y="396" width="80" height="22" uuid="53703809-4574-45cb-b44b-af4e54368c9d"/>
 				<textFieldExpression><![CDATA[(($P{r21_vessel} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="341" y="434" width="80" height="22" uuid="ef731628-bf25-498a-91c8-3b2982d035cf"/>
 				<textFieldExpression><![CDATA[(($P{r22_vessel} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="341" y="468" width="80" height="22" uuid="cb2018c6-3f54-4b6f-bd57-40dfd9ec0635"/>
 				<textFieldExpression><![CDATA[(($P{r23_vessel} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="341" y="503" width="80" height="22" uuid="1e09ce10-e219-4238-9c93-4b16c629baaa"/>
 				<textFieldExpression><![CDATA[(($P{r24_vessel} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="341" y="543" width="80" height="22" uuid="4b08819a-5d41-499e-aa4c-a146ddebdc4c"/>
 				<textFieldExpression><![CDATA[(($P{r25_vessel} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="340" y="575" width="80" height="22" uuid="f222dd67-b79f-47e0-aca5-80203c42bfd8"/>
 				<textFieldExpression><![CDATA[(($P{r26_vessel} == true) ? "Yes":"")]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="50" y="680" width="130" height="20" uuid="d42b24e4-91a2-4eba-a683-809a043c3161"/>
 				<textFieldExpression><![CDATA[$P{name_bunkertanker}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="224" y="680" width="126" height="20" uuid="69f020a4-d699-42e8-acad-8d4b5fb27cce"/>
 				<textFieldExpression><![CDATA[$P{name_vessel}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="392" y="680" width="128" height="20" uuid="fbb9810f-4d99-492d-a713-0592ee0b6795"/>
 				<textFieldExpression><![CDATA[$P{name_surveyor}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="60" y="700" width="120" height="20" uuid="b13d6699-22f4-4433-bb30-60fc8ea9b41c"/>
 				<textFieldExpression><![CDATA[$P{signature_bunkertanker}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="237" y="700" width="112" height="20" uuid="a7d7ba41-48c8-43f0-9435-12538d773678"/>
 				<textFieldExpression><![CDATA[$P{signature_vessel}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="410" y="700" width="114" height="20" uuid="7648c006-b64a-45a3-946a-7363e0e65400"/>
 				<textFieldExpression><![CDATA[$P{signature_surveyor}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="46" y="720" width="124" height="20" uuid="19ad9422-643c-4658-886b-a206c48c27d1"/>
 				<textFieldExpression><![CDATA[$P{date_bunkertanker}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="220" y="720" width="100" height="20" uuid="fa3643db-490d-4e2c-85a3-5a94fc648ca9"/>
 				<textFieldExpression><![CDATA[$P{date_vessel}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="391" y="720" width="100" height="20" uuid="c2d59ba4-d7af-4239-8349-f07870710c0e"/>
 				<textFieldExpression><![CDATA[$P{date_surveyor}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="46" y="740" width="124" height="20" uuid="c7497329-956f-444f-9ed0-ba12f93489ad"/>
 				<textElement verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[$P{time_bunkertanker}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="220" y="740" width="100" height="20" uuid="6e96847b-73ac-469a-84b8-371e696a388c"/>
 				<textElement verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[$P{time_vessel}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="391" y="740" width="101" height="20" uuid="5a66d094-f007-42a6-8cf5-612f9165f955"/>
 				<textElement verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[$P{time_surveyor}]]></textFieldExpression>

@@ -168,7 +168,7 @@ We have been nominated to supply you the following grade(s) for bunker:]]></text
 			<line>
 				<reportElement x="428" y="74" width="97" height="1" uuid="2da0d5e0-fc38-465c-ad5c-2df8253e258b"/>
 			</line>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="433" y="61" width="100" height="12" uuid="d8ced52b-e288-4bbf-a199-b0d682f31095">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -177,7 +177,7 @@ We have been nominated to supply you the following grade(s) for bunker:]]></text
 				</textElement>
 				<textFieldExpression><![CDATA[$P{completedAt}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="433" y="38" width="100" height="12" uuid="e2c36ab1-2f21-4baa-825f-78b70ee278c0">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -186,7 +186,7 @@ We have been nominated to supply you the following grade(s) for bunker:]]></text
 				</textElement>
 				<textFieldExpression><![CDATA[$P{commencedAt}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="330" y="208" width="68" height="30" uuid="69e17e0a-d5d0-4efb-9081-b02a1bd0e639"/>
 				<box>
 					<topPen lineWidth="0.25"/>
@@ -199,7 +199,7 @@ We have been nominated to supply you the following grade(s) for bunker:]]></text
 				</textElement>
 				<textFieldExpression><![CDATA[$P{waterContentPercentage}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="458" y="208" width="78" height="30" uuid="eb3c8927-0eb6-4043-9b87-37b7598fdb97"/>
 				<box>
 					<topPen lineWidth="0.25"/>
@@ -212,7 +212,7 @@ We have been nominated to supply you the following grade(s) for bunker:]]></text
 				</textElement>
 				<textFieldExpression><![CDATA[$P{sulphurContentPercentage}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="398" y="208" width="60" height="30" uuid="54ff45ac-5006-47b3-a9a6-5ded4e99d476"/>
 				<box>
 					<topPen lineWidth="0.25"/>
@@ -225,7 +225,7 @@ We have been nominated to supply you the following grade(s) for bunker:]]></text
 				</textElement>
 				<textFieldExpression><![CDATA[$P{flashPointCelsius}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="256" y="208" width="74" height="30" uuid="c53808b2-527b-435f-88fb-f41ca29d4bf2"/>
 				<box>
 					<topPen lineWidth="0.25"/>
@@ -238,7 +238,7 @@ We have been nominated to supply you the following grade(s) for bunker:]]></text
 				</textElement>
 				<textFieldExpression><![CDATA[$P{density}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="178" y="208" width="78" height="30" uuid="57ff9bce-c151-4bc2-9c78-c4c6f4a6c58d"/>
 				<box>
 					<topPen lineWidth="0.25"/>
@@ -251,7 +251,7 @@ We have been nominated to supply you the following grade(s) for bunker:]]></text
 				</textElement>
 				<textFieldExpression><![CDATA[$P{viscosity}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="80" y="208" width="98" height="30" uuid="57b0db9e-a416-4f4a-8155-0c3431f1d0c7"/>
 				<box>
 					<topPen lineWidth="0.25"/>
@@ -264,7 +264,7 @@ We have been nominated to supply you the following grade(s) for bunker:]]></text
 				</textElement>
 				<textFieldExpression><![CDATA[$P{isBlendedInAdvance}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="10" y="208" width="70" height="30" uuid="39e1e45d-45b5-4e60-9a9c-9a2d217ac9ad"/>
 				<box>
 					<topPen lineWidth="0.25"/>
@@ -508,7 +508,7 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 			<line>
 				<reportElement isPrintRepeatedValues="false" x="355" y="325" width="80" height="1" isPrintInFirstWholeBand="true" uuid="8f8e8a94-1145-4a77-a1e4-6f75edd49adf"/>
 			</line>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement isPrintRepeatedValues="false" x="355" y="337" width="84" height="12" isPrintInFirstWholeBand="true" uuid="9e040175-6f99-4ff2-8759-e06018edb27d">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -517,7 +517,7 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 				</textElement>
 				<textFieldExpression><![CDATA[$P{allowLineClearing}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="57" y="259" width="76" height="12" uuid="f4bdbc84-a0fc-4d14-bb7a-686302143afe">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -526,7 +526,7 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 				</textElement>
 				<textFieldExpression><![CDATA[$P{productName}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="193" y="280" width="86" height="12" uuid="1a606668-ffc4-4896-96af-efacc9a49ae1">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -535,7 +535,7 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 				</textElement>
 				<textFieldExpression><![CDATA[$P{pumpingCapacity}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement isPrintRepeatedValues="false" x="355" y="357" width="115" height="13" isPrintInFirstWholeBand="true" uuid="c9b82067-91d8-4b18-9475-93da76fd6255"/>
 				<textElement>
 					<font size="8"/>
@@ -772,7 +772,7 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 				</textElement>
 				<text><![CDATA[Date / Time:]]></text>
 			</staticText>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement isPrintRepeatedValues="false" x="2" y="585" width="523" height="12" isPrintInFirstWholeBand="true" uuid="06e6c1f6-8487-42e9-b2da-71d347fffd78">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -781,7 +781,7 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 				</textElement>
 				<textFieldExpression><![CDATA[$P{constraintDescription}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement isPrintRepeatedValues="false" x="81" y="540" width="99" height="12" isPrintInFirstWholeBand="true" uuid="27269020-c79b-4782-8a63-52ea3cda4682">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -790,7 +790,7 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 				</textElement>
 				<textFieldExpression><![CDATA[$P{cargoOfficerSignedAt}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement isPrintRepeatedValues="false" x="251" y="540" width="105" height="12" isPrintInFirstWholeBand="true" uuid="6fef27ac-5c9b-4e7b-b9b1-d32cc9a9e3d1">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -799,21 +799,21 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 				</textElement>
 				<textFieldExpression><![CDATA[$P{chiefEngineerSignedAt}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement isPrintRepeatedValues="false" x="453" y="538" width="94" height="12" isPrintInFirstWholeBand="true" uuid="ec4b55b4-3a50-41b5-92f0-a6d8c036eede"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{surveyorSignedAt}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement isPrintRepeatedValues="false" x="433" y="689" width="118" height="12" isPrintInFirstWholeBand="true" uuid="de2fffe9-d09e-46c6-952c-d3e59d25f2fd"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{surveyorForConstraintSignedAt}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement isPrintRepeatedValues="false" x="257" y="689" width="122" height="12" isPrintInFirstWholeBand="true" uuid="9d63a5bb-f1db-43c1-bae2-e797a9fb1316">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -822,7 +822,7 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 				</textElement>
 				<textFieldExpression><![CDATA[$P{chiefEngineerForConstraintSignedAt}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement isPrintRepeatedValues="false" x="51" y="689" width="143" height="12" isPrintInFirstWholeBand="true" uuid="c3b3e9fc-b80a-4ac3-843d-de9f5e3d825d">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -831,7 +831,7 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 				</textElement>
 				<textFieldExpression><![CDATA[$P{cargoOfficerForConstraintSignedAt}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="57" y="479" width="100" height="12" uuid="10ffb3bf-12c8-40f6-b5b9-407d8614af16">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -840,7 +840,7 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 				</textElement>
 				<textFieldExpression><![CDATA[$P{cargoOfficerFullName}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="246" y="479" width="105" height="12" uuid="6e8509ab-4371-4670-be18-8bd1e9a01ef2">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -849,7 +849,7 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 				</textElement>
 				<textFieldExpression><![CDATA[$P{chiefEngineerFullName}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="439" y="480" width="100" height="12" uuid="c84388ab-d799-4689-a58d-14735edee311">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -861,7 +861,7 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 			<line>
 				<reportElement isPrintRepeatedValues="false" x="375" y="450" width="175" height="1" isPrintInFirstWholeBand="true" uuid="cb52b725-2614-4fed-906a-c290073fe9e6"/>
 			</line>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="441" y="257" width="32" height="12" uuid="4f261c58-2d80-4273-b303-c11ae3127035">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -870,7 +870,7 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 				</textElement>
 				<textFieldExpression><![CDATA[$P{deliveryTemperatureCelsius}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="356" y="297" width="76" height="12" uuid="6e67bd80-d962-4209-971c-d8554cb16968">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -879,7 +879,7 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 				</textElement>
 				<textFieldExpression><![CDATA[$P{marineFuelOilTonnesPerHour}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="356" y="312" width="76" height="12" uuid="f3a876b4-4f75-4914-b161-f98b784f1e86">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -888,7 +888,7 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 				</textElement>
 				<textFieldExpression><![CDATA[$P{marineGasTonnesPerHour}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="59" y="59" width="122" height="12" uuid="3cff357f-5259-4f6c-af20-745c19cf5818">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -897,7 +897,7 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 				</textElement>
 				<textFieldExpression><![CDATA[$P{mvSS}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="375" y="119" width="100" height="12" uuid="1ab3a82d-0ed9-42f1-a925-cf6727d2b115">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -906,7 +906,7 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 				</textElement>
 				<textFieldExpression><![CDATA[$P{cst}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="34" y="112" width="120" height="12" uuid="a9cd3e0b-af88-49b9-aea2-0ddff118fd69">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -915,7 +915,7 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 				</textElement>
 				<textFieldExpression><![CDATA[$P{tonnesMarineFuel}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="34" y="130" width="120" height="12" uuid="4d531a2f-d39f-44d8-9350-7ba9d215ac1c">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
