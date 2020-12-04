@@ -384,42 +384,42 @@ ISO 14596 ISO 8754]]></text>
 				<text><![CDATA[cSt.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement isPrintRepeatedValues="false" x="10" y="240" width="422" height="11" isPrintInFirstWholeBand="true" uuid="72de1932-e57e-4853-8e63-90d207b5d737"/>
+				<reportElement x="10" y="240" width="422" height="11" uuid="72de1932-e57e-4853-8e63-90d207b5d737"/>
 				<textElement>
 					<font size="7"/>
 				</textElement>
 				<text><![CDATA[* The COQ (Certificate of Quality) Density stated above is for fuel specification only and not for custody transfer quantity determination.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement isPrintRepeatedValues="false" x="0" y="259" width="55" height="13" isPrintInFirstWholeBand="true" uuid="7bdea5c1-1b01-4e1f-9111-3ffb2d098e38"/>
+				<reportElement x="0" y="259" width="55" height="13" isPrintInFirstWholeBand="true" uuid="7bdea5c1-1b01-4e1f-9111-3ffb2d098e38"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
 				<text><![CDATA[We will supply]]></text>
 			</staticText>
 			<staticText>
-				<reportElement isPrintRepeatedValues="false" x="137" y="259" width="60" height="12" isPrintInFirstWholeBand="true" uuid="733264d9-771b-4021-9c99-bda6f6be2f48"/>
+				<reportElement x="137" y="259" width="60" height="12" isPrintInFirstWholeBand="true" uuid="733264d9-771b-4021-9c99-bda6f6be2f48"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
 				<text><![CDATA[first, followed by]]></text>
 			</staticText>
 			<staticText>
-				<reportElement isPrintRepeatedValues="false" x="284" y="259" width="149" height="12" isPrintInFirstWholeBand="true" uuid="eac82680-4566-4e55-a8d1-05b347c1b559"/>
+				<reportElement x="284" y="259" width="149" height="12" isPrintInFirstWholeBand="true" uuid="eac82680-4566-4e55-a8d1-05b347c1b559"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
 				<text><![CDATA[. The approximate delivery temperature is ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement isPrintRepeatedValues="false" x="483" y="259" width="15" height="13" isPrintInFirstWholeBand="true" uuid="b69976be-c5aa-4779-8f4e-51ca48fd8589"/>
+				<reportElement x="483" y="259" width="15" height="13" isPrintInFirstWholeBand="true" uuid="b69976be-c5aa-4779-8f4e-51ca48fd8589"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
 				<text><![CDATA[ °C.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement isPrintRepeatedValues="false" x="0" y="280" width="190" height="12" isPrintInFirstWholeBand="true" uuid="f1a04426-8782-4a90-a227-827fed0809d2">
+				<reportElement x="0" y="280" width="190" height="12" isPrintInFirstWholeBand="true" uuid="f1a04426-8782-4a90-a227-827fed0809d2">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
@@ -428,14 +428,14 @@ ISO 14596 ISO 8754]]></text>
 				<text><![CDATA[The rated pumping capacity of our bunker tanker is ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement isPrintRepeatedValues="false" x="280" y="281" width="74" height="11" isPrintInFirstWholeBand="true" uuid="e14c91c0-6c9a-4d95-b0ed-920a0feedcfe"/>
+				<reportElement x="280" y="281" width="74" height="11" isPrintInFirstWholeBand="true" uuid="e14c91c0-6c9a-4d95-b0ed-920a0feedcfe"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
 				<text><![CDATA[tonnes per hour.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement isPrintRepeatedValues="false" x="0" y="295" width="338" height="80" isPrintInFirstWholeBand="true" uuid="1ac42c85-099f-4d58-92d3-29acf57248b7"/>
+				<reportElement x="0" y="295" width="338" height="80" isPrintInFirstWholeBand="true" uuid="1ac42c85-099f-4d58-92d3-29acf57248b7"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
@@ -448,7 +448,7 @@ ISO 14596 ISO 8754]]></text>
 3)	Is your vessel under any fuel quality testing programme ?]]></text>
 			</staticText>
 			<staticText>
-				<reportElement isPrintRepeatedValues="false" x="440" y="299" width="84" height="40" isPrintInFirstWholeBand="true" uuid="d4abd325-eccf-4763-b893-a92980164bba"/>
+				<reportElement x="440" y="299" width="84" height="40" isPrintInFirstWholeBand="true" uuid="d4abd325-eccf-4763-b893-a92980164bba"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
@@ -457,17 +457,7 @@ ISO 14596 ISO 8754]]></text>
 tonnes per hour]]></text>
 			</staticText>
 			<staticText>
-				<reportElement isPrintRepeatedValues="false" x="0" y="376" width="498" height="34" isPrintInFirstWholeBand="true" uuid="6b4c22f3-cdbf-4559-847c-dbde5e128f12"/>
-				<textElement>
-					<font size="8"/>
-				</textElement>
-				<text><![CDATA[Note 1 - Witnessing of meter reading(s) is compulsory.
-Note 2 - For analysis of bunker analysis, only the representative sample collected as per Annex W on Sampling shall be used.
-Note 3 - Witnessing of custody transfer sampling is complusory.
-]]></text>
-			</staticText>
-			<staticText>
-				<reportElement isPrintRepeatedValues="false" x="0" y="420" width="100" height="12" isPrintInFirstWholeBand="true" uuid="34af29a6-3950-4947-bed4-d47d66c8b100">
+				<reportElement x="0" y="420" width="100" height="12" isPrintInFirstWholeBand="true" uuid="34af29a6-3950-4947-bed4-d47d66c8b100">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
@@ -476,7 +466,7 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 				<text><![CDATA[Acknowledge by:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement isPrintRepeatedValues="false" x="213" y="450" width="114" height="12" isPrintInFirstWholeBand="true" uuid="ba192501-29e6-4359-a562-2fa364b8e414">
+				<reportElement x="213" y="450" width="114" height="12" isPrintInFirstWholeBand="true" uuid="ba192501-29e6-4359-a562-2fa364b8e414">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
@@ -485,31 +475,31 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 				<text><![CDATA[Signature of Chief Engineer]]></text>
 			</staticText>
 			<line>
-				<reportElement isPrintRepeatedValues="false" x="211" y="450" width="115" height="1" isPrintInFirstWholeBand="true" uuid="15bf08f6-e8da-448c-b0b2-eb8015e19b5e"/>
+				<reportElement x="211" y="450" width="115" height="1" isPrintInFirstWholeBand="true" uuid="15bf08f6-e8da-448c-b0b2-eb8015e19b5e"/>
 			</line>
 			<line>
-				<reportElement isPrintRepeatedValues="false" x="25" y="449" width="115" height="1" isPrintInFirstWholeBand="true" uuid="5d3de387-ea06-45d7-ad05-55f6a88c938a"/>
+				<reportElement x="25" y="449" width="115" height="1" isPrintInFirstWholeBand="true" uuid="5d3de387-ea06-45d7-ad05-55f6a88c938a"/>
 			</line>
 			<line>
-				<reportElement isPrintRepeatedValues="false" x="200" y="270" width="80" height="1" isPrintInFirstWholeBand="true" uuid="49d78792-319f-4a01-9502-e8d9a1f86390"/>
+				<reportElement x="200" y="270" width="80" height="1" isPrintInFirstWholeBand="true" uuid="49d78792-319f-4a01-9502-e8d9a1f86390"/>
 			</line>
 			<line>
-				<reportElement isPrintRepeatedValues="false" x="437" y="269" width="38" height="1" isPrintInFirstWholeBand="true" uuid="54c6cdf7-0f9f-48de-af7e-2349d5011d78"/>
+				<reportElement x="437" y="269" width="38" height="1" isPrintInFirstWholeBand="true" uuid="54c6cdf7-0f9f-48de-af7e-2349d5011d78"/>
 			</line>
 			<line>
-				<reportElement isPrintRepeatedValues="false" x="193" y="293" width="80" height="1" isPrintInFirstWholeBand="true" uuid="04eedeb5-9c19-4fe3-8e3b-4715d3028ac5"/>
+				<reportElement x="193" y="293" width="80" height="1" isPrintInFirstWholeBand="true" uuid="04eedeb5-9c19-4fe3-8e3b-4715d3028ac5"/>
 			</line>
 			<line>
-				<reportElement isPrintRepeatedValues="false" x="53" y="272" width="82" height="1" isPrintInFirstWholeBand="true" uuid="a07aa3ae-7855-401b-b645-ccb3de7142a2"/>
+				<reportElement x="53" y="272" width="82" height="1" isPrintInFirstWholeBand="true" uuid="a07aa3ae-7855-401b-b645-ccb3de7142a2"/>
 			</line>
 			<line>
-				<reportElement isPrintRepeatedValues="false" x="354" y="310" width="80" height="1" isPrintInFirstWholeBand="true" uuid="b99ba52b-2025-461b-bb9b-90cc1385f4aa"/>
+				<reportElement x="354" y="310" width="80" height="1" isPrintInFirstWholeBand="true" uuid="b99ba52b-2025-461b-bb9b-90cc1385f4aa"/>
 			</line>
 			<line>
-				<reportElement isPrintRepeatedValues="false" x="355" y="325" width="80" height="1" isPrintInFirstWholeBand="true" uuid="8f8e8a94-1145-4a77-a1e4-6f75edd49adf"/>
+				<reportElement x="355" y="325" width="80" height="1" isPrintInFirstWholeBand="true" uuid="8f8e8a94-1145-4a77-a1e4-6f75edd49adf"/>
 			</line>
 			<textField isBlankWhenNull="true">
-				<reportElement isPrintRepeatedValues="false" x="355" y="337" width="84" height="12" isPrintInFirstWholeBand="true" uuid="9e040175-6f99-4ff2-8759-e06018edb27d">
+				<reportElement x="355" y="337" width="84" height="12" isPrintInFirstWholeBand="true" uuid="9e040175-6f99-4ff2-8759-e06018edb27d">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
@@ -536,14 +526,14 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 				<textFieldExpression><![CDATA[$P{pumpingCapacity}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement isPrintRepeatedValues="false" x="355" y="357" width="115" height="13" isPrintInFirstWholeBand="true" uuid="c9b82067-91d8-4b18-9475-93da76fd6255"/>
+				<reportElement x="355" y="357" width="115" height="13" isPrintInFirstWholeBand="true" uuid="c9b82067-91d8-4b18-9475-93da76fd6255"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{isUnderFuelQualityTesting}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement isPrintRepeatedValues="false" x="29" y="451" width="108" height="12" isPrintInFirstWholeBand="true" uuid="fcead296-502f-41fd-bc79-d1da06e1cfb3">
+				<reportElement x="29" y="451" width="108" height="12" isPrintInFirstWholeBand="true" uuid="fcead296-502f-41fd-bc79-d1da06e1cfb3">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
@@ -552,7 +542,7 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 				<text><![CDATA[Signature of Cargo Officer]]></text>
 			</staticText>
 			<staticText>
-				<reportElement isPrintRepeatedValues="false" x="378" y="451" width="173" height="12" isPrintInFirstWholeBand="true" uuid="56dbbcdb-1595-45df-a4e3-5d838f40db46">
+				<reportElement x="378" y="451" width="173" height="12" isPrintInFirstWholeBand="true" uuid="56dbbcdb-1595-45df-a4e3-5d838f40db46">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
@@ -561,7 +551,7 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 				<text><![CDATA[Signature of Bunker Surveyor (when engaged)]]></text>
 			</staticText>
 			<staticText>
-				<reportElement isPrintRepeatedValues="false" x="0" y="480" width="51" height="12" isPrintInFirstWholeBand="true" uuid="7657c79b-4473-4011-a291-036b89d40c03">
+				<reportElement x="0" y="480" width="51" height="12" isPrintInFirstWholeBand="true" uuid="7657c79b-4473-4011-a291-036b89d40c03">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
@@ -570,10 +560,10 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 				<text><![CDATA[Name in Full:]]></text>
 			</staticText>
 			<line>
-				<reportElement isPrintRepeatedValues="false" x="51" y="492" width="115" height="1" isPrintInFirstWholeBand="true" uuid="0675ec33-92ce-48d9-acb4-c6bc992538d0"/>
+				<reportElement x="51" y="492" width="115" height="1" isPrintInFirstWholeBand="true" uuid="0675ec33-92ce-48d9-acb4-c6bc992538d0"/>
 			</line>
 			<staticText>
-				<reportElement isPrintRepeatedValues="false" x="74" y="495" width="61" height="12" isPrintInFirstWholeBand="true" uuid="1fcd33a7-8a34-4852-b063-0f5bfadb4297">
+				<reportElement x="74" y="495" width="61" height="12" isPrintInFirstWholeBand="true" uuid="1fcd33a7-8a34-4852-b063-0f5bfadb4297">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
@@ -582,7 +572,7 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 				<text><![CDATA[(Block Letters)]]></text>
 			</staticText>
 			<staticText>
-				<reportElement isPrintRepeatedValues="false" x="189" y="480" width="52" height="12" isPrintInFirstWholeBand="true" uuid="9792407b-10b0-45ee-b467-88f55975944c">
+				<reportElement x="189" y="480" width="52" height="12" isPrintInFirstWholeBand="true" uuid="9792407b-10b0-45ee-b467-88f55975944c">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
@@ -591,10 +581,10 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 				<text><![CDATA[Name in Full:]]></text>
 			</staticText>
 			<line>
-				<reportElement isPrintRepeatedValues="false" x="241" y="492" width="115" height="1" isPrintInFirstWholeBand="true" uuid="f4456e1d-5bb1-4376-94ba-59004aba9cbd"/>
+				<reportElement x="241" y="492" width="115" height="1" isPrintInFirstWholeBand="true" uuid="f4456e1d-5bb1-4376-94ba-59004aba9cbd"/>
 			</line>
 			<staticText>
-				<reportElement isPrintRepeatedValues="false" x="266" y="494" width="61" height="12" isPrintInFirstWholeBand="true" uuid="63a02de1-68ed-4a0b-8ba1-d56546f277e0">
+				<reportElement x="266" y="494" width="61" height="12" isPrintInFirstWholeBand="true" uuid="63a02de1-68ed-4a0b-8ba1-d56546f277e0">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
@@ -603,7 +593,7 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 				<text><![CDATA[(Block Letters)]]></text>
 			</staticText>
 			<staticText>
-				<reportElement isPrintRepeatedValues="false" x="380" y="480" width="52" height="12" isPrintInFirstWholeBand="true" uuid="0b758773-70df-4356-b798-78d3e2b1e98b">
+				<reportElement x="380" y="480" width="52" height="12" isPrintInFirstWholeBand="true" uuid="0b758773-70df-4356-b798-78d3e2b1e98b">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
@@ -612,17 +602,17 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 				<text><![CDATA[Name in Full:]]></text>
 			</staticText>
 			<line>
-				<reportElement isPrintRepeatedValues="false" x="435" y="493" width="115" height="1" isPrintInFirstWholeBand="true" uuid="fc03d964-274b-4253-b189-fdcc3cdfed0c"/>
+				<reportElement x="435" y="493" width="115" height="1" isPrintInFirstWholeBand="true" uuid="fc03d964-274b-4253-b189-fdcc3cdfed0c"/>
 			</line>
 			<staticText>
-				<reportElement isPrintRepeatedValues="false" x="454" y="494" width="63" height="11" isPrintInFirstWholeBand="true" uuid="9303e13e-41c5-4142-8eec-93a0bc32c152"/>
+				<reportElement x="454" y="494" width="63" height="11" isPrintInFirstWholeBand="true" uuid="9303e13e-41c5-4142-8eec-93a0bc32c152"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
 				<text><![CDATA[(Block Letters)]]></text>
 			</staticText>
 			<staticText>
-				<reportElement isPrintRepeatedValues="false" x="0" y="517" width="79" height="12" isPrintInFirstWholeBand="true" uuid="5acd1fc9-d717-496b-8d94-cfacc7b4d4c4">
+				<reportElement x="0" y="517" width="79" height="12" isPrintInFirstWholeBand="true" uuid="5acd1fc9-d717-496b-8d94-cfacc7b4d4c4">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
@@ -631,7 +621,7 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 				<text><![CDATA[Bunker Taker Stamp:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement isPrintRepeatedValues="false" x="190" y="518" width="60" height="12" isPrintInFirstWholeBand="true" uuid="c90e9f4e-b8e0-4779-b8d9-5b62109e52d3">
+				<reportElement x="190" y="518" width="60" height="12" isPrintInFirstWholeBand="true" uuid="c90e9f4e-b8e0-4779-b8d9-5b62109e52d3">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
@@ -640,7 +630,7 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 				<text><![CDATA[Vessel's Stamp:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement isPrintRepeatedValues="false" x="380" y="519" width="68" height="11" isPrintInFirstWholeBand="true" uuid="8651b53f-bee8-4d78-a96a-6d887cdba8fa">
+				<reportElement x="380" y="519" width="68" height="11" isPrintInFirstWholeBand="true" uuid="8651b53f-bee8-4d78-a96a-6d887cdba8fa">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
@@ -649,16 +639,16 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 				<text><![CDATA[Company Stamp:]]></text>
 			</staticText>
 			<line>
-				<reportElement isPrintRepeatedValues="false" x="253" y="530" width="87" height="1" isPrintInFirstWholeBand="true" uuid="f7251c2c-79da-443e-89bb-cba62c1451d6"/>
+				<reportElement x="253" y="530" width="87" height="1" isPrintInFirstWholeBand="true" uuid="f7251c2c-79da-443e-89bb-cba62c1451d6"/>
 			</line>
 			<line>
-				<reportElement isPrintRepeatedValues="false" x="452" y="531" width="91" height="1" isPrintInFirstWholeBand="true" uuid="c4d95861-6253-4df9-92ab-ec119136a35f"/>
+				<reportElement x="452" y="531" width="91" height="1" isPrintInFirstWholeBand="true" uuid="c4d95861-6253-4df9-92ab-ec119136a35f"/>
 			</line>
 			<line>
-				<reportElement isPrintRepeatedValues="false" x="83" y="530" width="87" height="1" isPrintInFirstWholeBand="true" uuid="4c2c816e-6e31-4882-8bda-ea769e1133f3"/>
+				<reportElement x="83" y="530" width="87" height="1" isPrintInFirstWholeBand="true" uuid="4c2c816e-6e31-4882-8bda-ea769e1133f3"/>
 			</line>
 			<staticText>
-				<reportElement isPrintRepeatedValues="false" x="0" y="542" width="51" height="12" isPrintInFirstWholeBand="true" uuid="ec124249-5e7d-4a24-945a-d1685af1d0d8">
+				<reportElement x="0" y="542" width="51" height="12" isPrintInFirstWholeBand="true" uuid="ec124249-5e7d-4a24-945a-d1685af1d0d8">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
@@ -667,10 +657,10 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 				<text><![CDATA[Date / Time:]]></text>
 			</staticText>
 			<line>
-				<reportElement isPrintRepeatedValues="false" x="82" y="554" width="87" height="1" isPrintInFirstWholeBand="true" uuid="1261c980-254d-4980-a52c-4b75ff41135d"/>
+				<reportElement x="82" y="554" width="87" height="1" isPrintInFirstWholeBand="true" uuid="1261c980-254d-4980-a52c-4b75ff41135d"/>
 			</line>
 			<staticText>
-				<reportElement isPrintRepeatedValues="false" x="189" y="542" width="51" height="12" isPrintInFirstWholeBand="true" uuid="a7c6eec5-afb0-4e7f-b5a1-47f4028ae23b">
+				<reportElement x="189" y="542" width="51" height="12" isPrintInFirstWholeBand="true" uuid="a7c6eec5-afb0-4e7f-b5a1-47f4028ae23b">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
@@ -679,10 +669,10 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 				<text><![CDATA[Date / Time:]]></text>
 			</staticText>
 			<line>
-				<reportElement isPrintRepeatedValues="false" x="253" y="553" width="87" height="1" isPrintInFirstWholeBand="true" uuid="e6730986-d41b-44d5-a446-eae1d39b17b2"/>
+				<reportElement x="253" y="553" width="87" height="1" isPrintInFirstWholeBand="true" uuid="e6730986-d41b-44d5-a446-eae1d39b17b2"/>
 			</line>
 			<staticText>
-				<reportElement isPrintRepeatedValues="false" x="380" y="540" width="60" height="12" isPrintInFirstWholeBand="true" uuid="d946b723-40d0-4bc9-99e4-b16d1b7f02fd">
+				<reportElement x="380" y="540" width="60" height="12" isPrintInFirstWholeBand="true" uuid="d946b723-40d0-4bc9-99e4-b16d1b7f02fd">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
@@ -691,10 +681,10 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 				<text><![CDATA[Date / Time:]]></text>
 			</staticText>
 			<line>
-				<reportElement isPrintRepeatedValues="false" x="453" y="551" width="87" height="1" isPrintInFirstWholeBand="true" uuid="c6c9c8ea-208e-40af-8c80-4c8d515d1f7f"/>
+				<reportElement x="453" y="551" width="87" height="1" isPrintInFirstWholeBand="true" uuid="c6c9c8ea-208e-40af-8c80-4c8d515d1f7f"/>
 			</line>
 			<staticText>
-				<reportElement isPrintRepeatedValues="false" x="0" y="560" width="551" height="24" isPrintInFirstWholeBand="true" uuid="13638e9c-7ef2-458f-9d89-fad0313c321b">
+				<reportElement x="0" y="560" width="551" height="24" isPrintInFirstWholeBand="true" uuid="13638e9c-7ef2-458f-9d89-fad0313c321b">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
@@ -703,43 +693,43 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 				<text><![CDATA[Custody Transfer Sampling is compulsory. If custody transfer sample(s) cannot be taken at the bunker manifold of the vessel, describe the physical limitation/constraint encountered.]]></text>
 			</staticText>
 			<line>
-				<reportElement isPrintRepeatedValues="false" x="1" y="601" width="539" height="1" isPrintInFirstWholeBand="true" uuid="f06e38fc-2067-48a9-8f28-6d4f2c9b68ac"/>
+				<reportElement x="1" y="601" width="539" height="1" isPrintInFirstWholeBand="true" uuid="f06e38fc-2067-48a9-8f28-6d4f2c9b68ac"/>
 			</line>
 			<line>
-				<reportElement isPrintRepeatedValues="false" x="1" y="620" width="539" height="1" isPrintInFirstWholeBand="true" uuid="343f53c6-105a-4437-9361-664640a99b31"/>
+				<reportElement x="1" y="620" width="539" height="1" isPrintInFirstWholeBand="true" uuid="343f53c6-105a-4437-9361-664640a99b31"/>
 			</line>
 			<staticText>
-				<reportElement isPrintRepeatedValues="false" x="10" y="655" width="108" height="14" isPrintInFirstWholeBand="true" uuid="94847131-2ca2-4df2-996a-6bebff685e9c"/>
+				<reportElement x="10" y="655" width="108" height="14" isPrintInFirstWholeBand="true" uuid="94847131-2ca2-4df2-996a-6bebff685e9c"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
 				<text><![CDATA[Signature of Cargo Officer]]></text>
 			</staticText>
 			<staticText>
-				<reportElement isPrintRepeatedValues="false" x="213" y="655" width="114" height="14" isPrintInFirstWholeBand="true" uuid="adcd0166-a6ed-4ee9-a7e1-a44390692491"/>
+				<reportElement x="213" y="655" width="114" height="14" isPrintInFirstWholeBand="true" uuid="adcd0166-a6ed-4ee9-a7e1-a44390692491"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
 				<text><![CDATA[Signature of Chief Engineer]]></text>
 			</staticText>
 			<staticText>
-				<reportElement isPrintRepeatedValues="false" x="381" y="656" width="169" height="12" isPrintInFirstWholeBand="true" uuid="c4699b79-b70e-4ffc-a134-da64fec5c74a"/>
+				<reportElement x="381" y="656" width="169" height="12" isPrintInFirstWholeBand="true" uuid="c4699b79-b70e-4ffc-a134-da64fec5c74a"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
 				<text><![CDATA[Signature of Bunker Surveyor (when engaged)]]></text>
 			</staticText>
 			<line>
-				<reportElement isPrintRepeatedValues="false" x="211" y="655" width="115" height="1" isPrintInFirstWholeBand="true" uuid="960e7611-e618-495d-87ab-1377dcaa399c"/>
+				<reportElement x="211" y="655" width="115" height="1" isPrintInFirstWholeBand="true" uuid="960e7611-e618-495d-87ab-1377dcaa399c"/>
 			</line>
 			<line>
-				<reportElement isPrintRepeatedValues="false" x="3" y="654" width="115" height="1" isPrintInFirstWholeBand="true" uuid="1001f2e3-736c-4e8e-bd61-52930cd8bdb2"/>
+				<reportElement x="3" y="654" width="115" height="1" isPrintInFirstWholeBand="true" uuid="1001f2e3-736c-4e8e-bd61-52930cd8bdb2"/>
 			</line>
 			<line>
-				<reportElement isPrintRepeatedValues="false" x="380" y="654" width="171" height="1" isPrintInFirstWholeBand="true" uuid="ba6c86b5-9f99-4ba2-b10c-32502b0ff181"/>
+				<reportElement x="380" y="654" width="171" height="1" isPrintInFirstWholeBand="true" uuid="ba6c86b5-9f99-4ba2-b10c-32502b0ff181"/>
 			</line>
 			<staticText>
-				<reportElement isPrintRepeatedValues="false" x="0" y="689" width="50" height="12" isPrintInFirstWholeBand="true" uuid="a2079308-5656-41af-b0c4-1349dc12d144">
+				<reportElement x="0" y="689" width="50" height="12" isPrintInFirstWholeBand="true" uuid="a2079308-5656-41af-b0c4-1349dc12d144">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
@@ -748,23 +738,23 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 				<text><![CDATA[Date / Time:]]></text>
 			</staticText>
 			<line>
-				<reportElement isPrintRepeatedValues="false" x="52" y="701" width="119" height="1" isPrintInFirstWholeBand="true" uuid="3aba9639-e43c-4b47-b311-a8637c4549b1"/>
+				<reportElement x="52" y="701" width="119" height="1" isPrintInFirstWholeBand="true" uuid="3aba9639-e43c-4b47-b311-a8637c4549b1"/>
 			</line>
 			<staticText>
-				<reportElement isPrintRepeatedValues="false" x="210" y="689" width="46" height="12" isPrintInFirstWholeBand="true" uuid="045e2284-aec4-4e90-a01e-cfb3dc99eea3"/>
+				<reportElement x="210" y="689" width="46" height="12" isPrintInFirstWholeBand="true" uuid="045e2284-aec4-4e90-a01e-cfb3dc99eea3"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
 				<text><![CDATA[Date / Time:]]></text>
 			</staticText>
 			<line>
-				<reportElement isPrintRepeatedValues="false" x="258" y="701" width="117" height="1" isPrintInFirstWholeBand="true" uuid="628fb4e7-c52a-4645-8a6a-456fec83e819"/>
+				<reportElement x="258" y="701" width="117" height="1" isPrintInFirstWholeBand="true" uuid="628fb4e7-c52a-4645-8a6a-456fec83e819"/>
 			</line>
 			<line>
-				<reportElement isPrintRepeatedValues="false" x="434" y="702" width="117" height="1" isPrintInFirstWholeBand="true" uuid="eead37ec-1d89-4c73-9268-31136f560894"/>
+				<reportElement x="434" y="702" width="117" height="1" isPrintInFirstWholeBand="true" uuid="eead37ec-1d89-4c73-9268-31136f560894"/>
 			</line>
 			<staticText>
-				<reportElement isPrintRepeatedValues="false" x="382" y="689" width="48" height="12" isPrintInFirstWholeBand="true" uuid="7a8b220f-4362-4aa9-941d-e5485a79512f">
+				<reportElement x="382" y="689" width="48" height="12" isPrintInFirstWholeBand="true" uuid="7a8b220f-4362-4aa9-941d-e5485a79512f">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
@@ -773,7 +763,7 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 				<text><![CDATA[Date / Time:]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement isPrintRepeatedValues="false" x="2" y="585" width="523" height="12" isPrintInFirstWholeBand="true" uuid="06e6c1f6-8487-42e9-b2da-71d347fffd78">
+				<reportElement x="2" y="585" width="523" height="12" isPrintInFirstWholeBand="true" uuid="06e6c1f6-8487-42e9-b2da-71d347fffd78">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
@@ -782,7 +772,7 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 				<textFieldExpression><![CDATA[$P{constraintDescription}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement isPrintRepeatedValues="false" x="81" y="540" width="99" height="12" isPrintInFirstWholeBand="true" uuid="27269020-c79b-4782-8a63-52ea3cda4682">
+				<reportElement x="81" y="540" width="99" height="12" isPrintInFirstWholeBand="true" uuid="27269020-c79b-4782-8a63-52ea3cda4682">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
@@ -791,7 +781,7 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 				<textFieldExpression><![CDATA[$P{cargoOfficerSignedAt}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement isPrintRepeatedValues="false" x="251" y="540" width="105" height="12" isPrintInFirstWholeBand="true" uuid="6fef27ac-5c9b-4e7b-b9b1-d32cc9a9e3d1">
+				<reportElement x="251" y="540" width="105" height="12" isPrintInFirstWholeBand="true" uuid="6fef27ac-5c9b-4e7b-b9b1-d32cc9a9e3d1">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
@@ -800,21 +790,21 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 				<textFieldExpression><![CDATA[$P{chiefEngineerSignedAt}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement isPrintRepeatedValues="false" x="453" y="538" width="94" height="12" isPrintInFirstWholeBand="true" uuid="ec4b55b4-3a50-41b5-92f0-a6d8c036eede"/>
+				<reportElement x="453" y="538" width="94" height="12" isPrintInFirstWholeBand="true" uuid="ec4b55b4-3a50-41b5-92f0-a6d8c036eede"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{surveyorSignedAt}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement isPrintRepeatedValues="false" x="433" y="689" width="118" height="12" isPrintInFirstWholeBand="true" uuid="de2fffe9-d09e-46c6-952c-d3e59d25f2fd"/>
+				<reportElement x="433" y="689" width="118" height="12" isPrintInFirstWholeBand="true" uuid="de2fffe9-d09e-46c6-952c-d3e59d25f2fd"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{surveyorForConstraintSignedAt}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement isPrintRepeatedValues="false" x="257" y="689" width="122" height="12" isPrintInFirstWholeBand="true" uuid="9d63a5bb-f1db-43c1-bae2-e797a9fb1316">
+				<reportElement x="257" y="689" width="122" height="12" isPrintInFirstWholeBand="true" uuid="9d63a5bb-f1db-43c1-bae2-e797a9fb1316">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
@@ -823,7 +813,7 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 				<textFieldExpression><![CDATA[$P{chiefEngineerForConstraintSignedAt}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement isPrintRepeatedValues="false" x="51" y="689" width="143" height="12" isPrintInFirstWholeBand="true" uuid="c3b3e9fc-b80a-4ac3-843d-de9f5e3d825d">
+				<reportElement x="51" y="689" width="143" height="12" isPrintInFirstWholeBand="true" uuid="c3b3e9fc-b80a-4ac3-843d-de9f5e3d825d">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
@@ -859,7 +849,7 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 				<textFieldExpression><![CDATA[$P{surveyorFullName}]]></textFieldExpression>
 			</textField>
 			<line>
-				<reportElement isPrintRepeatedValues="false" x="375" y="450" width="175" height="1" isPrintInFirstWholeBand="true" uuid="cb52b725-2614-4fed-906a-c290073fe9e6"/>
+				<reportElement x="375" y="450" width="175" height="1" isPrintInFirstWholeBand="true" uuid="cb52b725-2614-4fed-906a-c290073fe9e6"/>
 			</line>
 			<textField isBlankWhenNull="true">
 				<reportElement x="441" y="257" width="32" height="12" uuid="4f261c58-2d80-4273-b303-c11ae3127035">
@@ -924,6 +914,16 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 				</textElement>
 				<textFieldExpression><![CDATA[$P{tonnesMarineDiesel}]]></textFieldExpression>
 			</textField>
+			<staticText>
+				<reportElement x="0" y="376" width="498" height="34" isPrintInFirstWholeBand="true" uuid="6b4c22f3-cdbf-4559-847c-dbde5e128f12"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Note 1 - Witnessing of meter reading(s) is compulsory.
+Note 2 - For analysis of bunker analysis, only the representative sample collected as per Annex W on Sampling shall be used.
+Note 3 - Witnessing of custody transfer sampling is complusory.
+]]></text>
+			</staticText>
 		</band>
 	</title>
 </jasperReport>
