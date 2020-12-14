@@ -1159,7 +1159,7 @@
 				<textFieldExpression><![CDATA[$P{limitValue}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="461" y="293" width="90" height="15" uuid="f33715e2-cd38-422e-92b2-83a0f195eab4">
+				<reportElement x="461" y="293" width="99" height="15" uuid="f33715e2-cd38-422e-92b2-83a0f195eab4">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$P{nextPort}]]></textFieldExpression>
@@ -1177,7 +1177,7 @@
 				<textFieldExpression><![CDATA[$P{density}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="461" y="262" width="76" height="15" uuid="5643f391-ee24-455e-b1e2-4959872ac1b3">
+				<reportElement x="461" y="262" width="99" height="15" uuid="5643f391-ee24-455e-b1e2-4959872ac1b3">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$P{etdAt}]]></textFieldExpression>
