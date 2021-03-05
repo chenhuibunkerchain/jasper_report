@@ -146,7 +146,9 @@
 				<text><![CDATA[12]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="50" y="60" width="173" height="69" uuid="2fa5717d-1365-4d98-bb52-2fab14f85621"/>
+				<reportElement x="50" y="60" width="173" height="69" uuid="2fa5717d-1365-4d98-bb52-2fab14f85621">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
 				<box>
 					<topPen lineWidth="0.25"/>
 					<leftPen lineWidth="0.25"/>
@@ -155,6 +157,7 @@
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Top">
 					<font size="10"/>
+					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Are all crew / staff members involved in the bunkering operations wearing the appropriate personal protective equipment including H2S  and O2 monitors?]]></text>
 			</staticText>
@@ -220,6 +223,7 @@
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="10"/>
+					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Are hand torches of an approved type?]]></text>
 			</staticText>
@@ -285,6 +289,7 @@
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="10"/>
+					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Are portable eletronic devices of an approved type (for narine usage)?]]></text>
 			</staticText>
@@ -350,6 +355,7 @@
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="10"/>
+					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Are restrictions on smoking and the use of naked lights being observed?]]></text>
 			</staticText>
@@ -415,6 +421,7 @@
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="10"/>
+					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Is firefighting equipment positioned and ready for immediate use?]]></text>
 			</staticText>
@@ -480,6 +487,7 @@
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="10"/>
+					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Is emergency oil spill response equipment positioned adjacent to both hose connections?]]></text>
 			</staticText>
@@ -545,6 +553,7 @@
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="10"/>
+					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Are all external doors and portholes in the accommodation closed?]]></text>
 			</staticText>
@@ -610,6 +619,7 @@
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="10"/>
+					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Are window type air conditioning units (where fitted) disconnected?]]></text>
 			</staticText>
@@ -675,6 +685,7 @@
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="10"/>
+					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Are air conditioning intakes which may permit the entry of cargo vapours closed?]]></text>
 			</staticText>
@@ -740,6 +751,7 @@
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="10"/>
+					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Is effective communication established between the bunker tanker and the vessel?]]></text>
 			</staticText>
@@ -805,6 +817,7 @@
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="10"/>
+					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Has the emergency signals and shut down procedure been agreed upon?]]></text>
 			</staticText>
@@ -870,6 +883,7 @@
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="10"/>
+					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Are there sufficient persons on board and at the delivery point to deal with emergencies?]]></text>
 			</staticText>
@@ -935,6 +949,7 @@
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Top">
 					<font size="10"/>
+					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Is there safe access between the bunker tanker and vessel?]]></text>
 			</staticText>
@@ -1000,6 +1015,7 @@
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Top">
 					<font size="10"/>
+					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Are the scuppers and drains on board properly plugged?]]></text>
 			</staticText>
@@ -1065,6 +1081,7 @@
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Top">
 					<font size="10"/>
+					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Is adequate lighting available to perform operations during hours of darkness?]]></text>
 			</staticText>
@@ -1128,6 +1145,7 @@
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Top">
 					<font size="10"/>
+					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[For bunker tanker]]></text>
 			</staticText>
@@ -1141,6 +1159,7 @@
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Top">
 					<font size="10"/>
+					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[For vessel]]></text>
 			</staticText>
@@ -1154,6 +1173,7 @@
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Top">
 					<font size="10"/>
+					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[For Bunker Surveyor
 (For receipt only)]]></text>
@@ -1168,6 +1188,7 @@
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Top">
 					<font size="10"/>
+					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Name:]]></text>
 			</staticText>
@@ -1181,6 +1202,7 @@
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Top">
 					<font size="10"/>
+					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Name:]]></text>
 			</staticText>
@@ -1194,6 +1216,7 @@
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Top">
 					<font size="10"/>
+					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Name:]]></text>
 			</staticText>
@@ -1207,6 +1230,7 @@
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Top">
 					<font size="10"/>
+					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Signature:]]></text>
 			</staticText>
@@ -1220,6 +1244,7 @@
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Top">
 					<font size="10"/>
+					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Signature:]]></text>
 			</staticText>
@@ -1233,6 +1258,7 @@
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Top">
 					<font size="10"/>
+					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Signature:]]></text>
 			</staticText>
@@ -1246,6 +1272,7 @@
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Top">
 					<font size="10"/>
+					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Date:
 
@@ -1261,6 +1288,7 @@ Time:]]></text>
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Top">
 					<font size="10"/>
+					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Date:
 
@@ -1276,6 +1304,7 @@ Time:]]></text>
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Top">
 					<font size="10"/>
+					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Date:
 
@@ -1283,14 +1312,26 @@ Time:]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="430" y="390" width="70" height="20" uuid="ba5ed37a-1186-43a1-bf2d-23c5b297d57b"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="10"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
 				<text><![CDATA[State method:]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="430" y="430" width="90" height="20" uuid="26f907b6-fa75-4bbf-b4f2-22ee581b918a"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="10"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
 				<text><![CDATA[State procedure:]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="429" y="460" width="100" height="20" uuid="44520ac9-509e-40b1-89b9-08971f1acbcd"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="10"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
 				<text><![CDATA[State no. of persons:]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
