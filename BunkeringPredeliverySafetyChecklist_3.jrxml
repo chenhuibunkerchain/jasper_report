@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="BunkeringPredeliverySafetyChecklist_1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c2405fe2-8f84-4a1a-a652-4ee3eb026a4d">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="SafetyChecklistDA.xml"/>
 	<property name="net.sf.jasperreports.data.adapter" value="SafetyChecklistDA.xml"/>
 	<style name="Table_TH" mode="Opaque" backcolor="#FFFFFF">
 		<box>
@@ -56,6 +57,51 @@
 			<rightPen lineWidth="0.5" lineColor="#000000"/>
 		</box>
 	</style>
+	<style name="Table 2_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 2_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 3_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 4_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
 	<subDataset name="SafetyCheckList" uuid="f6ff8dee-1d09-45ec-9c7f-92ea7d67a28a">
 		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="SafetyChecklistDA"/>
 		<queryString language="json">
@@ -102,6 +148,18 @@
 	<parameter name="agent" class="java.lang.String"/>
 	<parameter name="port" class="java.lang.String"/>
 	<parameter name="grade" class="java.lang.String"/>
+	<parameter name="name_bunkertanker" class="java.lang.String"/>
+	<parameter name="name_vessel" class="java.lang.String"/>
+	<parameter name="name_surveyor" class="java.lang.String"/>
+	<parameter name="signature_bunkertanker" class="java.lang.String"/>
+	<parameter name="signature_vessel" class="java.lang.String"/>
+	<parameter name="signature_surveyor" class="java.lang.String"/>
+	<parameter name="date_bunkertanker" class="java.lang.String"/>
+	<parameter name="date_vessel" class="java.lang.String"/>
+	<parameter name="date_surveyor" class="java.lang.String"/>
+	<parameter name="time_bunkertanker" class="java.lang.String"/>
+	<parameter name="time_vessel" class="java.lang.String"/>
+	<parameter name="time_surveyor" class="java.lang.String"/>
 	<queryString language="JSON">
 		<![CDATA[data]]>
 	</queryString>
@@ -157,7 +215,7 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="802" splitType="Stretch">
+		<band height="336" splitType="Stretch">
 			<staticText>
 				<reportElement x="120" y="20" width="330" height="30" uuid="52bb751f-1874-4936-bba6-e98ac02abaff"/>
 				<textElement textAlignment="Center">
@@ -250,7 +308,7 @@
 				<textFieldExpression><![CDATA[$P{port}]]></textFieldExpression>
 			</textField>
 			<componentElement>
-				<reportElement x="9" y="200" width="534" height="120" uuid="b5959af5-d945-49b7-b825-4d01f3b82306">
+				<reportElement stretchType="ContainerHeight" x="9" y="200" width="534" height="120" uuid="b5959af5-d945-49b7-b825-4d01f3b82306">
 					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
 					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
 					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
@@ -298,10 +356,13 @@
 								<text><![CDATA[No]]></text>
 							</staticText>
 						</jr:columnHeader>
-						<jr:detailCell style="Table_TD" height="30">
+						<jr:detailCell style="Table_TD" height="70">
+							<box topPadding="0" leftPadding="5" bottomPadding="0" rightPadding="0"/>
 							<textField>
-								<reportElement x="0" y="0" width="50" height="30" uuid="f7d1ae3a-1fe5-4e98-94a0-25bfd90190a7"/>
-								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<reportElement x="0" y="0" width="45" height="70" uuid="f7d1ae3a-1fe5-4e98-94a0-25bfd90190a7"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7"/>
+								</textElement>
 								<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
@@ -317,16 +378,214 @@
 								<text><![CDATA[Item to be checked]]></text>
 							</staticText>
 						</jr:columnHeader>
-						<jr:detailCell style="Table_TD" height="30">
-							<genericElement>
-								<reportElement positionType="Float" stretchType="ContainerBottom" isPrintRepeatedValues="false" x="0" y="0" width="150" height="15" uuid="302fd86a-6463-4d75-bb11-9c42dc71f79e">
-									<property name="com.jaspersoft.layout.grid.weight.fixed" value="true"/>
+						<jr:detailCell style="Table_TD" height="70">
+							<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+							<property name="com.jaspersoft.studio.unit.height" value="px"/>
+							<box leftPadding="0"/>
+							<frame>
+								<reportElement x="5" y="0" width="145" height="70" uuid="f2964d8e-6f15-4acc-80d0-7d890776e961">
+									<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+									<property name="ShowOutOfBoundContent" value="true"/>
+									<property name="com.jaspersoft.studio.unit.x" value="px"/>
+									<property name="com.jaspersoft.studio.unit.width" value="px"/>
+									<property name="com.jaspersoft.studio.unit.height" value="px"/>
 								</reportElement>
-								<genericElementType namespace="http://jasperreports.sourceforge.net/jasperreports/html" name="htmlelement"/>
-								<genericElementParameter name="htmlContent">
-									<valueExpression><![CDATA[IF($F{id}==4,"<b>"+$F{itemDescription}+"</b><br /><span>State sequence and rates</span></br /><table border=\"1\" style=\"border-collapse: collapse\"><tr><th>Grade</th><th>Initial Rate</th><th>Max rate</th><th>Topping rate</th></tr><tr><td>VLSFO</td><td>VLSFO</td><td>VLSFO</td><td>VLSFO</td></tr></table>","<div style=\"font-size:10px\">"+$F{itemDescription}+"</div>")]]></valueExpression>
-								</genericElementParameter>
-							</genericElement>
+								<textField textAdjust="StretchHeight">
+									<reportElement stretchType="ElementGroupHeight" x="0" y="0" width="145" height="24" uuid="fd19a9e9-6db1-414e-919a-1b8d31b0c7f1">
+										<property name="com.jaspersoft.layout.grid.x" value="-1"/>
+										<property name="com.jaspersoft.layout.grid.y" value="-1"/>
+										<property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
+										<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+										<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+										<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+										<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+									</reportElement>
+									<textElement>
+										<font size="7"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{itemDescription}]]></textFieldExpression>
+								</textField>
+								<staticText>
+									<reportElement stretchType="ElementGroupHeight" x="0" y="24" width="145" height="23" uuid="28dca502-18b9-4021-beb9-c236571bd283">
+										<property name="com.jaspersoft.layout.grid.x" value="-1"/>
+										<property name="com.jaspersoft.layout.grid.y" value="1"/>
+										<property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
+										<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+										<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+										<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+										<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+										<printWhenExpression><![CDATA[$F{id}==4]]></printWhenExpression>
+									</reportElement>
+									<textElement verticalAlignment="Middle">
+										<font size="7"/>
+									</textElement>
+									<text><![CDATA[State sequence and rates]]></text>
+								</staticText>
+								<componentElement>
+									<reportElement stretchType="ElementGroupHeight" x="0" y="47" width="145" height="23" uuid="b485b33c-5746-4567-a36b-de41f2c3c4a4">
+										<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+										<property name="com.jaspersoft.studio.unit.height" value="px"/>
+										<property name="com.jaspersoft.studio.unit.y" value="px"/>
+										<property name="com.jaspersoft.layout.grid.x" value="-1"/>
+										<property name="com.jaspersoft.layout.grid.y" value="2"/>
+										<property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
+										<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+										<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+										<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+										<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+										<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+										<printWhenExpression><![CDATA[$F{id}==4]]></printWhenExpression>
+									</reportElement>
+									<jr:table>
+										<datasetRun subDataset="SafetyCheckList" uuid="eae3923b-19b2-449d-ac2f-56ed1a53a71e">
+											<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+										</datasetRun>
+										<jr:column width="40" uuid="8d50e662-1eda-40c0-9c62-2b8a5d39cc4e">
+											<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column6"/>
+											<jr:columnHeader height="10" rowSpan="1">
+												<staticText>
+													<reportElement x="0" y="0" width="40" height="10" uuid="e8b08a10-1418-481a-81c4-b54aac764854">
+														<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+													</reportElement>
+													<box>
+														<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+														<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+														<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+														<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+													</box>
+													<textElement textAlignment="Center">
+														<font size="5"/>
+													</textElement>
+													<text><![CDATA[Grades]]></text>
+												</staticText>
+											</jr:columnHeader>
+											<jr:detailCell height="10">
+												<box>
+													<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+													<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+													<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+													<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+												</box>
+												<staticText>
+													<reportElement x="0" y="0" width="40" height="10" uuid="1f91db5f-1e44-4f81-a232-db8a0b3e26f5">
+														<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+													</reportElement>
+													<textElement textAlignment="Center">
+														<font size="5"/>
+													</textElement>
+													<text><![CDATA[vlsfo]]></text>
+												</staticText>
+											</jr:detailCell>
+										</jr:column>
+										<jr:column width="20" uuid="53bd388f-320a-491f-833c-0b3ae56e7acb">
+											<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+											<jr:columnHeader height="10" rowSpan="1">
+												<property name="com.jaspersoft.studio.unit.width" value="px"/>
+												<box>
+													<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+													<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+													<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+													<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+												</box>
+												<staticText>
+													<reportElement x="0" y="0" width="20" height="10" uuid="9c45f56c-9b1c-4a79-8456-3c254e09ec71"/>
+													<textElement textAlignment="Center">
+														<font size="5"/>
+													</textElement>
+													<text><![CDATA[Initial Rate]]></text>
+												</staticText>
+											</jr:columnHeader>
+											<jr:detailCell height="10">
+												<box>
+													<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+													<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+													<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+													<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+												</box>
+												<textField textAdjust="ScaleFont">
+													<reportElement x="0" y="0" width="20" height="10" uuid="e37401f2-282f-4442-ad68-4bade6d6bd2a"/>
+													<textElement textAlignment="Center">
+														<font size="5"/>
+													</textElement>
+													<textFieldExpression><![CDATA[$F{initialRate}]]></textFieldExpression>
+												</textField>
+											</jr:detailCell>
+										</jr:column>
+										<jr:column width="20" uuid="c2d68638-3d4c-40fc-a05f-ef97cc29e257">
+											<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+											<jr:columnHeader height="10" rowSpan="1">
+												<box>
+													<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+													<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+													<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+													<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+												</box>
+												<staticText>
+													<reportElement x="0" y="0" width="20" height="10" uuid="6c6ae6f9-cb2b-4be2-a294-3db16d714770"/>
+													<textElement textAlignment="Center">
+														<font size="5"/>
+													</textElement>
+													<text><![CDATA[Max Rate]]></text>
+												</staticText>
+											</jr:columnHeader>
+											<jr:detailCell height="10">
+												<property name="com.jaspersoft.studio.unit.height" value="px"/>
+												<property name="com.jaspersoft.studio.unit.width" value="px"/>
+												<box>
+													<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+													<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+													<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+													<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+												</box>
+												<textField textAdjust="ScaleFont">
+													<reportElement x="0" y="0" width="20" height="10" uuid="153b9e23-25ab-4f12-89a1-d94f08487da4"/>
+													<textElement textAlignment="Center">
+														<font size="5"/>
+													</textElement>
+													<textFieldExpression><![CDATA[$F{maxRate}]]></textFieldExpression>
+												</textField>
+											</jr:detailCell>
+										</jr:column>
+										<jr:column width="20" uuid="905a4fba-02f1-4c92-9234-c64e367aa364">
+											<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column4"/>
+											<jr:columnHeader height="10" rowSpan="1">
+												<property name="com.jaspersoft.studio.unit.width" value="px"/>
+												<box>
+													<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+													<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+													<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+													<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+												</box>
+												<staticText>
+													<reportElement x="0" y="0" width="20" height="10" uuid="8fea47c4-0a53-4f4c-95ac-dd4485b555a2"/>
+													<textElement textAlignment="Center">
+														<font size="5"/>
+													</textElement>
+													<text><![CDATA[Topping Rate]]></text>
+												</staticText>
+											</jr:columnHeader>
+											<jr:detailCell height="10">
+												<box>
+													<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+													<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+													<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+													<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+												</box>
+												<textField textAdjust="ScaleFont">
+													<reportElement x="0" y="0" width="20" height="10" uuid="cc36c8c6-9224-4337-a35c-32c606c4da30"/>
+													<textElement textAlignment="Center">
+														<font size="5"/>
+													</textElement>
+													<textFieldExpression><![CDATA[$F{toppingRate}]]></textFieldExpression>
+												</textField>
+											</jr:detailCell>
+										</jr:column>
+										<jr:detail>
+											<printWhenExpression><![CDATA[$F{id}==4]]></printWhenExpression>
+										</jr:detail>
+									</jr:table>
+								</componentElement>
+							</frame>
 						</jr:detailCell>
 					</jr:column>
 					<jr:column width="107" uuid="45cd5ab6-f974-40c2-8321-ffa4a1e28459">
@@ -340,10 +599,13 @@
 								<text><![CDATA[Bunker]]></text>
 							</staticText>
 						</jr:columnHeader>
-						<jr:detailCell style="Table_TD" height="30">
+						<jr:detailCell style="Table_TD" height="70">
+							<box leftPadding="5"/>
 							<textField>
-								<reportElement x="0" y="0" width="107" height="30" uuid="bc4acce9-c3d5-4602-a4c1-a4bd48cb5f3f"/>
-								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<reportElement x="0" y="0" width="102" height="70" uuid="bc4acce9-c3d5-4602-a4c1-a4bd48cb5f3f"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7"/>
+								</textElement>
 								<textFieldExpression><![CDATA[$F{bunkerTankerChecked}==null?"N.A.": ($F{bunkerTankerChecked}?"Yes":"No")]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
@@ -359,10 +621,13 @@
 								<text><![CDATA[Vessel]]></text>
 							</staticText>
 						</jr:columnHeader>
-						<jr:detailCell style="Table_TD" height="30">
+						<jr:detailCell style="Table_TD" height="70">
+							<box leftPadding="5"/>
 							<textField>
-								<reportElement x="0" y="0" width="105" height="30" uuid="cba10104-cd8e-44a9-8998-9f36370ce18e"/>
-								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<reportElement x="0" y="0" width="100" height="70" uuid="cba10104-cd8e-44a9-8998-9f36370ce18e"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7"/>
+								</textElement>
 								<textFieldExpression><![CDATA[$F{vesselChecked}== null ?"N.A.": ($F{vesselChecked}?"Yes":"No")]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
@@ -378,10 +643,12 @@
 								<text><![CDATA[Remarks]]></text>
 							</staticText>
 						</jr:columnHeader>
-						<jr:detailCell style="Table_TD" height="30">
+						<jr:detailCell style="Table_TD" height="70">
 							<textField>
-								<reportElement x="0" y="0" width="122" height="30" uuid="4afe904b-736a-480c-893d-2695d34b93fd"/>
-								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<reportElement x="0" y="0" width="122" height="70" uuid="4afe904b-736a-480c-893d-2695d34b93fd"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7"/>
+								</textElement>
 								<textFieldExpression><![CDATA[$F{remark}]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
@@ -390,4 +657,242 @@
 			</componentElement>
 		</band>
 	</title>
+	<pageHeader>
+		<band height="177">
+			<staticText>
+				<reportElement x="10" y="23" width="528" height="30" uuid="fee883c5-5ec1-4b4a-9f97-c1c3aee55c77"/>
+				<text><![CDATA[We, the undersigned have jointly covered all items on this checklist and have satisified ourselves that the entries we have made are correct and to the best of our knowledge.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="53" width="173" height="26" uuid="f320effa-0e5c-493f-9ef2-0fdd423c6e85"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="10"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[For bunker tanker]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="183" y="53" width="173" height="26" uuid="853c8ed4-8b66-49cb-bdcf-1c006040d1d1"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="10"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[For vessel]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="356" y="53" width="173" height="26" uuid="267f7670-2423-4648-8215-2ccd07e92115"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="10"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[For Bunker Surveyor
+(For receipt only)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="79" width="173" height="20" uuid="df21404d-62e1-4dfe-a8a9-d8570cb059b9"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="10"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="183" y="79" width="173" height="20" uuid="b09fafdd-8fc4-488b-beb3-cbed3f30b53b"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="10"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="356" y="79" width="173" height="20" uuid="e2648953-d250-471e-9306-4da4c84bbdfc"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="10"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="99" width="173" height="20" uuid="609ff4b9-ee63-4f57-aeb7-d1bc2e343664"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="10"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Signature:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="183" y="99" width="173" height="20" uuid="7fd4222c-c66a-40ad-8d3f-d25bb5aa802a"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="10"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Signature:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="356" y="99" width="173" height="20" uuid="4178f39d-f342-48e2-8962-63ab934e7ff7"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="10"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Signature:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="119" width="173" height="40" uuid="efdf1041-d22c-40fc-a32e-f4a62397dcc8"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="10"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Date:
+Time:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="183" y="119" width="173" height="40" uuid="58c475e0-6552-4aff-842c-c88e10b1fdbc"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="10"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Date:
+Time:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="356" y="119" width="173" height="40" uuid="22f4901d-7d36-4042-95b5-59ae2b3ce2c7"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="10"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Date:
+Time:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="50" y="79" width="130" height="20" uuid="6793f734-cf0d-437c-9fc9-71c9a0fe6669"/>
+				<textFieldExpression><![CDATA[$P{name_bunkertanker}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="224" y="79" width="126" height="20" uuid="f9c6a4ff-7abf-45e9-8f59-2fdf1edac4fd"/>
+				<textFieldExpression><![CDATA[$P{name_vessel}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="392" y="79" width="128" height="20" uuid="411bee61-327a-4574-8efc-7e2014739c87"/>
+				<textFieldExpression><![CDATA[$P{name_surveyor}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="60" y="99" width="120" height="20" uuid="a1cd0d7c-ffd1-4171-a435-bac519f83717"/>
+				<textFieldExpression><![CDATA[$P{signature_bunkertanker}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="237" y="99" width="112" height="20" uuid="856d8912-e0a4-42b8-afbc-149e7689c64f"/>
+				<textFieldExpression><![CDATA[$P{signature_vessel}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="410" y="99" width="114" height="20" uuid="78186232-bea7-4363-a51c-0f9e20e02326"/>
+				<textFieldExpression><![CDATA[$P{signature_surveyor}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="59" y="119" width="124" height="20" uuid="1e72b860-b4d0-43e0-8e3b-7dc4e8da761e"/>
+				<textFieldExpression><![CDATA[$P{date_bunkertanker}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="237" y="119" width="100" height="20" uuid="65f04d4c-0447-472f-a809-362942ca41d7"/>
+				<textFieldExpression><![CDATA[$P{date_vessel}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="410" y="119" width="100" height="20" uuid="1c53a189-5c37-4e0c-95c1-9771a2ecf75e"/>
+				<textFieldExpression><![CDATA[$P{date_surveyor}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="59" y="139" width="124" height="20" uuid="3946635b-f0b2-4c9c-affa-3e76b1bae684"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{time_bunkertanker}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="237" y="139" width="100" height="20" uuid="5600757a-7b9e-4a64-92bb-65717cbdaca4"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{time_vessel}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="410" y="139" width="101" height="20" uuid="b5f09904-967d-4e45-aeb2-99d8591ba6c5"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{time_surveyor}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="10" width="100" height="19" uuid="36448fbf-5d61-4641-97d6-b0f4b7fc4bbf"/>
+				<textElement>
+					<font size="10" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Declaration]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
 </jasperReport>
