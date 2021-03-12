@@ -365,9 +365,7 @@ After Delivery intact]]></text>
 					<property name="com.jaspersoft.studio.components.autoresize.next" value="true"/>
 				</reportElement>
 				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
-					<datasetRun subDataset="NewData" uuid="9ff17cf8-631a-46e5-af18-2e6b710fa4e2">
-						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource()]]></dataSourceExpression>
-					</datasetRun>
+					<datasetRun subDataset="NewData" uuid="552e7d73-ddc8-4821-be72-e06893018daa"/>
 					<jr:column width="20" uuid="724f6170-a60c-495c-af35-654f3059ddd6">
 						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
 						<jr:detailCell style="Table_TD" height="15">
