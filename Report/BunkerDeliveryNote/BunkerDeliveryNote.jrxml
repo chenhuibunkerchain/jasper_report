@@ -55,27 +55,27 @@
 	<title>
 		<band height="802" splitType="Stretch">
 			<ellipse>
-				<reportElement x="510" y="605" width="15" height="15" uuid="4345e644-2a80-489b-a8d5-5e124a1e9d1c">
+				<reportElement x="511" y="607" width="15" height="15" uuid="4345e644-2a80-489b-a8d5-5e124a1e9d1c">
 					<printWhenExpression><![CDATA[$P{satisfy}==5]]></printWhenExpression>
 				</reportElement>
 			</ellipse>
 			<ellipse>
-				<reportElement x="450" y="605" width="15" height="15" uuid="a6d924fa-4cb2-4c3f-86ce-597dda38f1be">
+				<reportElement x="453" y="607" width="15" height="15" uuid="a6d924fa-4cb2-4c3f-86ce-597dda38f1be">
 					<printWhenExpression><![CDATA[$P{satisfy}==4]]></printWhenExpression>
 				</reportElement>
 			</ellipse>
 			<ellipse>
-				<reportElement x="402" y="605" width="15" height="15" uuid="ef3cfa72-774e-4145-8ca0-abb6593e8f25">
+				<reportElement x="402" y="607" width="15" height="15" uuid="ef3cfa72-774e-4145-8ca0-abb6593e8f25">
 					<printWhenExpression><![CDATA[$P{satisfy}==3]]></printWhenExpression>
 				</reportElement>
 			</ellipse>
 			<ellipse>
-				<reportElement x="357" y="605" width="15" height="15" uuid="8febc775-c541-4bb2-8bec-06a26dfa3a07">
+				<reportElement x="357" y="607" width="15" height="15" uuid="8febc775-c541-4bb2-8bec-06a26dfa3a07">
 					<printWhenExpression><![CDATA[$P{satisfy}==2]]></printWhenExpression>
 				</reportElement>
 			</ellipse>
 			<ellipse>
-				<reportElement x="312" y="605" width="15" height="15" uuid="dc7946bc-f503-4f91-b0bd-77fbce835248">
+				<reportElement x="313" y="607" width="15" height="15" uuid="dc7946bc-f503-4f91-b0bd-77fbce835248">
 					<printWhenExpression><![CDATA[$P{satisfy}==1]]></printWhenExpression>
 				</reportElement>
 			</ellipse>
@@ -143,91 +143,91 @@
 				<text><![CDATA[BDN No.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="290" y="80" width="150" height="20" uuid="6c94f283-1061-4566-99cf-5f16ad902cdf"/>
+				<reportElement x="290" y="80" width="143" height="20" uuid="6c94f283-1061-4566-99cf-5f16ad902cdf"/>
 				<textElement>
 					<font size="11" isBold="false"/>
 				</textElement>
 				<text><![CDATA[Bunker Metering Ticket No.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="290" y="110" width="150" height="20" uuid="036a872e-1d3a-4fcc-8d05-073f636d2115"/>
+				<reportElement x="290" y="110" width="143" height="20" uuid="036a872e-1d3a-4fcc-8d05-073f636d2115"/>
 				<textElement>
 					<font size="11" isBold="false"/>
 				</textElement>
 				<text><![CDATA[Date]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="290" y="140" width="150" height="20" uuid="5c8a7320-bd67-4b6e-b57a-a80d382ea399"/>
+				<reportElement x="290" y="140" width="143" height="20" uuid="5c8a7320-bd67-4b6e-b57a-a80d382ea399"/>
 				<textElement>
 					<font size="11" isBold="false"/>
 				</textElement>
 				<text><![CDATA[Vessel's Name]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="290" y="170" width="150" height="20" uuid="9b6ad8d0-b7cc-4130-a426-95e10ef82a28"/>
+				<reportElement x="290" y="170" width="143" height="20" uuid="9b6ad8d0-b7cc-4130-a426-95e10ef82a28"/>
 				<textElement>
 					<font size="11" isBold="false"/>
 				</textElement>
 				<text><![CDATA[Vessel's IMO No.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="290" y="200" width="150" height="20" uuid="4dc24441-c76e-4467-84e7-be56447dc613"/>
+				<reportElement x="290" y="200" width="143" height="20" uuid="4dc24441-c76e-4467-84e7-be56447dc613"/>
 				<textElement>
 					<font size="11" isBold="false"/>
 				</textElement>
 				<text><![CDATA[Gross Tonnage]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="290" y="231" width="150" height="20" uuid="9dd84506-9116-4953-a52f-797a79b67bf5"/>
+				<reportElement x="290" y="231" width="143" height="20" uuid="9dd84506-9116-4953-a52f-797a79b67bf5"/>
 				<textElement>
 					<font size="11" isBold="false"/>
 				</textElement>
 				<text><![CDATA[Owner/Operator]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="290" y="260" width="150" height="20" uuid="1588a74b-0aa8-437b-8e84-438862948909"/>
+				<reportElement x="290" y="260" width="143" height="20" uuid="1588a74b-0aa8-437b-8e84-438862948909"/>
 				<textElement>
 					<font size="11" isBold="false"/>
 				</textElement>
 				<text><![CDATA[ETD]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="290" y="291" width="150" height="20" uuid="106ae282-3bce-49b1-9e01-eb78192475f8"/>
+				<reportElement x="290" y="291" width="143" height="20" uuid="106ae282-3bce-49b1-9e01-eb78192475f8"/>
 				<textElement>
 					<font size="11" isBold="false"/>
 				</textElement>
 				<text><![CDATA[Next Port]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="440" y="80" width="10" height="20" uuid="30e74a68-b526-4328-a3f5-8d4eb1df41b2"/>
+				<reportElement x="433" y="80" width="10" height="20" uuid="30e74a68-b526-4328-a3f5-8d4eb1df41b2"/>
 				<text><![CDATA[:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="440" y="140" width="10" height="20" uuid="004a0e02-e83d-40e8-9900-0854eff6ded0"/>
+				<reportElement x="433" y="140" width="10" height="20" uuid="004a0e02-e83d-40e8-9900-0854eff6ded0"/>
 				<text><![CDATA[:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="440" y="110" width="10" height="20" uuid="284633ed-d4af-449f-9680-a3c543ccfce1"/>
+				<reportElement x="433" y="110" width="10" height="20" uuid="284633ed-d4af-449f-9680-a3c543ccfce1"/>
 				<text><![CDATA[:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="440" y="200" width="10" height="20" uuid="7d1fb6f0-2704-44e3-8374-e963e0e43b4e"/>
+				<reportElement x="433" y="200" width="10" height="20" uuid="7d1fb6f0-2704-44e3-8374-e963e0e43b4e"/>
 				<text><![CDATA[:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="440" y="170" width="10" height="20" uuid="37f2c2f9-e291-4dc1-b882-1e77022cfc8f"/>
+				<reportElement x="433" y="170" width="10" height="20" uuid="37f2c2f9-e291-4dc1-b882-1e77022cfc8f"/>
 				<text><![CDATA[:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="440" y="260" width="10" height="20" uuid="4dad98d4-588c-4b37-9f36-11d38439b524"/>
+				<reportElement x="433" y="260" width="10" height="20" uuid="4dad98d4-588c-4b37-9f36-11d38439b524"/>
 				<text><![CDATA[:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="440" y="231" width="10" height="20" uuid="1ae00cbd-d573-4579-8c19-895e102483d1"/>
+				<reportElement x="433" y="231" width="10" height="20" uuid="1ae00cbd-d573-4579-8c19-895e102483d1"/>
 				<text><![CDATA[:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="440" y="291" width="10" height="20" uuid="51989b26-87c5-481e-8085-0f25b1bdacd3"/>
+				<reportElement x="433" y="291" width="10" height="20" uuid="51989b26-87c5-481e-8085-0f25b1bdacd3"/>
 				<text><![CDATA[:]]></text>
 			</staticText>
 			<staticText>
@@ -329,7 +329,7 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="450" y="80" width="120" height="20" uuid="135dbcbe-ea56-4c1f-812c-b7a61d7b9c6c"/>
+				<reportElement x="443" y="80" width="120" height="20" uuid="135dbcbe-ea56-4c1f-812c-b7a61d7b9c6c"/>
 				<box>
 					<bottomPen lineWidth="0.25"/>
 				</box>
@@ -339,7 +339,7 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="450" y="110" width="120" height="20" uuid="c2481184-c47b-4b48-835e-752fae01a3b3"/>
+				<reportElement x="443" y="111" width="120" height="20" uuid="c2481184-c47b-4b48-835e-752fae01a3b3"/>
 				<box>
 					<bottomPen lineWidth="0.25"/>
 				</box>
@@ -349,7 +349,7 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="450" y="140" width="120" height="20" uuid="5b6887b2-11d3-4029-849e-4085d24e4214"/>
+				<reportElement x="443" y="140" width="120" height="20" uuid="5b6887b2-11d3-4029-849e-4085d24e4214"/>
 				<box>
 					<bottomPen lineWidth="0.25"/>
 				</box>
@@ -359,7 +359,7 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="450" y="170" width="120" height="20" uuid="e68a476d-fb0f-4291-8766-630f7e7a9006"/>
+				<reportElement x="443" y="170" width="120" height="20" uuid="e68a476d-fb0f-4291-8766-630f7e7a9006"/>
 				<box>
 					<bottomPen lineWidth="0.25"/>
 				</box>
@@ -369,7 +369,7 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="450" y="200" width="120" height="20" uuid="866ff88f-69bb-4a0a-87e1-35c8c54e7746"/>
+				<reportElement x="443" y="200" width="120" height="20" uuid="866ff88f-69bb-4a0a-87e1-35c8c54e7746"/>
 				<box>
 					<bottomPen lineWidth="0.25"/>
 				</box>
@@ -379,7 +379,7 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="450" y="231" width="120" height="20" uuid="b61b81e2-05c0-40b8-a6c9-bcb42b4b5721"/>
+				<reportElement x="443" y="231" width="120" height="20" uuid="b61b81e2-05c0-40b8-a6c9-bcb42b4b5721"/>
 				<box>
 					<bottomPen lineWidth="0.25"/>
 				</box>
@@ -389,7 +389,7 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="450" y="260" width="120" height="20" uuid="f74e5976-6be8-4954-914a-bcbde2b833be"/>
+				<reportElement x="443" y="260" width="120" height="20" uuid="f74e5976-6be8-4954-914a-bcbde2b833be"/>
 				<box>
 					<bottomPen lineWidth="0.25"/>
 				</box>
@@ -399,7 +399,7 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="450" y="291" width="120" height="20" uuid="450b240a-8c17-4115-8b59-79637d796b03"/>
+				<reportElement x="443" y="291" width="120" height="20" uuid="450b240a-8c17-4115-8b59-79637d796b03"/>
 				<box>
 					<bottomPen lineWidth="0.25"/>
 				</box>
@@ -442,15 +442,18 @@
 				<text><![CDATA[PRODUCT SUPPLIED:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="2" y="360" width="128" height="20" uuid="c9bc9c23-5aa7-4cd3-86b9-2f37e41f8ba3"/>
+				<reportElement x="2" y="360" width="128" height="20" uuid="c9bc9c23-5aa7-4cd3-86b9-2f37e41f8ba3">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
 				<box>
 					<topPen lineWidth="1.0"/>
 					<leftPen lineWidth="1.0"/>
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement>
-					<font size="8" isBold="false"/>
+				<textElement textAlignment="Left">
+					<font size="6" isBold="false"/>
+					<paragraph leftIndent="5"/>
 				</textElement>
 				<text><![CDATA[Product Name]]></text>
 			</staticText>
@@ -467,14 +470,17 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="280" y="360" width="134" height="20" uuid="aa28396e-efa1-465b-810c-f05dae94e9ea"/>
+				<reportElement x="280" y="360" width="134" height="20" uuid="aa28396e-efa1-465b-810c-f05dae94e9ea">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
 				<box>
 					<topPen lineWidth="1.0"/>
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
 				<textElement>
-					<font size="8" isBold="false"/>
+					<font size="6" isBold="false"/>
+					<paragraph leftIndent="5"/>
 				</textElement>
 				<text><![CDATA[Flash Point °C
  (ISO 2719)]]></text>
@@ -492,40 +498,49 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="2" y="380" width="128" height="20" uuid="a2ce56bc-45f9-4685-bb76-3590226053ac"/>
+				<reportElement x="2" y="380" width="128" height="20" uuid="a2ce56bc-45f9-4685-bb76-3590226053ac">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
 				<box>
 					<leftPen lineWidth="1.0"/>
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
 				<textElement>
-					<font size="8" isBold="false"/>
+					<font size="6" isBold="false"/>
+					<paragraph leftIndent="5"/>
 				</textElement>
 				<text><![CDATA[Viscosity @ 40°C or  50°C, (mm²/s)
  (ISO 3104)]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="2" y="400" width="128" height="20" uuid="88a01e9f-d47e-41a8-a00b-e37d081bfadb"/>
+				<reportElement x="2" y="400" width="128" height="20" uuid="88a01e9f-d47e-41a8-a00b-e37d081bfadb">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
 				<box>
 					<leftPen lineWidth="1.0"/>
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
 				<textElement>
-					<font size="8" isBold="false"/>
+					<font size="6" isBold="false"/>
+					<paragraph leftIndent="5"/>
 				</textElement>
 				<text><![CDATA[*COQ Density @ 15°C, (kg/m³)
  (ISO 3675 or ISO 12185)]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="2" y="420" width="128" height="20" uuid="399c33fd-5803-4fd5-896e-461a26cd7c1a"/>
+				<reportElement x="2" y="420" width="128" height="20" uuid="399c33fd-5803-4fd5-896e-461a26cd7c1a">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
 				<box>
 					<leftPen lineWidth="1.0"/>
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
 				<textElement>
-					<font size="8" isBold="false"/>
+					<font size="6" isBold="false"/>
+					<paragraph leftIndent="5"/>
 				</textElement>
 				<text><![CDATA[Water Content % V/V
 (ISO 3773)]]></text>
@@ -563,26 +578,32 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="280" y="380" width="134" height="20" uuid="93967a9a-dbb9-4561-9fb5-ba3d11fc6231"/>
+				<reportElement x="280" y="380" width="134" height="20" uuid="93967a9a-dbb9-4561-9fb5-ba3d11fc6231">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
 				<box>
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
 				<textElement>
-					<font size="8" isBold="false"/>
+					<font size="6" isBold="false"/>
+					<paragraph leftIndent="5"/>
 				</textElement>
 				<text><![CDATA[Sulphur Content % m/m
  (ISO 14596 or ISO 8754)]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="280" y="400" width="134" height="40" uuid="ee63ebec-e93e-4482-b191-42194122f29f"/>
+				<reportElement x="280" y="400" width="134" height="40" uuid="ee63ebec-e93e-4482-b191-42194122f29f">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
 				<box>
 					<leftPen lineWidth="1.0"/>
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font size="8" isBold="false"/>
+					<font size="6" isBold="false"/>
+					<paragraph leftIndent="5"/>
 				</textElement>
 				<text><![CDATA[Metric Tons Delivered]]></text>
 			</staticText>
@@ -616,7 +637,7 @@
 					<rightPen lineWidth="1.0"/>
 				</box>
 				<textElement textAlignment="Center">
-					<font size="8" isBold="false"/>
+					<font size="6" isBold="false"/>
 				</textElement>
 				<text><![CDATA[SUPPLIERS'S DECLARATION]]></text>
 			</staticText>
@@ -627,7 +648,7 @@
 					<rightPen lineWidth="1.0"/>
 				</box>
 				<textElement textAlignment="Center">
-					<font size="8" isBold="false"/>
+					<font size="6" isBold="false"/>
 				</textElement>
 				<text><![CDATA[MASTER'S / CHIEF ENGINNEER'S ACKNOWLEDGEMENT]]></text>
 			</staticText>
@@ -643,25 +664,31 @@
 				<text><![CDATA[Declaration that bunker fuel supplied conforms with MARPOL Annex VI]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="280" y="450" width="272" height="30" uuid="5e9c1b7e-3901-4a9b-b931-e1b4ca14a793"/>
+				<reportElement x="280" y="450" width="272" height="30" uuid="5e9c1b7e-3901-4a9b-b931-e1b4ca14a793">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
 				<box>
 					<rightPen lineWidth="1.0"/>
 				</box>
 				<textElement textAlignment="Left">
 					<font size="6" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="5"/>
 				</textElement>
 				<text><![CDATA[ We acknowledge receipt of the above product and confirm its intended use
  and that the following samples were jointly taken by the continuous drip
  sampler at the vessel's manifold sealed and numbered:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="2" y="460" width="278" height="120" uuid="974a4c62-749b-4022-8cac-cb8e39d76b16"/>
+				<reportElement x="2" y="460" width="278" height="120" uuid="974a4c62-749b-4022-8cac-cb8e39d76b16">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
 				<box>
 					<leftPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
 				<textElement textAlignment="Left">
 					<font size="6" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="5"/>
 				</textElement>
 				<text><![CDATA[ We declare that the bunker fuel supplied conforms with Regulation 18.3 of
  this Annex and that the sulphur content of the fuel oil supplied does not
@@ -698,9 +725,12 @@
 				<text><![CDATA[CUSTOMER FEEDBACK]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="280" y="490" width="40" height="40" uuid="93a37d57-e030-4ba9-8f4d-75e49f32f0e4"/>
+				<reportElement x="280" y="490" width="40" height="40" uuid="93a37d57-e030-4ba9-8f4d-75e49f32f0e4">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="6" isBold="false"/>
+					<paragraph leftIndent="4"/>
 				</textElement>
 				<text><![CDATA[Vessel:]]></text>
 			</staticText>
@@ -732,23 +762,32 @@
 				<text><![CDATA[(MARPOL)]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="280" y="530" width="50" height="10" uuid="40b67aba-9417-4873-b5a7-9ce984224122"/>
+				<reportElement x="280" y="530" width="50" height="10" uuid="40b67aba-9417-4873-b5a7-9ce984224122">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="6" isBold="false"/>
+					<paragraph leftIndent="5"/>
 				</textElement>
 				<text><![CDATA[Bunker Tanker:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="280" y="540" width="50" height="10" uuid="0ce21165-fb87-49e0-a1ac-86be0bf6e479"/>
+				<reportElement x="280" y="540" width="50" height="10" uuid="0ce21165-fb87-49e0-a1ac-86be0bf6e479">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="6" isBold="false"/>
+					<paragraph leftIndent="5"/>
 				</textElement>
 				<text><![CDATA[Surveyor:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="280" y="550" width="50" height="20" uuid="66d52370-5cc2-48ce-8a43-600446103328"/>
+				<reportElement x="280" y="550" width="50" height="20" uuid="66d52370-5cc2-48ce-8a43-600446103328">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="6" isBold="false"/>
+					<paragraph leftIndent="5"/>
 				</textElement>
 				<text><![CDATA[Other:]]></text>
 			</staticText>
@@ -847,24 +886,17 @@
 				<text><![CDATA[(To specify)]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="280" y="570" width="134" height="10" uuid="fbe84a1e-6de6-4067-aed2-4e08e51ff3be"/>
+				<reportElement x="280" y="570" width="134" height="10" uuid="fbe84a1e-6de6-4067-aed2-4e08e51ff3be">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
 				<box>
 					<topPen lineWidth="1.0"/>
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="6" isBold="false"/>
+					<paragraph leftIndent="5"/>
 				</textElement>
 				<text><![CDATA[Was a copy of MSDS received?]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="413" y="570" width="138" height="10" uuid="1036fe38-a95c-443d-b8d8-a6e6b6216e8b"/>
-				<box>
-					<topPen lineWidth="1.0"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="6" isBold="false"/>
-				</textElement>
-				<text><![CDATA[Yes / No]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="414" y="480" width="138" height="10" uuid="0a9cd2ea-96d7-4d98-8b99-fcea64e155d1"/>
@@ -874,16 +906,22 @@
 				<text><![CDATA[Counter Seal No. (if any)]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="2" y="580" width="40" height="40" uuid="98e05084-32e4-4e10-be6b-328f1ca7c908"/>
+				<reportElement x="2" y="580" width="40" height="40" uuid="98e05084-32e4-4e10-be6b-328f1ca7c908">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="6" isBold="false"/>
+					<paragraph leftIndent="5"/>
 				</textElement>
 				<text><![CDATA[For]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="280" y="590" width="270" height="20" uuid="ddfdc89a-726e-46e8-a053-e5e642ff045a"/>
+				<reportElement x="280" y="590" width="270" height="20" uuid="ddfdc89a-726e-46e8-a053-e5e642ff045a">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
 					<font size="6" isBold="false"/>
+					<paragraph leftIndent="5"/>
 				</textElement>
 				<text><![CDATA[The following rating is satisification level of the bunkering operation
 (Please Circle)]]></text>
@@ -1043,9 +1081,12 @@
 				<text><![CDATA[Bunker Tanker's Stamp]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="2" y="684" width="40" height="40" uuid="40835f48-d41a-41a9-aa2a-8c9c89f373ce"/>
+				<reportElement x="2" y="684" width="40" height="40" uuid="40835f48-d41a-41a9-aa2a-8c9c89f373ce">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="6" isBold="false"/>
+					<paragraph leftIndent="5"/>
 				</textElement>
 				<text><![CDATA[Remark]]></text>
 			</staticText>
@@ -1057,18 +1098,14 @@
 				<text><![CDATA[Static Text]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="2" y="725" width="90" height="10" uuid="14c4b851-6482-472d-8dec-2afb6aaa9743"/>
+				<reportElement x="2" y="725" width="90" height="10" uuid="14c4b851-6482-472d-8dec-2afb6aaa9743">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="5" isBold="false"/>
+					<paragraph leftIndent="5"/>
 				</textElement>
 				<text><![CDATA[Was a note of protest issued?]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="92" y="725" width="138" height="10" uuid="83aed065-52a1-4908-8b41-6933f632b757"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="6" isBold="false"/>
-				</textElement>
-				<text><![CDATA[Yes / No]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="49" y="709" width="178" height="10" uuid="02fd8e65-a618-4f1b-8ed8-e37fb4384588"/>
@@ -1110,17 +1147,17 @@
 					<textFieldExpression><![CDATA[$P{fullNameInBlockLetter}]]></textFieldExpression>
 				</textField>
 				<textField isBlankWhenNull="true">
-					<reportElement x="99" y="142" width="100" height="12" uuid="0e6d82b3-3cce-4cfd-9602-843c37375462">
+					<reportElement x="90" y="145" width="109" height="10" uuid="0e6d82b3-3cce-4cfd-9602-843c37375462">
 						<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					</reportElement>
 					<textElement>
-						<font size="8"/>
+						<font size="6"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$P{isNoteOfProtestIssue}]]></textFieldExpression>
 				</textField>
 			</frame>
 			<staticText>
-				<reportElement x="280" y="480" width="272" height="255" uuid="aa9e5ca5-0c72-42f5-8bca-8acfd01aaa2e"/>
+				<reportElement x="281" y="480" width="272" height="255" uuid="aa9e5ca5-0c72-42f5-8bca-8acfd01aaa2e"/>
 				<box>
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
@@ -1135,28 +1172,37 @@
 				<reportElement x="150" y="423" width="120" height="15" uuid="cd42d6cc-4cc4-451a-9ead-635b1ff62ed1">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
+				<textElement>
+					<font size="6"/>
+				</textElement>
 				<textFieldExpression><![CDATA[$P{waterContentPercentage}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement x="420" y="362" width="113" height="15" uuid="7ec9d29e-e0c9-431a-aacf-f3c28ca6b669">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
+				<textElement>
+					<font size="6"/>
+				</textElement>
 				<textFieldExpression><![CDATA[$P{flashPointCelsius}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement x="420" y="383" width="124" height="15" uuid="71458959-1b49-4ee1-9233-773dc7403dca">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
+				<textElement>
+					<font size="6"/>
+				</textElement>
 				<textFieldExpression><![CDATA[$P{sulphurContentPercentage}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="100" y="501" width="30" height="12" uuid="1acff286-3189-451a-879d-ef847429b71b">
+				<reportElement x="100" y="502" width="30" height="11" uuid="1acff286-3189-451a-879d-ef847429b71b">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font size="8"/>
+					<font size="6"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{limitValue}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{sulphurContentLimit}=="3"?$P{limitValue}: ""]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement x="461" y="293" width="99" height="15" uuid="f33715e2-cd38-422e-92b2-83a0f195eab4">
@@ -1168,12 +1214,18 @@
 				<reportElement x="151" y="382" width="79" height="15" uuid="092afb7f-a8ce-4524-92d5-cad9bf459de2">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
+				<textElement>
+					<font size="6"/>
+				</textElement>
 				<textFieldExpression><![CDATA[$P{viscosity}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement x="151" y="403" width="100" height="15" uuid="cb507d78-4512-4572-ace3-f44e70cf4b4e">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
+				<textElement>
+					<font size="6"/>
+				</textElement>
 				<textFieldExpression><![CDATA[$P{density}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
@@ -1189,7 +1241,17 @@
 				<textFieldExpression><![CDATA[$P{vesselsName}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="444" y="570" width="104" height="20" uuid="b82a4e91-a680-4e4d-9d9f-ea41bbc990b2"/>
+				<reportElement x="414" y="570" width="136" height="10" uuid="b82a4e91-a680-4e4d-9d9f-ea41bbc990b2"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="6"/>
+				</textElement>
 				<textFieldExpression><![CDATA[$P{isMSDSReceived}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
@@ -1238,12 +1300,18 @@
 				<reportElement x="151" y="363" width="100" height="15" uuid="00b25208-f50a-4100-b6f9-be14704f0415">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
+				<textElement>
+					<font size="6"/>
+				</textElement>
 				<textFieldExpression><![CDATA[$P{productName}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement x="419" y="412" width="124" height="15" uuid="02ee3b2b-6b35-44aa-8c65-b22e46973905">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
+				<textElement>
+					<font size="6"/>
+				</textElement>
 				<textFieldExpression><![CDATA[$P{metricTonsDelivered}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
@@ -1352,6 +1420,36 @@
 					<font size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{chiefEngineerFullNameInBlockLetter}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="13" y="491" width="5" height="5" uuid="8d77570e-3034-49a3-a844-f0cd3467b3e8">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{sulphurContentLimit}=="1"?"X":""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="13" y="499" width="5" height="5" uuid="6a374da5-1c7c-43ac-97bf-f89924d9a138">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{sulphurContentLimit}=="2"?"X": ""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="13" y="507" width="5" height="5" uuid="8b522e81-4a11-421e-9fbe-8f1118297b30">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{sulphurContentLimit}=="3"?"X": ""]]></textFieldExpression>
 			</textField>
 		</band>
 	</title>

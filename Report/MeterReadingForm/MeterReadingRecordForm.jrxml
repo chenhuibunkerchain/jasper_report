@@ -48,33 +48,57 @@
 				<text><![CDATA[Meter Reading Record Form (Delivery)]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="40" width="120" height="20" uuid="93ac7eca-de43-4bee-8ee2-069470c73cf0"/>
-				<textElement textAlignment="Left"/>
+				<reportElement x="0" y="40" width="120" height="20" uuid="93ac7eca-de43-4bee-8ee2-069470c73cf0">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<paragraph leftIndent="3"/>
+				</textElement>
 				<text><![CDATA[Bunker Tanker's Name]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="60" width="120" height="20" uuid="186c6f41-b2ee-439d-a973-c328894cdfba"/>
-				<textElement textAlignment="Left"/>
+				<reportElement x="0" y="60" width="120" height="20" uuid="186c6f41-b2ee-439d-a973-c328894cdfba">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<paragraph leftIndent="3"/>
+				</textElement>
 				<text><![CDATA[Vessel's Name]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="80" width="120" height="20" uuid="a785441a-a79b-40a5-8f3d-bd54abed2d24"/>
-				<textElement textAlignment="Left"/>
+				<reportElement x="0" y="80" width="120" height="20" uuid="a785441a-a79b-40a5-8f3d-bd54abed2d24">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<paragraph leftIndent="3"/>
+				</textElement>
 				<text><![CDATA[BDN No.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="283" y="40" width="120" height="20" uuid="acadffb6-9d23-440c-9549-1544267255b0"/>
-				<textElement textAlignment="Left"/>
+				<reportElement x="283" y="40" width="120" height="20" uuid="acadffb6-9d23-440c-9549-1544267255b0">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<paragraph leftIndent="3"/>
+				</textElement>
 				<text><![CDATA[SB No.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="283" y="60" width="120" height="20" uuid="3d069161-9f98-4e6e-8178-2d1f4a907d15"/>
-				<textElement textAlignment="Left"/>
+				<reportElement x="283" y="60" width="120" height="20" uuid="3d069161-9f98-4e6e-8178-2d1f4a907d15">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<paragraph leftIndent="3"/>
+				</textElement>
 				<text><![CDATA[Meter Serial No.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="283" y="80" width="120" height="20" uuid="374c51cb-6725-4f8f-9842-f2e2b0018b98"/>
-				<textElement textAlignment="Left"/>
+				<reportElement x="283" y="80" width="120" height="20" uuid="374c51cb-6725-4f8f-9842-f2e2b0018b98">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<paragraph leftIndent="3"/>
+				</textElement>
 				<text><![CDATA[Bunker Metering Ticket (BMT No.)]]></text>
 			</staticText>
 			<staticText>
@@ -115,12 +139,15 @@
 				<text><![CDATA[Section A-Start of delivery]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="130" width="190" height="20" uuid="1974d429-4064-4477-b18d-7fc23310298a"/>
+				<reportElement x="0" y="130" width="190" height="20" uuid="1974d429-4064-4477-b18d-7fc23310298a">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
 				<box>
 					<pen lineWidth="0.25"/>
 				</box>
 				<textElement textAlignment="Left">
 					<font size="9"/>
+					<paragraph leftIndent="3"/>
 				</textElement>
 				<text><![CDATA[Delivery meter totaliser reading (MT)[A]]]></text>
 			</staticText>
@@ -133,12 +160,15 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="280" y="130" width="190" height="20" uuid="3830f70f-54a6-493f-bbf8-18e66a696089"/>
+				<reportElement x="280" y="130" width="190" height="20" uuid="3830f70f-54a6-493f-bbf8-18e66a696089">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
 				<box>
 					<pen lineWidth="0.25"/>
 				</box>
 				<textElement textAlignment="Left">
 					<font size="9"/>
+					<paragraph leftIndent="3"/>
 				</textElement>
 				<text><![CDATA[Loading meter totaliser reading (MT)[X]]]></text>
 			</staticText>
@@ -151,23 +181,39 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="160" width="140" height="20" uuid="7a90bc65-4980-40f2-8d37-164491807313"/>
-				<textElement textAlignment="Left"/>
+				<reportElement x="0" y="160" width="140" height="20" uuid="7a90bc65-4980-40f2-8d37-164491807313">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<paragraph leftIndent="3"/>
+				</textElement>
 				<text><![CDATA[Sampling container seal no.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="180" width="230" height="20" uuid="ab1b0845-0b22-40be-ba9e-8347121ef1ff"/>
-				<textElement textAlignment="Left"/>
+				<reportElement x="0" y="180" width="230" height="20" uuid="ab1b0845-0b22-40be-ba9e-8347121ef1ff">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<paragraph leftIndent="3"/>
+				</textElement>
 				<text><![CDATA[Vessel has sufficient tank space for purging:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="280" y="160" width="110" height="20" uuid="df37a43f-e0f5-4a8d-985d-10c3f019935a"/>
-				<textElement textAlignment="Left"/>
+				<reportElement x="280" y="160" width="110" height="20" uuid="df37a43f-e0f5-4a8d-985d-10c3f019935a">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<paragraph leftIndent="3"/>
+				</textElement>
 				<text><![CDATA[Needle valve seal no.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="200" width="90" height="20" uuid="c90a16e0-8149-46fb-93fb-a65cdbeabe08"/>
-				<textElement textAlignment="Left"/>
+				<reportElement x="0" y="200" width="90" height="20" uuid="c90a16e0-8149-46fb-93fb-a65cdbeabe08">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<paragraph leftIndent="3"/>
+				</textElement>
 				<text><![CDATA[Remarks (if any):]]></text>
 			</staticText>
 			<staticText>
@@ -263,22 +309,28 @@
 				<text><![CDATA[Signature of Bunker Surveyor's]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="180" y="290" width="60" height="20" uuid="5dcde813-b8d7-4146-8f56-2420c0d0abd6"/>
+				<reportElement x="180" y="290" width="60" height="20" uuid="5dcde813-b8d7-4146-8f56-2420c0d0abd6">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
 				<box>
 					<leftPen lineWidth="0.25"/>
 				</box>
 				<textElement textAlignment="Left">
 					<font size="9"/>
+					<paragraph leftIndent="3"/>
 				</textElement>
 				<text><![CDATA[Name in full:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="380" y="290" width="60" height="20" uuid="85b9eb6d-aec6-4f00-ab2f-5ef835c53fd2"/>
+				<reportElement x="380" y="290" width="60" height="20" uuid="85b9eb6d-aec6-4f00-ab2f-5ef835c53fd2">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
 				<box>
 					<leftPen lineWidth="0.25"/>
 				</box>
 				<textElement textAlignment="Left">
 					<font size="9"/>
+					<paragraph leftIndent="3"/>
 				</textElement>
 				<text><![CDATA[Name in full:]]></text>
 			</staticText>
@@ -307,29 +359,38 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="310" width="60" height="20" uuid="ee2722b6-bd7d-4bff-8a43-6ec3c3058b75"/>
+				<reportElement x="0" y="310" width="60" height="20" uuid="ee2722b6-bd7d-4bff-8a43-6ec3c3058b75">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
 				<box>
 					<leftPen lineWidth="0.25"/>
 				</box>
 				<textElement textAlignment="Left">
 					<font size="9"/>
+					<paragraph leftIndent="3"/>
 				</textElement>
 				<text><![CDATA[Date/Time:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="180" y="310" width="60" height="20" uuid="b5934a29-c8ea-48bd-bae6-69189ffe63b0"/>
+				<reportElement x="180" y="310" width="60" height="20" uuid="b5934a29-c8ea-48bd-bae6-69189ffe63b0">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
 				<box>
 					<leftPen lineWidth="0.25"/>
 				</box>
 				<textElement textAlignment="Left">
 					<font size="9"/>
+					<paragraph leftIndent="3"/>
 				</textElement>
 				<text><![CDATA[Date/Time:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="380" y="310" width="60" height="20" uuid="5e3e9147-16ae-40aa-92ce-36abd04b1f87"/>
+				<reportElement x="380" y="310" width="60" height="20" uuid="5e3e9147-16ae-40aa-92ce-36abd04b1f87">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
 				<textElement textAlignment="Left">
 					<font size="9"/>
+					<paragraph leftIndent="3"/>
 				</textElement>
 				<text><![CDATA[Date/Time:]]></text>
 			</staticText>
@@ -392,13 +453,16 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="350" width="110" height="20" uuid="364d9180-e768-48c8-a9b9-e70152009606"/>
+				<reportElement x="0" y="350" width="110" height="20" uuid="364d9180-e768-48c8-a9b9-e70152009606">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
 				<box>
 					<leftPen lineWidth="0.25"/>
 					<bottomPen lineWidth="0.25"/>
 				</box>
 				<textElement textAlignment="Left">
 					<font size="9"/>
+					<paragraph leftIndent="3"/>
 				</textElement>
 				<text><![CDATA[Banker Tanker's Stamp:]]></text>
 			</staticText>
@@ -413,13 +477,16 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="180" y="350" width="70" height="20" uuid="8a52b071-2230-458a-982f-7aca3725c767"/>
+				<reportElement x="180" y="350" width="70" height="20" uuid="8a52b071-2230-458a-982f-7aca3725c767">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
 				<box>
 					<leftPen lineWidth="0.25"/>
 					<bottomPen lineWidth="0.25"/>
 				</box>
 				<textElement textAlignment="Left">
 					<font size="9"/>
+					<paragraph leftIndent="3"/>
 				</textElement>
 				<text><![CDATA[Vessel's Stamp:]]></text>
 			</staticText>
@@ -434,13 +501,16 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="380" y="350" width="90" height="20" uuid="e711b0f1-93f3-4166-b62b-622310f4497d"/>
+				<reportElement x="380" y="350" width="90" height="20" uuid="e711b0f1-93f3-4166-b62b-622310f4497d">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
 				<box>
 					<leftPen lineWidth="0.25"/>
 					<bottomPen lineWidth="0.25"/>
 				</box>
 				<textElement textAlignment="Left">
 					<font size="9"/>
+					<paragraph leftIndent="3"/>
 				</textElement>
 				<text><![CDATA[Company's Stamp:]]></text>
 			</staticText>
@@ -456,12 +526,15 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="290" width="60" height="20" uuid="c8cf4906-b8da-4974-8244-a90c0e8e3cab"/>
+				<reportElement x="0" y="290" width="60" height="20" uuid="c8cf4906-b8da-4974-8244-a90c0e8e3cab">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
 				<box>
 					<leftPen lineWidth="0.25"/>
 				</box>
 				<textElement textAlignment="Left">
 					<font size="9"/>
+					<paragraph leftIndent="3"/>
 				</textElement>
 				<text><![CDATA[Name in full:]]></text>
 			</staticText>
@@ -473,12 +546,15 @@
 				<text><![CDATA[Section B-End of delivery]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="460" width="190" height="20" uuid="52d2cf85-53f2-4bd1-a382-15a675b2e208"/>
+				<reportElement x="0" y="460" width="190" height="20" uuid="52d2cf85-53f2-4bd1-a382-15a675b2e208">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
 				<box>
 					<pen lineWidth="0.25"/>
 				</box>
 				<textElement textAlignment="Left">
 					<font size="9"/>
+					<paragraph leftIndent="3"/>
 				</textElement>
 				<text><![CDATA[Delivery meter totaliser reading (MT)[B]]]></text>
 			</staticText>
@@ -491,12 +567,15 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="280" y="460" width="190" height="20" uuid="bbdf767d-8af0-4fa4-a5c6-d88f58e6695e"/>
+				<reportElement x="280" y="460" width="190" height="20" uuid="bbdf767d-8af0-4fa4-a5c6-d88f58e6695e">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
 				<box>
 					<pen lineWidth="0.25"/>
 				</box>
 				<textElement textAlignment="Left">
 					<font size="9"/>
+					<paragraph leftIndent="3"/>
 				</textElement>
 				<text><![CDATA[Loading meter totaliser reading (MT)[Y]]]></text>
 			</staticText>
@@ -509,12 +588,15 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="490" width="190" height="30" uuid="d99b1eef-0b99-4d52-ada9-5b118605b2c7"/>
+				<reportElement x="0" y="490" width="190" height="30" uuid="d99b1eef-0b99-4d52-ada9-5b118605b2c7">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
 				<box>
 					<pen lineWidth="0.25"/>
 				</box>
 				<textElement textAlignment="Left">
 					<font size="9"/>
+					<paragraph leftIndent="3"/>
 				</textElement>
 				<text><![CDATA[Quantity delivered (MT)
 [(B-A) - (Y-X)]]]></text>
@@ -620,22 +702,28 @@
 				<text><![CDATA[Signature of Bunker Surveyor's]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="180" y="590" width="60" height="20" uuid="cc89f44a-c6f5-43fe-aed9-9421faf2b0c6"/>
+				<reportElement x="180" y="590" width="60" height="20" uuid="cc89f44a-c6f5-43fe-aed9-9421faf2b0c6">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
 				<box>
 					<leftPen lineWidth="0.25"/>
 				</box>
 				<textElement textAlignment="Left">
 					<font size="9"/>
+					<paragraph leftIndent="3"/>
 				</textElement>
 				<text><![CDATA[Name in full:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="380" y="590" width="60" height="20" uuid="eff845df-eb33-47fa-a1ab-f8c01b771238"/>
+				<reportElement x="380" y="590" width="60" height="20" uuid="eff845df-eb33-47fa-a1ab-f8c01b771238">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
 				<box>
 					<leftPen lineWidth="0.25"/>
 				</box>
 				<textElement textAlignment="Left">
 					<font size="9"/>
+					<paragraph leftIndent="3"/>
 				</textElement>
 				<text><![CDATA[Name in full:]]></text>
 			</staticText>
@@ -664,29 +752,38 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="610" width="60" height="20" uuid="2db6d5e9-a50f-4227-a722-43e0a1e08b8f"/>
+				<reportElement x="0" y="610" width="60" height="20" uuid="2db6d5e9-a50f-4227-a722-43e0a1e08b8f">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
 				<box>
 					<leftPen lineWidth="0.25"/>
 				</box>
 				<textElement textAlignment="Left">
 					<font size="9"/>
+					<paragraph leftIndent="3"/>
 				</textElement>
 				<text><![CDATA[Date/Time:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="180" y="610" width="60" height="20" uuid="16fb58c4-2759-4b08-bffb-46d54e044b4a"/>
+				<reportElement x="180" y="610" width="60" height="20" uuid="16fb58c4-2759-4b08-bffb-46d54e044b4a">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
 				<box>
 					<leftPen lineWidth="0.25"/>
 				</box>
 				<textElement textAlignment="Left">
 					<font size="9"/>
+					<paragraph leftIndent="3"/>
 				</textElement>
 				<text><![CDATA[Date/Time:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="380" y="610" width="60" height="20" uuid="4d21e693-deda-40cb-953f-a3b0feca1575"/>
+				<reportElement x="380" y="610" width="60" height="20" uuid="4d21e693-deda-40cb-953f-a3b0feca1575">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
 				<textElement textAlignment="Left">
 					<font size="9"/>
+					<paragraph leftIndent="3"/>
 				</textElement>
 				<text><![CDATA[Date/Time:]]></text>
 			</staticText>
@@ -749,13 +846,16 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="650" width="110" height="20" uuid="eef0ea35-ecbc-49eb-8e83-f5a2b9cea7b1"/>
+				<reportElement x="0" y="650" width="110" height="20" uuid="eef0ea35-ecbc-49eb-8e83-f5a2b9cea7b1">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
 				<box>
 					<leftPen lineWidth="0.25"/>
 					<bottomPen lineWidth="0.25"/>
 				</box>
 				<textElement textAlignment="Left">
 					<font size="9"/>
+					<paragraph leftIndent="3"/>
 				</textElement>
 				<text><![CDATA[Banker Tanker's Stamp:]]></text>
 			</staticText>
@@ -770,13 +870,16 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="180" y="650" width="70" height="20" uuid="16fbe46e-20b0-4922-beca-21a6c6dc7a7b"/>
+				<reportElement x="180" y="650" width="70" height="20" uuid="16fbe46e-20b0-4922-beca-21a6c6dc7a7b">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
 				<box>
 					<leftPen lineWidth="0.25"/>
 					<bottomPen lineWidth="0.25"/>
 				</box>
 				<textElement textAlignment="Left">
 					<font size="9"/>
+					<paragraph leftIndent="3"/>
 				</textElement>
 				<text><![CDATA[Vessel's Stamp:]]></text>
 			</staticText>
@@ -791,13 +894,16 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="380" y="650" width="90" height="20" uuid="a52d203d-c0a1-4df7-9005-1f66005a106e"/>
+				<reportElement x="380" y="650" width="90" height="20" uuid="a52d203d-c0a1-4df7-9005-1f66005a106e">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
 				<box>
 					<leftPen lineWidth="0.25"/>
 					<bottomPen lineWidth="0.25"/>
 				</box>
 				<textElement textAlignment="Left">
 					<font size="9"/>
+					<paragraph leftIndent="3"/>
 				</textElement>
 				<text><![CDATA[Company's Stamp:]]></text>
 			</staticText>
@@ -813,12 +919,15 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="590" width="60" height="20" uuid="39d98cf1-f073-4b55-b073-aad23f71520c"/>
+				<reportElement x="0" y="590" width="60" height="20" uuid="39d98cf1-f073-4b55-b073-aad23f71520c">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
 				<box>
 					<leftPen lineWidth="0.25"/>
 				</box>
 				<textElement textAlignment="Left">
 					<font size="9"/>
+					<paragraph leftIndent="3"/>
 				</textElement>
 				<text><![CDATA[Name in full:]]></text>
 			</staticText>
