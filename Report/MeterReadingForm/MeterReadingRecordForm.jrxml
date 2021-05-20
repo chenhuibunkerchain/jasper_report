@@ -132,7 +132,7 @@
 				<text><![CDATA[:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="110" width="140" height="20" uuid="253fccb5-9ac9-43dc-b924-85b6513e7baf"/>
+				<reportElement x="0" y="110" width="273" height="20" uuid="253fccb5-9ac9-43dc-b924-85b6513e7baf"/>
 				<textElement>
 					<font isBold="true" isUnderline="true"/>
 				</textElement>
@@ -181,7 +181,7 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="160" width="140" height="20" uuid="7a90bc65-4980-40f2-8d37-164491807313">
+				<reportElement x="0" y="160" width="169" height="16" uuid="7a90bc65-4980-40f2-8d37-164491807313">
 					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left">
@@ -199,7 +199,7 @@
 				<text><![CDATA[Vessel has sufficient tank space for purging:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="280" y="160" width="110" height="20" uuid="df37a43f-e0f5-4a8d-985d-10c3f019935a">
+				<reportElement x="280" y="160" width="130" height="15" uuid="df37a43f-e0f5-4a8d-985d-10c3f019935a">
 					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left">
@@ -539,7 +539,7 @@
 				<text><![CDATA[Name in full:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="440" width="140" height="20" uuid="2984117d-b9ff-4ff8-bd26-d0969cb9f882"/>
+				<reportElement x="0" y="440" width="272" height="20" uuid="2984117d-b9ff-4ff8-bd26-d0969cb9f882"/>
 				<textElement>
 					<font isBold="true" isUnderline="true"/>
 				</textElement>
@@ -932,7 +932,7 @@
 				<text><![CDATA[Name in full:]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement x="390" y="160" width="150" height="15" uuid="ed7c9747-2b3e-456b-aae5-dc755afe9d43">
+				<reportElement x="410" y="160" width="130" height="15" uuid="ed7c9747-2b3e-456b-aae5-dc755afe9d43">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$P{needleValveSealNumber}]]></textFieldExpression>
@@ -942,7 +942,7 @@
 				<textFieldExpression><![CDATA[$P{meterSerialNumber}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="140" y="161" width="132" height="15" uuid="aecf1de7-26bd-43d9-8f64-a32f3f454423">
+				<reportElement x="169" y="160" width="103" height="16" uuid="aecf1de7-26bd-43d9-8f64-a32f3f454423">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$P{samplingContainerSealNumber}]]></textFieldExpression>
@@ -1017,7 +1017,7 @@
 				<textFieldExpression><![CDATA[$P{surveyorSignedAtAfterDelivery}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="423" y="80" width="134" height="30" uuid="b993784f-fd9d-4771-a85b-565dc397772b"/>
+				<reportElement x="423" y="80" width="134" height="20" uuid="b993784f-fd9d-4771-a85b-565dc397772b"/>
 				<textFieldExpression><![CDATA[$P{bunkerMeterTicketNumber}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
