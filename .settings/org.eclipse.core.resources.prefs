@@ -1,4 +1,12 @@
 eclipse.preferences.version=1
+encoding//Report/BargeNOP/BargeNoteOfProtest.jrxml=UTF-8
+encoding//Report/BargeNOP/VesselNOP.jrxml=UTF-8
+encoding//Report/BunkerDeliveryNote/BunkerDeliveryNote.jrxml=UTF-8
+encoding//Report/BunkerRequisitionForm/BunkerRequisitionForm.jrxml=UTF-8
+encoding//Report/MFMSealChecklist/MfmSystemSealCheckList.jrxml=UTF-8
+encoding//Report/MeterReadingForm/MeterReadingRecordForm.jrxml=UTF-8
+encoding//Report/SafetyChecklist/BunkeringPredeliverySafetyChecklist.jrxml=UTF-8
+encoding//Report/Timesheet/TimeSheet.jrxml=UTF-8
 encoding/BargeNoteOfProtest.jrxml=UTF-8
 encoding/BunkerDeliveryNote.jrxml=UTF-8
 encoding/BunkerRequisitionForm.jrxml=UTF-8

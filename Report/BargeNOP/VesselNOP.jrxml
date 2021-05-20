@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="VesselNOP" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="cc466d33-9217-4e7b-bdcc-cd7120829ee9">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
+	<parameter name="receivedTonnes" class="java.lang.String"/>
+	<parameter name="ref" class="java.lang.String"/>
+	<parameter name="fullNameCargoOfficer" class="java.lang.String"/>
+	<parameter name="fullNameChiefEngineer" class="java.lang.String"/>
+	<parameter name="nameOfBunkerTanker" class="java.lang.String"/>
+	<parameter name="nameOfVesselReceivingBunkers" class="java.lang.String"/>
+	<parameter name="sbNo" class="java.lang.String"/>
+	<parameter name="productName" class="java.lang.String"/>
+	<parameter name="tonnesOfProduct" class="java.lang.String"/>
+	<parameter name="fromTime" class="java.lang.String"/>
+	<parameter name="fromDate" class="java.lang.String"/>
+	<parameter name="datetimeAcknowledged" class="java.lang.String"/>
+	<parameter name="dateBargeNoteProtest" class="java.lang.String"/>
+	<parameter name="dateOperationsOn" class="java.lang.String"/>
+	<parameter name="agentFaxNo" class="java.lang.String"/>
+	<parameter name="agentEmail" class="java.lang.String"/>
+	<parameter name="agentContact" class="java.lang.String"/>
+	<parameter name="agentCompany" class="java.lang.String"/>
+	<parameter name="location" class="java.lang.String"/>
+	<parameter name="address" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<title>
+		<band height="666" splitType="Stretch">
+			<staticText>
+				<reportElement x="89" y="420" width="144" height="15" uuid="80e0a34f-935f-4d34-8b63-457f5015e21b"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="255" y="398" width="134" height="17" uuid="8a87edbe-5b67-4a64-88f9-440398ec65a4"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="321" y="379" width="146" height="15" uuid="fdc21f17-44d2-44a1-a78e-f3d33866a1ca"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="172" y="1" width="210" height="26" uuid="34723e2b-561e-4f5a-952f-389cafffeab5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NOTE OF PROTEST]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="22" y="28" width="40" height="20" uuid="f82a89c0-067f-46a4-8207-5186984d3f84"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="22" y="48" width="40" height="20" uuid="806ab93b-1fe6-42f2-a64b-5170d5f8cc89"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Ref]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="22" y="68" width="40" height="20" uuid="9ccc5e91-043e-4971-99cc-3130647bed2d"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[To]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="62" y="28" width="28" height="20" uuid="0416b0f0-c61a-4814-9086-9f337e948edd"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="62" y="48" width="28" height="20" uuid="ffd076f0-fcb0-41b4-a1be-2011c1b4e371"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="62" y="68" width="28" height="20" uuid="1511d4a3-a0d4-40db-b44c-3984bfab6f4e"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="90" y="68" width="301" height="20" uuid="17dc3458-4e86-497a-8d5f-ac3cdda9a4aa"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="90" y="49" width="100" height="18" uuid="d84a96eb-9363-4e6f-a609-a63fc1b6ed93"/>
+				<textFieldExpression><![CDATA[$P{ref}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="90" y="72" width="238" height="15" uuid="6a07b9d3-adc6-4471-aaae-27d2b03d0ab6">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nameOfVesselReceivingBunkers}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="90" y="28" width="168" height="20" uuid="c9b023cb-6928-418f-b81f-aa53fda71524"/>
+				<textFieldExpression><![CDATA[$P{dateBargeNoteProtest}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="90" y="88" width="300" height="12" uuid="a15e2a0a-c322-45a7-a36c-5d7708abcf81"/>
+				<textElement textAlignment="Center">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Master/Cargo officer of bunker tanker]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="146" width="80" height="20" uuid="0de5f22b-ca54-4ec8-8870-998cb14bb008"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Dear Sirs,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="177" width="340" height="20" uuid="67a83dd6-86aa-4c1a-8ce5-ec676cbbd015"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NOTE OF PROTEST FOR BUNKERING OPERATIONS ON:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="328" y="173" width="148" height="20" uuid="d4f0f4b1-6bfa-4f1d-95de-5a738ab82081"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="206" width="110" height="17" uuid="4c0194c4-c0ba-40c2-a845-428bcfa9d9d9"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[I, Chief Engineer of M/V]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="110" y="204" width="182" height="17" uuid="94c49d16-c6cd-4f76-861a-c700d274348e"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="298" y="225" width="116" height="17" uuid="facba39f-cc41-4704-b2b4-237c54d53ab5"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="292" y="307" width="18" height="17" uuid="ee8a6d2c-b6c4-496c-acc1-f46098d97343"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[ at]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="47" y="225" width="126" height="17" uuid="a708d374-2327-4c7a-a9f1-5df5fd613376"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="173" y="227" width="74" height="17" uuid="cd487f88-778a-41b1-9246-59426898ebec"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[ (Grade of bunkers) ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="249" width="95" height="17" uuid="b574d261-eff6-4ff8-ada2-c3e96cb26202"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[tonnes requested on]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="310" y="306" width="137" height="17" uuid="6dccac48-2a1e-422f-9980-1fc8c6a34c1d"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="307" width="22" height="17" uuid="d57c84e6-edc7-4aab-ab84-048594e2c238"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[ on]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="172" y="305" width="86" height="17" uuid="e65d4e4e-08cc-4319-907e-4a45a1eb777d"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="258" y="307" width="34" height="17" uuid="fadd5bf5-5aca-4242-aaae-b04bbf5ef363"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[ (Date)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="280" width="206" height="16" uuid="6de4f4be-e5eb-40af-89b1-27269dadb8bc"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[The bunkers were supplied by bunker tanker]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="400" width="54" height="16" uuid="9f18b6d0-fade-4442-b968-706ba816e811"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[at Tel No:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="211" y="400" width="56" height="16" uuid="5586fdda-45cf-4dff-9559-161bb5b6de30">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[, Fax No:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="379" width="320" height="16" uuid="5193f186-bac2-4b5a-9136-8be6232cf3d3">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[For more information on the dispute, please contact our shipping agent]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="333" width="551" height="40" uuid="62a1bdf6-9bf4-4c75-ad22-5e9873043716">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[I hereby lodge a protest against the delivery.  (Particulars of any undue stoppages or delays may also be set out in this paragraph).]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="445" width="100" height="16" uuid="c218cd71-76cb-4806-b996-ca77ddbe0c69">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Yours faithfully]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="298" y="227" width="116" height="17" uuid="95b5ead1-51a4-4de5-936a-c65a4ae1c9a0">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{receivedTonnes}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="333" y="204" width="142" height="17" uuid="faa7b8f8-7081-4dc3-b774-df8e083ec977"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="227" width="46" height="17" uuid="c66ca645-ed08-4551-a7ef-415ffc83c2e2"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[tonnes of]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="109" y="206" width="184" height="17" uuid="32db5644-0ba9-42f7-9ea3-3cdf8ec429fd">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nameOfVesselReceivingBunkers}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="333" y="206" width="142" height="17" uuid="56e1f5d7-9197-430d-b63f-20e756efe42d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{tonnesOfProduct}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="47" y="227" width="126" height="17" uuid="c0171730-5c74-4b8d-bb3e-2e072fde8c79">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{productName}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="310" y="307" width="137" height="17" uuid="2c65da30-e967-4aaa-9b40-ae0587898b8c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{location}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="172" y="307" width="86" height="16" uuid="33279e60-0241-494f-b3a8-564e2d701f0c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fromDate}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="330" y="177" width="146" height="19" uuid="e3c3c920-28c5-4be9-96d7-dd4ae10b5b0b">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dateOperationsOn}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="293" y="206" width="40" height="17" uuid="008400a0-bd3c-4c88-a916-84be97f1c307"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[received]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="95" y="247" width="111" height="17" uuid="e813c669-9ac2-48c7-9bd0-958205677a41"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="95" y="249" width="111" height="17" uuid="ecf75417-2e03-4be7-ac4f-1eb96f56f990">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{dateOperationsOn}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="206" y="249" width="126" height="17" uuid="e370e67a-f301-4b0e-8fc1-13697ec2cd45"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[ (Date of bunkers received).]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="206" y="280" width="154" height="16" uuid="15255402-b035-438b-b206-1ba2158a3dbc">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nameOfBunkerTanker}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="202" y="278" width="153" height="16" uuid="eed00bac-ed9f-480e-9176-869db8813c05"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="40" y="307" width="110" height="17" uuid="dfb5ddf9-86a3-48ac-af9f-338e5140ea3c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{sbNo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="307" width="40" height="17" uuid="9731c4af-5700-48d5-a760-b8729f04d39c"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[SB No .:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="305" width="110" height="17" uuid="30fc6d0c-8463-45df-8455-ab13332f6d6e"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="447" y="307" width="87" height="17" uuid="e61a80ad-03ce-48ba-a988-0f83d69440bf"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[(Location).]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="321" y="379" width="146" height="15" uuid="13a98fec-2571-421c-b962-57f3e972a1d2">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{agentCompany}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="467" y="379" width="84" height="14" uuid="8b5f5e97-89ee-4e06-9bbe-30a2eff5c2be"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[(Name of company)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="55" y="398" width="155" height="16" uuid="56665e26-5501-4327-b9c9-dda0e61ff76a"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="55" y="400" width="154" height="16" uuid="c72f6b0c-d4be-471b-a9e5-e5dfb6758365">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{agentContact}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="254" y="400" width="134" height="17" uuid="f80b3e70-b051-4334-9196-11b40c82d833">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{agentFaxNo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="420" width="88" height="16" uuid="9b49c09c-0f54-4b62-acfb-d6b51e3d11de"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[or e-mail address:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="89" y="420" width="144" height="16" uuid="1c8648d5-98f8-4877-9a40-3a21443eaa60">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{agentEmail}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="233" y="420" width="30" height="16" uuid="cefe78ba-4c80-4dc3-a677-cc4ec2fc235e"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="483" width="282" height="20" uuid="cdb7b4be-7de1-4b7b-a27b-50eaeb0aa8f4"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="502" width="260" height="20" uuid="7c5b3929-4c55-49fe-abf6-b6f71becdece"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[(Name & Signature of Chief Engineer of vessel)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="533" width="36" height="20" uuid="1efceedb-2ca7-4014-9587-94a758e5c1b9"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[cc]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="46" y="533" width="194" height="110" uuid="88b1dddf-9023-46bf-94d4-3d50fd09cec4"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[1. Executive Director
+Singapore Shipping Association
+59 Tras Street
+Singapore: 078998
+Fax No.: +65 62225527
+(Enclosing with it a copy of the BDN)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="362" y="523" width="194" height="122" uuid="7868e2e0-270a-4dc9-b682-963722e61580"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[2. Officer-in-charge
+Bunker Services Department
+Martime and Port Authority of Singapore
+7B Keppel Road
+#21-07 Tanjong Pagar Complex
+Singapore: 089055
+Fax No: +65 62211742
+Email Address: bsd@mpa.gov.sg
+(Enclosing it with a copy of the BDN)]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="22" y="483" width="258" height="20" uuid="ac44aad7-71c5-40e3-b487-8388f7aa264f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{fullNameChiefEngineer}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="645" width="552" height="20" uuid="743301e4-77fc-4b47-b50a-54509e196edf"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="90" y="100" width="301" height="20" uuid="142ed0b1-8c3a-4191-bccc-c1e2bd62f9bc"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="90" y="105" width="238" height="15" uuid="ec6635b1-564f-4d2b-a6ab-9da4bde373b8">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$P{address}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="206" y="120" width="58" height="20" uuid="82ed79b4-a83b-4cea-b48c-49083ae642d6"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="247" y="227" width="51" height="17" uuid="e8e11ce0-c55e-4a70-8219-229524b41ac9"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[ out of the]]></text>
+			</staticText>
+		</band>
+	</title>
+	<summary>
+		<band height="117" splitType="Stretch">
+			<staticText>
+				<reportElement x="8" y="1" width="166" height="18" uuid="9ce5e6dd-4430-4ada-aa6c-57078d4ee2ac"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Acknowledged receipt:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="8" y="19" width="246" height="20" uuid="cce854a9-2ae5-43e4-b8f3-5cee49a6f172"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="7" y="39" width="248" height="20" uuid="723c4f25-3fe5-4fa2-99d8-fedb0035a0d1"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Signature of Master/Cargo Officer of bunker tanker]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="7" y="59" width="246" height="20" uuid="c65c9b99-1792-4779-b49b-079cc5db1e81"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="7" y="79" width="248" height="20" uuid="737b9fdc-b841-4f6d-a346-88ce4a14ad9b"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Name of Chief Engineer of vessel receiving bunkers]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="322" y="60" width="226" height="20" uuid="66f16b13-d208-4526-a483-d975bac4ba14"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="397" y="80" width="70" height="19" uuid="9cc811ed-32fb-4eff-baf9-88b0b0181a6c"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Date / Time]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="7" y="59" width="250" height="20" uuid="b058f185-7b3a-413a-a8e6-3731982fdfdb"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{fullNameChiefEngineer}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>
