@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="TimeSheet" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ca62e0e1-d354-470a-9fa0-dd4c96f230bb">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
 	<parameter name="date" class="java.sql.Date">
 		<parameterDescription><![CDATA[Date of the time sheet]]></parameterDescription>
 	</parameter>
@@ -285,7 +286,7 @@
 			<frame>
 				<reportElement positionType="Float" x="0" y="99" width="555" height="99" uuid="b3534bf5-e515-4558-a70d-350f4f0df89b"/>
 				<staticText>
-					<reportElement x="0" y="80" width="180" height="18" uuid="15aa1160-3d7c-482c-81e2-081a8959fc7f"/>
+					<reportElement x="-1" y="50" width="180" height="18" uuid="15aa1160-3d7c-482c-81e2-081a8959fc7f"/>
 					<box>
 						<topPen lineWidth="1.0"/>
 					</box>
@@ -293,14 +294,14 @@
 					<text><![CDATA[Barge Cargo Officer]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="187" y="80" width="172" height="19" uuid="9886fd55-bc07-4c10-9fbf-5b5e6347c6eb"/>
+					<reportElement x="184" y="50" width="172" height="19" uuid="9886fd55-bc07-4c10-9fbf-5b5e6347c6eb"/>
 					<box>
 						<topPen lineWidth="1.0"/>
 					</box>
 					<text><![CDATA[Terminal / Vessel]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="372" y="80" width="180" height="19" uuid="5abe0aa9-c55d-4b1d-8873-dca3dbeadbc0"/>
+					<reportElement x="372" y="50" width="180" height="19" uuid="5abe0aa9-c55d-4b1d-8873-dca3dbeadbc0"/>
 					<box>
 						<topPen lineWidth="1.0"/>
 					</box>
@@ -315,7 +316,7 @@
 					<text><![CDATA[ Representative]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="372" y="99" width="50" height="19" uuid="30d20202-0778-4e4b-bb20-afb7f93bbe34"/>
+					<reportElement x="370" y="40" width="50" height="19" uuid="30d20202-0778-4e4b-bb20-afb7f93bbe34"/>
 					<text><![CDATA[Company:]]></text>
 				</staticText>
 				<textField textAdjust="StretchHeight" isBlankWhenNull="true">

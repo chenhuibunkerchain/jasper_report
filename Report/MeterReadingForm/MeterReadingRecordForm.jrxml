@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="MeterReadingRecordForm" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d7d86fd7-e301-4bce-a72d-c5bff39e0de8">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
 	<parameter name="samplingContainerSealNumber" class="java.lang.String"/>
 	<parameter name="needleValveSealNumber" class="java.lang.String"/>
 	<parameter name="vesselHasSufficientTankSpaceForPurging" class="java.lang.String"/>
@@ -26,7 +27,6 @@
 	<parameter name="bunkerTankersName" class="java.lang.String"/>
 	<parameter name="sbNo" class="java.lang.String"/>
 	<parameter name="vesselsName" class="java.lang.String"/>
-	<parameter name="bdnNo" class="java.lang.String"/>
 	<parameter name="fullNameCargoOfficerAfter" class="java.lang.String"/>
 	<parameter name="fullNameCargoOfficerBefore" class="java.lang.String"/>
 	<parameter name="fullNameChiefEngineerAfter" class="java.lang.String"/>
@@ -34,6 +34,21 @@
 	<parameter name="fullNameSurvyorAfter" class="java.lang.String"/>
 	<parameter name="fullNameSurvyorBefore" class="java.lang.String"/>
 	<parameter name="mtFinal" class="java.lang.String"/>
+	<parameter name="cargoOfficerSignature" class="java.lang.String"/>
+	<parameter name="chiefEngineerSignature" class="java.lang.String"/>
+	<parameter name="surveyorSignature" class="java.lang.String"/>
+	<parameter name="cargoOfficerFullName" class="java.lang.String"/>
+	<parameter name="chiefEngineerFullName" class="java.lang.String"/>
+	<parameter name="surveyorFullName" class="java.lang.String"/>
+	<parameter name="surveyorCompany" class="java.lang.String"/>
+	<parameter name="cargoOfficerConfirmedAt" class="java.lang.String"/>
+	<parameter name="chiefEngineerConfirmedAt" class="java.lang.String"/>
+	<parameter name="surveyorConfirmedAt" class="java.lang.String"/>
+	<parameter name="cargoOfficerSignedAt" class="java.lang.String"/>
+	<parameter name="chiefEngineerSignedAt" class="java.lang.String"/>
+	<parameter name="surveyorSignedAt" class="java.lang.String"/>
+	<parameter name="vesselsIMOno" class="java.lang.String"/>
+	<parameter name="bdnNumber" class="java.lang.String"/>
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
@@ -41,7 +56,7 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="802" splitType="Stretch">
+		<band height="670" splitType="Stretch">
 			<staticText>
 				<reportElement x="180" y="11" width="200" height="20" uuid="95a13ed6-c064-4950-987b-b28ee7993068"/>
 				<textElement textAlignment="Center"/>
@@ -190,13 +205,13 @@
 				<text><![CDATA[Sampling container seal no.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="180" width="230" height="20" uuid="ab1b0845-0b22-40be-ba9e-8347121ef1ff">
+				<reportElement x="0" y="180" width="290" height="20" uuid="ab1b0845-0b22-40be-ba9e-8347121ef1ff">
 					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left">
 					<paragraph leftIndent="3"/>
 				</textElement>
-				<text><![CDATA[Vessel has sufficient tank space for purging:]]></text>
+				<text><![CDATA[Vessel has sufficient tank space for purging / line clearing:]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="280" y="160" width="130" height="15" uuid="df37a43f-e0f5-4a8d-985d-10c3f019935a">
@@ -464,7 +479,7 @@
 					<font size="9"/>
 					<paragraph leftIndent="3"/>
 				</textElement>
-				<text><![CDATA[Banker Tanker's Stamp:]]></text>
+				<text><![CDATA[Bunker Tanker:]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="110" y="350" width="70" height="20" uuid="e620cedf-7fc7-47bb-80a9-67c6cf3da6f6"/>
@@ -488,7 +503,7 @@
 					<font size="9"/>
 					<paragraph leftIndent="3"/>
 				</textElement>
-				<text><![CDATA[Vessel's Stamp:]]></text>
+				<text><![CDATA[Vessel:]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="250" y="350" width="130" height="20" uuid="b0739aa2-a120-440a-9dd6-788e6dbdeae5"/>
@@ -512,7 +527,7 @@
 					<font size="9"/>
 					<paragraph leftIndent="3"/>
 				</textElement>
-				<text><![CDATA[Company's Stamp:]]></text>
+				<text><![CDATA[Company:]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="470" y="350" width="87" height="20" uuid="5a96a990-f3ce-49e8-a5e4-8fe150fd86ab"/>
@@ -539,14 +554,14 @@
 				<text><![CDATA[Name in full:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="440" width="272" height="20" uuid="2984117d-b9ff-4ff8-bd26-d0969cb9f882"/>
+				<reportElement x="0" y="417" width="272" height="20" uuid="2984117d-b9ff-4ff8-bd26-d0969cb9f882"/>
 				<textElement>
 					<font isBold="true" isUnderline="true"/>
 				</textElement>
 				<text><![CDATA[Section B-End of delivery]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="460" width="190" height="20" uuid="52d2cf85-53f2-4bd1-a382-15a675b2e208">
+				<reportElement x="0" y="437" width="190" height="20" uuid="52d2cf85-53f2-4bd1-a382-15a675b2e208">
 					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
 				</reportElement>
 				<box>
@@ -559,7 +574,7 @@
 				<text><![CDATA[Delivery meter totaliser reading (MT)[B]]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="190" y="460" width="83" height="20" uuid="70bd8811-71af-49d4-87de-2ab475bde7db"/>
+				<reportElement x="190" y="437" width="83" height="20" uuid="70bd8811-71af-49d4-87de-2ab475bde7db"/>
 				<box>
 					<pen lineWidth="0.25"/>
 				</box>
@@ -567,7 +582,7 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="280" y="460" width="190" height="20" uuid="bbdf767d-8af0-4fa4-a5c6-d88f58e6695e">
+				<reportElement x="280" y="437" width="190" height="20" uuid="bbdf767d-8af0-4fa4-a5c6-d88f58e6695e">
 					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
 				</reportElement>
 				<box>
@@ -580,7 +595,7 @@
 				<text><![CDATA[Loading meter totaliser reading (MT)[Y]]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="470" y="460" width="87" height="20" uuid="fc5025ad-3b43-472c-9a80-8461bd0bc4b9"/>
+				<reportElement x="470" y="437" width="87" height="20" uuid="fc5025ad-3b43-472c-9a80-8461bd0bc4b9"/>
 				<box>
 					<pen lineWidth="0.25"/>
 				</box>
@@ -588,7 +603,7 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="490" width="190" height="30" uuid="d99b1eef-0b99-4d52-ada9-5b118605b2c7">
+				<reportElement x="0" y="467" width="190" height="30" uuid="d99b1eef-0b99-4d52-ada9-5b118605b2c7">
 					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
 				</reportElement>
 				<box>
@@ -602,7 +617,7 @@
 [(B-A) - (Y-X)]]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="190" y="490" width="83" height="30" uuid="061ad923-d54b-4f0c-97d9-dfccc6d85c03"/>
+				<reportElement x="190" y="467" width="83" height="30" uuid="061ad923-d54b-4f0c-97d9-dfccc6d85c03"/>
 				<box>
 					<pen lineWidth="0.25"/>
 				</box>
@@ -610,7 +625,7 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="530" width="180" height="20" uuid="bd624d74-cc7b-44ca-8b42-1a09338f17ca"/>
+				<reportElement x="0" y="507" width="180" height="20" uuid="bd624d74-cc7b-44ca-8b42-1a09338f17ca"/>
 				<box>
 					<pen lineWidth="0.25"/>
 				</box>
@@ -620,7 +635,7 @@
 				<text><![CDATA[Bunker Tanker's Representative]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="180" y="530" width="200" height="20" uuid="59c3fe70-3f8a-4e29-9cb7-bbcc1b6d801a"/>
+				<reportElement x="180" y="507" width="200" height="20" uuid="59c3fe70-3f8a-4e29-9cb7-bbcc1b6d801a"/>
 				<box>
 					<pen lineWidth="0.25"/>
 				</box>
@@ -630,7 +645,7 @@
 				<text><![CDATA[Vessel's Representative]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="380" y="530" width="177" height="20" uuid="e47a84a1-7082-48fb-a97a-b8e00b3d358b"/>
+				<reportElement x="380" y="507" width="177" height="20" uuid="e47a84a1-7082-48fb-a97a-b8e00b3d358b"/>
 				<box>
 					<pen lineWidth="0.25"/>
 				</box>
@@ -640,7 +655,7 @@
 				<text><![CDATA[Bunker Surveyor (When engaged)]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="550" width="180" height="20" uuid="e39359da-41f3-44b2-9441-d82061b27d31"/>
+				<reportElement x="0" y="527" width="180" height="20" uuid="e39359da-41f3-44b2-9441-d82061b27d31"/>
 				<box>
 					<leftPen lineWidth="0.25"/>
 				</box>
@@ -650,7 +665,7 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="570" width="180" height="20" uuid="718751f7-7f40-44a5-a67b-3cad4e7af29e"/>
+				<reportElement x="0" y="547" width="180" height="20" uuid="718751f7-7f40-44a5-a67b-3cad4e7af29e"/>
 				<box>
 					<leftPen lineWidth="0.25"/>
 				</box>
@@ -660,7 +675,7 @@
 				<text><![CDATA[Signature of Cargo Officer]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="180" y="550" width="200" height="20" uuid="f5af3dde-c232-4cf6-b9d8-47b8a16af564"/>
+				<reportElement x="180" y="527" width="200" height="20" uuid="f5af3dde-c232-4cf6-b9d8-47b8a16af564"/>
 				<box>
 					<leftPen lineWidth="0.25"/>
 				</box>
@@ -670,7 +685,7 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="180" y="570" width="200" height="20" uuid="7cef6fca-9470-4210-b352-dc6cc3d13459"/>
+				<reportElement x="180" y="547" width="200" height="20" uuid="7cef6fca-9470-4210-b352-dc6cc3d13459"/>
 				<box>
 					<leftPen lineWidth="0.25"/>
 				</box>
@@ -680,7 +695,7 @@
 				<text><![CDATA[Signature of Chief Engineer]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="380" y="550" width="177" height="20" uuid="0b9281d8-b59e-4ede-a66d-16518ef484c6"/>
+				<reportElement x="380" y="527" width="177" height="20" uuid="0b9281d8-b59e-4ede-a66d-16518ef484c6"/>
 				<box>
 					<leftPen lineWidth="0.25"/>
 					<rightPen lineWidth="0.25"/>
@@ -691,7 +706,7 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="380" y="570" width="177" height="20" uuid="8bc8ab67-18a3-48bb-b51c-5b7a57ceea38"/>
+				<reportElement x="380" y="547" width="177" height="20" uuid="8bc8ab67-18a3-48bb-b51c-5b7a57ceea38"/>
 				<box>
 					<leftPen lineWidth="0.25"/>
 					<rightPen lineWidth="0.25"/>
@@ -702,7 +717,7 @@
 				<text><![CDATA[Signature of Bunker Surveyor's]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="180" y="590" width="60" height="20" uuid="cc89f44a-c6f5-43fe-aed9-9421faf2b0c6">
+				<reportElement x="180" y="567" width="60" height="20" uuid="cc89f44a-c6f5-43fe-aed9-9421faf2b0c6">
 					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
 				</reportElement>
 				<box>
@@ -715,7 +730,7 @@
 				<text><![CDATA[Name in full:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="380" y="590" width="60" height="20" uuid="eff845df-eb33-47fa-a1ab-f8c01b771238">
+				<reportElement x="380" y="567" width="60" height="20" uuid="eff845df-eb33-47fa-a1ab-f8c01b771238">
 					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
 				</reportElement>
 				<box>
@@ -728,21 +743,21 @@
 				<text><![CDATA[Name in full:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="60" y="590" width="120" height="20" uuid="57d176bc-b144-4c06-ba8b-8010c8f52bca"/>
+				<reportElement x="60" y="567" width="120" height="20" uuid="57d176bc-b144-4c06-ba8b-8010c8f52bca"/>
 				<textElement textAlignment="Left">
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="240" y="590" width="140" height="20" uuid="65c1d7ec-bbde-4f1f-a581-4c9d19ba0064"/>
+				<reportElement x="240" y="567" width="140" height="20" uuid="65c1d7ec-bbde-4f1f-a581-4c9d19ba0064"/>
 				<textElement textAlignment="Left">
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="440" y="590" width="117" height="20" uuid="773f29b2-db17-4003-b7e0-914c16ffde68"/>
+				<reportElement x="440" y="567" width="117" height="20" uuid="773f29b2-db17-4003-b7e0-914c16ffde68"/>
 				<box>
 					<rightPen lineWidth="0.25"/>
 				</box>
@@ -752,7 +767,7 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="610" width="60" height="20" uuid="2db6d5e9-a50f-4227-a722-43e0a1e08b8f">
+				<reportElement x="0" y="587" width="60" height="20" uuid="2db6d5e9-a50f-4227-a722-43e0a1e08b8f">
 					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
 				</reportElement>
 				<box>
@@ -765,7 +780,7 @@
 				<text><![CDATA[Date/Time:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="180" y="610" width="60" height="20" uuid="16fb58c4-2759-4b08-bffb-46d54e044b4a">
+				<reportElement x="180" y="587" width="60" height="20" uuid="16fb58c4-2759-4b08-bffb-46d54e044b4a">
 					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
 				</reportElement>
 				<box>
@@ -778,7 +793,7 @@
 				<text><![CDATA[Date/Time:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="380" y="610" width="60" height="20" uuid="4d21e693-deda-40cb-953f-a3b0feca1575">
+				<reportElement x="380" y="587" width="60" height="20" uuid="4d21e693-deda-40cb-953f-a3b0feca1575">
 					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left">
@@ -788,14 +803,14 @@
 				<text><![CDATA[Date/Time:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="60" y="610" width="120" height="20" uuid="798b2336-3df8-4036-9f02-dd54c1013bf8"/>
+				<reportElement x="60" y="587" width="120" height="20" uuid="798b2336-3df8-4036-9f02-dd54c1013bf8"/>
 				<textElement textAlignment="Left">
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="240" y="610" width="140" height="20" uuid="366ace14-01f2-4db0-b22c-3653acaec544"/>
+				<reportElement x="240" y="587" width="140" height="20" uuid="366ace14-01f2-4db0-b22c-3653acaec544"/>
 				<box>
 					<rightPen lineWidth="0.25"/>
 				</box>
@@ -805,7 +820,7 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="440" y="610" width="117" height="20" uuid="8c4f5f42-fa2d-404f-9d7e-7619b55eef95"/>
+				<reportElement x="440" y="587" width="117" height="20" uuid="8c4f5f42-fa2d-404f-9d7e-7619b55eef95"/>
 				<box>
 					<rightPen lineWidth="0.25"/>
 				</box>
@@ -815,7 +830,7 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="630" width="180" height="20" uuid="eee35164-b8bf-425f-80d4-671879df3aeb"/>
+				<reportElement x="0" y="607" width="180" height="20" uuid="eee35164-b8bf-425f-80d4-671879df3aeb"/>
 				<box>
 					<leftPen lineWidth="0.25"/>
 				</box>
@@ -825,7 +840,7 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="180" y="630" width="200" height="20" uuid="c6294450-4086-4e56-83fc-5c3b9dfdb50b"/>
+				<reportElement x="180" y="607" width="200" height="20" uuid="c6294450-4086-4e56-83fc-5c3b9dfdb50b"/>
 				<box>
 					<leftPen lineWidth="0.25"/>
 				</box>
@@ -835,7 +850,7 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="380" y="630" width="177" height="20" uuid="ca67568a-7db7-44ba-a513-4cd13aec8b47"/>
+				<reportElement x="380" y="607" width="177" height="20" uuid="ca67568a-7db7-44ba-a513-4cd13aec8b47"/>
 				<box>
 					<leftPen lineWidth="0.25"/>
 					<rightPen lineWidth="0.25"/>
@@ -846,7 +861,7 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="650" width="110" height="20" uuid="eef0ea35-ecbc-49eb-8e83-f5a2b9cea7b1">
+				<reportElement x="0" y="627" width="110" height="20" uuid="eef0ea35-ecbc-49eb-8e83-f5a2b9cea7b1">
 					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
 				</reportElement>
 				<box>
@@ -857,10 +872,10 @@
 					<font size="9"/>
 					<paragraph leftIndent="3"/>
 				</textElement>
-				<text><![CDATA[Banker Tanker's Stamp:]]></text>
+				<text><![CDATA[Bunker Tanker:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="110" y="650" width="70" height="20" uuid="84bd4c5c-d7f5-4e4f-a8f7-bf05327af165"/>
+				<reportElement x="110" y="627" width="70" height="20" uuid="84bd4c5c-d7f5-4e4f-a8f7-bf05327af165"/>
 				<box>
 					<bottomPen lineWidth="0.25"/>
 				</box>
@@ -870,7 +885,7 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="180" y="650" width="70" height="20" uuid="16fbe46e-20b0-4922-beca-21a6c6dc7a7b">
+				<reportElement x="180" y="627" width="70" height="20" uuid="16fbe46e-20b0-4922-beca-21a6c6dc7a7b">
 					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
 				</reportElement>
 				<box>
@@ -881,10 +896,10 @@
 					<font size="9"/>
 					<paragraph leftIndent="3"/>
 				</textElement>
-				<text><![CDATA[Vessel's Stamp:]]></text>
+				<text><![CDATA[Vessel:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="250" y="650" width="130" height="20" uuid="d48f8626-0f8f-4943-80f0-c2b725554811"/>
+				<reportElement x="250" y="627" width="130" height="20" uuid="d48f8626-0f8f-4943-80f0-c2b725554811"/>
 				<box>
 					<bottomPen lineWidth="0.25"/>
 				</box>
@@ -894,7 +909,7 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="380" y="650" width="90" height="20" uuid="a52d203d-c0a1-4df7-9005-1f66005a106e">
+				<reportElement x="380" y="627" width="90" height="20" uuid="a52d203d-c0a1-4df7-9005-1f66005a106e">
 					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
 				</reportElement>
 				<box>
@@ -905,10 +920,10 @@
 					<font size="9"/>
 					<paragraph leftIndent="3"/>
 				</textElement>
-				<text><![CDATA[Company's Stamp:]]></text>
+				<text><![CDATA[Company:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="470" y="650" width="87" height="20" uuid="018473d8-9b87-41f4-911a-259dec2aee69"/>
+				<reportElement x="470" y="627" width="87" height="20" uuid="018473d8-9b87-41f4-911a-259dec2aee69"/>
 				<box>
 					<bottomPen lineWidth="0.25"/>
 					<rightPen lineWidth="0.25"/>
@@ -919,7 +934,7 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="590" width="60" height="20" uuid="39d98cf1-f073-4b55-b073-aad23f71520c">
+				<reportElement x="0" y="567" width="60" height="20" uuid="39d98cf1-f073-4b55-b073-aad23f71520c">
 					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
 				</reportElement>
 				<box>
@@ -948,7 +963,7 @@
 				<textFieldExpression><![CDATA[$P{samplingContainerSealNumber}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="230" y="180" width="220" height="20" uuid="0cb75cfe-7308-49ec-a661-24d862bbfbc1"/>
+				<reportElement x="291" y="180" width="220" height="20" uuid="0cb75cfe-7308-49ec-a661-24d862bbfbc1"/>
 				<textFieldExpression><![CDATA[$P{vesselHasSufficientTankSpaceForPurging}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
@@ -964,57 +979,66 @@
 				<textFieldExpression><![CDATA[$P{mtX}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="190" y="460" width="82" height="20" uuid="5cad27d1-568f-4955-abc2-12c69e457d62"/>
+				<reportElement x="190" y="437" width="82" height="20" uuid="5cad27d1-568f-4955-abc2-12c69e457d62"/>
 				<textFieldExpression><![CDATA[$P{mtB}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="475" y="460" width="68" height="20" uuid="4cd2bef9-a4b5-47e3-a612-38de51460b46"/>
+				<reportElement x="475" y="437" width="68" height="20" uuid="4cd2bef9-a4b5-47e3-a612-38de51460b46"/>
 				<textFieldExpression><![CDATA[$P{mtY}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="64" y="312" width="114" height="15" uuid="374607e7-7c28-4c24-a332-2f5df32911cf">
+				<reportElement x="64" y="311" width="114" height="15" uuid="374607e7-7c28-4c24-a332-2f5df32911cf">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
 					<font size="8"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{cargoOfficerSignedAtBeforeDelivery}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{cargoOfficerConfirmedAt}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="243" y="312" width="127" height="15" uuid="9d71fdc7-8c1c-4f06-b2f9-1d3679e62a8b">
+				<reportElement x="243" y="311" width="127" height="15" uuid="9d71fdc7-8c1c-4f06-b2f9-1d3679e62a8b">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
 					<font size="8"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{chiefEngineerSignedAtBeforeDelivery}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{chiefEngineerConfirmedAt}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="441" y="311" width="114" height="15" uuid="d33b4fe4-ebad-4b89-9701-a8366d73e6b8">
+				<reportElement x="442" y="310" width="114" height="15" uuid="d33b4fe4-ebad-4b89-9701-a8366d73e6b8">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
 					<font size="8"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{surveyorSignedAtBeforeDelivery}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{surveyorConfirmedAt}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="65" y="610" width="104" height="20" uuid="563f426c-b57d-4de3-bc48-a8e75c11afcb">
+				<reportElement x="65" y="587" width="112" height="20" uuid="563f426c-b57d-4de3-bc48-a8e75c11afcb">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
-				<textFieldExpression><![CDATA[$P{cargoOfficerSignedAtAfterDelivery}]]></textFieldExpression>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cargoOfficerSignedAt}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="248" y="610" width="122" height="20" uuid="476a1001-5c29-42b7-a544-cec7431f8b57">
+				<reportElement x="248" y="587" width="122" height="20" uuid="476a1001-5c29-42b7-a544-cec7431f8b57">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
-				<textFieldExpression><![CDATA[$P{chiefEngineerSignedAtAfterDelivery}]]></textFieldExpression>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{chiefEngineerSignedAt}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="447" y="610" width="100" height="20" uuid="ffb4bc61-13da-477a-a42f-9611660cf0aa">
+				<reportElement x="447" y="587" width="100" height="20" uuid="ffb4bc61-13da-477a-a42f-9611660cf0aa">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
-				<textFieldExpression><![CDATA[$P{surveyorSignedAtAfterDelivery}]]></textFieldExpression>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{surveyorSignedAt}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement x="423" y="80" width="134" height="20" uuid="b993784f-fd9d-4771-a85b-565dc397772b"/>
@@ -1034,56 +1058,138 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement x="140" y="80" width="100" height="19" uuid="7dfbe475-0fc4-4ea4-a153-6ea3977959ef"/>
-				<textFieldExpression><![CDATA[$P{bdnNo}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{bdnNumber}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="64" y="292" width="104" height="15" uuid="30a900cc-73a3-42a6-90ab-f21ce1943351">
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
-				</reportElement>
-				<textElement>
-					<font size="8"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$P{fullNameCargoOfficerBefore}]]></textFieldExpression>
-			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement x="248" y="590" width="122" height="20" uuid="e39d7d35-7aff-4e49-bf9b-21357678b7ac">
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
-				</reportElement>
-				<textFieldExpression><![CDATA[$P{fullNameChiefEngineerAfter}]]></textFieldExpression>
-			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement x="447" y="590" width="100" height="20" uuid="1d62f50b-f4da-4632-bfc0-ecf3299df49b">
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
-				</reportElement>
-				<textFieldExpression><![CDATA[$P{fullNameSurvyorAfter}]]></textFieldExpression>
-			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement x="65" y="590" width="104" height="20" uuid="a5ee77e4-4f39-45a7-8286-8f5e1afb53a7">
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
-				</reportElement>
-				<textFieldExpression><![CDATA[$P{fullNameCargoOfficerAfter}]]></textFieldExpression>
-			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement x="243" y="291" width="122" height="15" uuid="da4c0739-cda3-43a3-afac-f5d408d7935c">
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
-				</reportElement>
-				<textElement>
-					<font size="8"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$P{fullNameChiefEngineerBefore}]]></textFieldExpression>
-			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement x="441" y="292" width="100" height="15" uuid="589cb049-60e8-4bf2-8a5d-395630a69367">
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
-				</reportElement>
-				<textElement>
-					<font size="8"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$P{fullNameSurvyorBefore}]]></textFieldExpression>
-			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement x="190" y="496" width="70" height="19" uuid="84ee3978-d511-46ab-b53c-92c970321bb1"/>
+				<reportElement x="190" y="473" width="70" height="19" uuid="84ee3978-d511-46ab-b53c-92c970321bb1"/>
 				<textFieldExpression><![CDATA[$P{mtFinal}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="35" y="222" width="129" height="65" uuid="2b0e5684-21af-4c7d-bbe3-d412e6d6fa59"/>
+				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64($P{cargoOfficerSignature}.getBytes()))]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="220" y="222" width="118" height="68" uuid="16dcd070-e947-4cd0-b30d-e9f425e1cbe6"/>
+				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64($P{chiefEngineerSignature}.getBytes()))]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="390" y="222" width="118" height="68" uuid="1363ad18-9bd4-4f52-acd0-1e2b446fa947"/>
+				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64($P{surveyorSignature}.getBytes()))]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="35" y="497" width="129" height="65" uuid="bc2fac8c-2ae8-459d-af33-17589b0d9fe9"/>
+				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64($P{cargoOfficerSignature}.getBytes()))]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="220" y="497" width="118" height="68" uuid="5ca8e68c-33d5-48d3-818d-9a56d9d4d46c"/>
+				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64($P{chiefEngineerSignature}.getBytes()))]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="390" y="497" width="118" height="68" uuid="ccf8c18b-85ef-4dc5-8ae7-84096dca0bcf"/>
+				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64($P{surveyorSignature}.getBytes()))]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="65" y="290" width="113" height="12" uuid="1e504516-d22c-4f17-b3fd-0c9f7cefcaa2">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cargoOfficerFullName}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="243" y="290" width="118" height="12" uuid="e524e734-41a3-4786-ad84-8f88747514ed">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{chiefEngineerFullName}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="442" y="290" width="113" height="12" uuid="71846395-a069-4c72-aa4c-c3294f0531fb">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{surveyorFullName}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="70" y="341" width="109" height="30" uuid="4e96fb28-6896-437c-baaa-aa1ea709919f"/>
+				<textElement textAlignment="Left">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[LEN($P{cargoOfficerConfirmedAt})>=1?T($P{bunkerTankersName})+"\nSB " +T($P{sbNo}) + "\n" +T($P{cargoOfficerConfirmedAt}):""]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="234" y="342" width="142" height="28" uuid="e4ed7bac-060c-47fe-9345-75facd35d87c"/>
+				<textElement textAlignment="Left">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[LEN($P{chiefEngineerConfirmedAt})>=1?$P{vesselsName} + "\nIMO:" +$P{vesselsIMOno} +"\n" +$P{chiefEngineerConfirmedAt}: ""]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="440" y="344" width="119" height="26" uuid="f844c029-498a-4bcd-8385-fabc5d3271ad"/>
+				<textElement textAlignment="Left">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[LEN($P{surveyorConfirmedAt})>=1?$P{surveyorCompany} +"\n" +$P{surveyorConfirmedAt}: ""]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="70" y="617" width="108" height="30" uuid="4bd8f02c-6cfa-46cc-b601-75be2dd8edec"/>
+				<textElement textAlignment="Left">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[LEN($P{cargoOfficerSignedAt})>=1?T($P{bunkerTankersName})+"\nSB " +T($P{sbNo}) + "\n" +T($P{cargoOfficerSignedAt}):""]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="234" y="618" width="145" height="28" uuid="de578160-e2cc-44e3-a6a6-53bda9ba089b"/>
+				<textElement textAlignment="Left">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[LEN($P{chiefEngineerSignedAt})>=1?$P{vesselsName} + "\nIMO: " +$P{vesselsIMOno} +"\n" +$P{chiefEngineerSignedAt}: ""]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="440" y="621" width="115" height="26" uuid="5ec6a424-2dfb-469e-be10-2f5acec9c14f"/>
+				<textElement textAlignment="Left">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[LEN($P{surveyorSignedAt})>=1?$P{surveyorCompany} +"\n" +$P{surveyorSignedAt}: ""]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="65" y="567" width="113" height="12" uuid="26b90f7f-6d92-47d4-a385-5fa91532b123">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cargoOfficerFullName}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="243" y="567" width="118" height="12" uuid="9e32ab38-9767-4d85-b964-605430f16cd9">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{chiefEngineerFullName}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="442" y="567" width="113" height="12" uuid="ef0b2a4a-2f16-4a85-af11-a48f6b9d6fb9">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{surveyorFullName}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="447" y="10" width="100" height="20" forecolor="#FF0000" uuid="5184b807-583a-42fe-a6a3-3e570567b16d"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{bdnNumber}]]></textFieldExpression>
 			</textField>
 		</band>
 	</title>
