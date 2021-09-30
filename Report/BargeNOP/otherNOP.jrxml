@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="otherNOP" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3f8b5224-f707-4346-8cfb-8938781dc031">
+	<parameter name="typeOfLetter" class="java.lang.String"/>
+	<parameter name="shipName" class="java.lang.String"/>
+	<parameter name="titleOfLetter" class="java.lang.String"/>
+	<parameter name="contentOfLetter" class="java.lang.String"/>
+	<parameter name="vesselWithoutPrejudice" class="java.lang.Integer"/>
+	<parameter name="bargeWithoutPrejudice" class="java.lang.Integer"/>
+	<parameter name="bdnNumber" class="java.lang.String"/>
+	<parameter name="cargoOfficerFullName" class="java.lang.String"/>
+	<parameter name="chiefEngineerFullName" class="java.lang.String"/>
+	<parameter name="cargoOfficerSignature" class="java.lang.String"/>
+	<parameter name="chiefEngineerSignature" class="java.lang.String"/>
+	<parameter name="createTime" class="java.lang.String"/>
+	<parameter name="toPerson" class="java.lang.String"/>
+	<parameter name="protestFor" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="311" splitType="Stretch">
+			<staticText>
+				<reportElement x="160" y="1" width="210" height="27" uuid="1d741ef0-d746-4b62-a769-3abf20aab4d7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NOTE OF PROTEST]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="450" y="4" width="100" height="20" forecolor="#FF0000" uuid="947a9182-6466-41d6-8406-9a73d2526a46"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{bdnNumber}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="5" y="50" width="100" height="20" uuid="c4d3d703-1b10-471c-8452-4fb08f8f57cb"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[To:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="80" width="100" height="20" uuid="6c0b33cb-22f2-4a4c-8ccc-2f933d14b202"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Dear Sirs,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="110" width="144" height="20" uuid="d8fbdac6-82d5-4142-b25a-cc57410f028d"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[NOTE OF PROTEST FOR]]></text>
+			</staticText>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="130" y="110" width="424" height="20" uuid="e4e4d5a6-cb0e-417a-84f7-5b57cb3f5f4c"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{protestFor}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="5" y="140" width="550" height="170" uuid="e4b01e17-7158-447b-bf98-cbfef9cfde6b"/>
+				<textFieldExpression><![CDATA[$P{contentOfLetter}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="49" y="30" width="100" height="16" uuid="829a2f29-58ca-4310-adb1-b1f534290171"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{createTime}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="5" y="30" width="55" height="16" uuid="bcd49667-2248-44d2-88cf-57dba5b3729e"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Date:]]></text>
+			</staticText>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="40" y="50" width="515" height="20" uuid="0a5d6d2d-d3a7-40f4-917c-514d65429990"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{toPerson}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<summary>
+		<band height="144" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="10" width="170" height="20" forecolor="#FF2F2B" uuid="c9d22877-c3b8-485c-a433-d7d550279e46">
+					<printWhenExpression><![CDATA[$P{bargeWithoutPrejudice}==1]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[For receipt only without prejudice ]]></text>
+			</staticText>
+			<image>
+				<reportElement x="56" y="30" width="129" height="65" uuid="2678f543-60b3-431e-b105-9ee50491bfda"/>
+				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64($P{cargoOfficerSignature}.getBytes()))]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="49" y="105" width="142" height="18" uuid="4f886756-d0cf-4c5d-8773-a03ea1323240"/>
+				<textFieldExpression><![CDATA[$P{cargoOfficerFullName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="306" y="124" width="248" height="20" uuid="83f0dccd-a94a-4f13-968f-82d85271760d"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Name of Chief Engineer of vessel receiving bunkers]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="306" y="104" width="248" height="20" uuid="163df66e-f0d3-473f-8d09-3d89e12eca44"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="306" y="84" width="248" height="20" uuid="a426db1b-d32c-45d1-a999-356b23735884"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Signature of Chief Engineer of vessel receiving bunkers]]></text>
+			</staticText>
+			<image>
+				<reportElement x="359" y="30" width="118" height="68" uuid="d007b1df-cbd0-41db-b45b-960314dd5619"/>
+				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64($P{chiefEngineerSignature}.getBytes()))]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="9" y="104" width="248" height="20" uuid="77b192fc-e893-42a3-8bc3-eb483ef26bba"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="124" width="248" height="20" uuid="cc021865-4f2e-4e5f-844c-e68636606f4f"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[(Name of Bunker Tanker Master / Cargo Officer)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="84" width="248" height="20" uuid="be9ba0fd-b177-4f35-a315-1e1fe32d03f3"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[(Signature of Bunker Tanker Master / Cargo Officer)]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="349" y="104" width="142" height="20" uuid="ac001494-3a53-4af0-9452-a027e1be9f62"/>
+				<textFieldExpression><![CDATA[$P{chiefEngineerFullName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="64" width="246" height="20" uuid="3541f0e2-dd93-459e-94d5-26f3d369ee87"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="306" y="64" width="248" height="20" uuid="78f7c1d5-22cf-4f61-8906-d917150bc886"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="307" y="10" width="170" height="20" forecolor="#FF2F2B" uuid="cb4ec45b-278b-4be3-bfe8-b22a6b9532a2">
+					<printWhenExpression><![CDATA[$P{vesselWithoutPrejudice}==1]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[For receipt only without prejudice ]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

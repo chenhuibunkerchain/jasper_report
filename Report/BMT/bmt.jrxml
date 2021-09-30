@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="statementOfFact" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="cf9686f8-5136-4d60-bed9-ee47b02dc25d">
+	<parameter name="sbNo" class="java.lang.String"/>
+	<parameter name="resetTime" class="java.lang.String"/>
+	<parameter name="printTime" class="java.lang.String"/>
+	<parameter name="bunkerBeginTime" class="java.lang.String"/>
+	<parameter name="bunkerEndTime" class="java.lang.String"/>
+	<parameter name="massInAir" class="java.lang.String"/>
+	<parameter name="beginFwdInvAir" class="java.lang.String"/>
+	<parameter name="endFwdInvAir" class="java.lang.String"/>
+	<parameter name="beginRevInvAir" class="java.lang.String"/>
+	<parameter name="endRevInvAir" class="java.lang.String"/>
+	<parameter name="cargoOfficerSignature" class="java.lang.String"/>
+	<parameter name="chiefEngineerSignature" class="java.lang.String"/>
+	<parameter name="surveyorSignature" class="java.lang.String"/>
+	<parameter name="cargoOfficerSignedAt" class="java.lang.String"/>
+	<parameter name="chiefEngineerSignedAt" class="java.lang.String"/>
+	<parameter name="surveyorSignedAt" class="java.lang.String"/>
+	<parameter name="bargeName" class="java.lang.String"/>
+	<parameter name="vesselName" class="java.lang.String"/>
+	<parameter name="vesselImo" class="java.lang.String"/>
+	<parameter name="companyName" class="java.lang.String"/>
+	<parameter name="systemId" class="java.lang.String"/>
+	<parameter name="productName" class="java.lang.String"/>
+	<parameter name="BTNNo" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<summary>
+		<band height="553" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20" uuid="15a5e4d4-59f8-4ff6-b0b5-6c38951e52aa"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[M/T]]></text>
+			</staticText>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="0" y="20" width="100" height="20" uuid="7a5ca3db-68c7-471c-8fd8-11172925a206"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{productName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="52" width="100" height="20" uuid="e46802f5-2ce3-4363-acf0-330ad5795c57"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["SB"+$P{sbNo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="78" width="90" height="20" uuid="94fa8300-77fb-46f0-ab71-9e6280494874"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[System ID:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="109" width="100" height="20" uuid="da91ff85-f547-450f-9b35-b688c5760715"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[BTN Number :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="143" width="100" height="20" uuid="f583a4be-a08d-493d-a895-5db717b1b6ec"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Reset Time]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="180" width="100" height="20" uuid="b05d7241-1ede-4646-8944-e1591405584b"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Print Time]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="218" width="100" height="20" uuid="bfbfc395-a460-4a1b-99a4-13db988610e4"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Bunker Begin Time]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="258" width="100" height="20" uuid="ec63ff4b-336f-4b9f-8c1c-93dbb56df016"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Bunker End Time]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="302" width="100" height="20" uuid="08cc5bce-8e53-4fdf-b042-9474017d196d"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Mass In Air]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="340" width="100" height="20" uuid="5ff7c389-86ea-4a5d-8e0e-0725afc91849"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Begin Fwd Inv Air]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="380" width="100" height="20" uuid="3e277a7b-9f34-4f90-8130-5e34eee63a23"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[End Fwd Inv Air]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="420" width="100" height="20" uuid="e108aed4-f3ac-4e0b-b124-2268da7f09db"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Begin Rev Inv Air]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="460" width="100" height="20" uuid="d0470660-467b-4633-8ca8-42252970bd27"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[End Rev Inv Air]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="503" width="240" height="50" uuid="3757aa49-bf12-46ec-a0d6-9fd3b103b9bc"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[IMPORTANT: Attach this ticket to BDN Report Indicate Time is SGT Original]]></text>
+			</staticText>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="56" y="77" width="100" height="21" uuid="59dcdd2c-ad26-4f12-b28c-a4fbb85e5a54"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{systemId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="163" y="260" width="177" height="60" uuid="bc497e79-745c-4abb-8db6-158eca0000f8"/>
+				<textFieldExpression><![CDATA[$P{vesselName}+"\n" +$P{vesselImo}+"\n" +$P{chiefEngineerSignedAt}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="163" y="330" width="129" height="65" uuid="8db9517e-a971-40e2-8e57-af0fd34e4e59"/>
+				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64($P{cargoOfficerSignature}.getBytes()))]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="163" y="190" width="118" height="68" uuid="1dea9b80-a789-49b1-8ac6-f79283e1356e"/>
+				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64($P{chiefEngineerSignature}.getBytes()))]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="163" y="400" width="177" height="40" uuid="040cf3b1-4d4f-4d8b-a8c4-1a5e8fa23e60"/>
+				<textFieldExpression><![CDATA[$P{bargeName}+"\nSB "+$P{sbNo}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="23" y="1" width="160" height="18" uuid="f60f71a8-f92b-4e0e-8ace-93f20f8f44c7"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{bargeName}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="70" y="109" width="100" height="20" uuid="d9eb7779-1fbd-4b7e-a8ad-1624fcd928d2"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{BTNNo}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="0" y="160" width="100" height="20" uuid="81906bdc-6467-4b94-a766-3fc6995435c1"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{resetTime}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="0" y="197" width="100" height="20" uuid="c8c3c19f-ba5e-4008-a3eb-f3b1fd054f61"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{printTime}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="0" y="236" width="100" height="20" uuid="4e5fd704-0111-43b9-9d4a-3d6c26e774cc"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{bunkerBeginTime}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="0" y="276" width="100" height="20" uuid="5c2f24eb-7c44-4c8c-9299-64450632c0a1"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{bunkerEndTime}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="0" y="320" width="100" height="20" uuid="281c01e7-df07-4bf5-99b1-36143c99d09b"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{massInAir}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="0" y="357" width="100" height="20" uuid="51f3856e-e25c-41e5-a6e2-b340f148e8d7"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{beginFwdInvAir}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="0" y="398" width="100" height="20" uuid="67d82f7c-d957-4574-8e69-059c00262479"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{endFwdInvAir}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="0" y="437" width="100" height="20" uuid="8686f1f6-39ad-48d2-bbac-c47c5b998e1c"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{beginRevInvAir}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="0" y="477" width="100" height="20" uuid="a7f9ab97-c3ee-4946-972d-a2b3e286f48c"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{endRevInvAir}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

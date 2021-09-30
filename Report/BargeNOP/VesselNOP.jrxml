@@ -22,6 +22,17 @@
 	<parameter name="agentCompany" class="java.lang.String"/>
 	<parameter name="location" class="java.lang.String"/>
 	<parameter name="address" class="java.lang.String"/>
+<<<<<<< Updated upstream
+=======
+	<parameter name="chiefEngineerSignedAt" class="java.lang.String"/>
+	<parameter name="vesselsIMOno" class="java.lang.String"/>
+	<parameter name="chiefEngineerSignature" class="java.lang.String"/>
+	<parameter name="cargoOfficerSignedAt" class="java.lang.String"/>
+	<parameter name="cargoOfficerSignature" class="java.lang.String"/>
+	<parameter name="cargoOfficerName" class="java.lang.String"/>
+	<parameter name="bdnNumber" class="java.lang.String"/>
+	<parameter name="bdnNo" class="java.lang.String"/>
+>>>>>>> Stashed changes
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
@@ -48,7 +59,11 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
+<<<<<<< Updated upstream
 				<reportElement x="321" y="379" width="146" height="15" uuid="fdc21f17-44d2-44a1-a78e-f3d33866a1ca"/>
+=======
+				<reportElement x="325" y="380" width="146" height="15" uuid="fdc21f17-44d2-44a1-a78e-f3d33866a1ca"/>
+>>>>>>> Stashed changes
 				<box>
 					<bottomPen lineWidth="1.0"/>
 				</box>
@@ -58,11 +73,11 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="172" y="1" width="210" height="26" uuid="34723e2b-561e-4f5a-952f-389cafffeab5"/>
+				<reportElement x="133" y="1" width="272" height="26" uuid="34723e2b-561e-4f5a-952f-389cafffeab5"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="12" isBold="true"/>
 				</textElement>
-				<text><![CDATA[NOTE OF PROTEST]]></text>
+				<text><![CDATA[NOTE OF PROTEST QUANTITY (VESSEL)]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="22" y="28" width="40" height="20" uuid="f82a89c0-067f-46a4-8207-5186984d3f84"/>
@@ -148,14 +163,17 @@
 				<text><![CDATA[Dear Sirs,]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="177" width="340" height="20" uuid="67a83dd6-86aa-4c1a-8ce5-ec676cbbd015"/>
+				<reportElement x="0" y="177" width="350" height="20" uuid="67a83dd6-86aa-4c1a-8ce5-ec676cbbd015">
+					<property name="com.jaspersoft.studio.unit.tabStopWidth" value="px"/>
+				</reportElement>
 				<textElement>
 					<font size="12" isBold="true"/>
+					<paragraph tabStopWidth="0"/>
 				</textElement>
 				<text><![CDATA[NOTE OF PROTEST FOR BUNKERING OPERATIONS ON:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="328" y="173" width="148" height="20" uuid="d4f0f4b1-6bfa-4f1d-95de-5a738ab82081"/>
+				<reportElement x="338" y="173" width="148" height="20" uuid="d4f0f4b1-6bfa-4f1d-95de-5a738ab82081"/>
 				<box>
 					<bottomPen lineWidth="1.0"/>
 				</box>
@@ -182,7 +200,11 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
+<<<<<<< Updated upstream
 				<reportElement x="298" y="225" width="116" height="17" uuid="facba39f-cc41-4704-b2b4-237c54d53ab5"/>
+=======
+				<reportElement x="347" y="225" width="116" height="17" uuid="facba39f-cc41-4704-b2b4-237c54d53ab5"/>
+>>>>>>> Stashed changes
 				<box>
 					<bottomPen lineWidth="1.0"/>
 				</box>
@@ -199,7 +221,11 @@
 				<text><![CDATA[ at]]></text>
 			</staticText>
 			<staticText>
+<<<<<<< Updated upstream
 				<reportElement x="47" y="225" width="126" height="17" uuid="a708d374-2327-4c7a-a9f1-5df5fd613376"/>
+=======
+				<reportElement x="46" y="225" width="172" height="17" uuid="a708d374-2327-4c7a-a9f1-5df5fd613376"/>
+>>>>>>> Stashed changes
 				<box>
 					<bottomPen lineWidth="1.0"/>
 				</box>
@@ -250,7 +276,7 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="258" y="307" width="34" height="17" uuid="fadd5bf5-5aca-4242-aaae-b04bbf5ef363"/>
+				<reportElement x="261" y="307" width="34" height="17" uuid="fadd5bf5-5aca-4242-aaae-b04bbf5ef363"/>
 				<textElement verticalAlignment="Middle">
 					<font size="8" isItalic="true"/>
 				</textElement>
@@ -307,7 +333,11 @@
 				<text><![CDATA[Yours faithfully]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
+<<<<<<< Updated upstream
 				<reportElement x="298" y="227" width="116" height="17" uuid="95b5ead1-51a4-4de5-936a-c65a4ae1c9a0">
+=======
+				<reportElement x="347" y="227" width="116" height="17" uuid="95b5ead1-51a4-4de5-936a-c65a4ae1c9a0">
+>>>>>>> Stashed changes
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
@@ -378,7 +408,7 @@
 				<textFieldExpression><![CDATA[$P{fromDate}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="330" y="177" width="146" height="19" uuid="e3c3c920-28c5-4be9-96d7-dd4ae10b5b0b">
+				<reportElement x="340" y="177" width="146" height="19" uuid="e3c3c920-28c5-4be9-96d7-dd4ae10b5b0b">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
@@ -394,7 +424,11 @@
 				<text><![CDATA[received]]></text>
 			</staticText>
 			<staticText>
+<<<<<<< Updated upstream
 				<reportElement x="95" y="247" width="111" height="17" uuid="e813c669-9ac2-48c7-9bd0-958205677a41"/>
+=======
+				<reportElement x="97" y="247" width="111" height="17" uuid="e813c669-9ac2-48c7-9bd0-958205677a41"/>
+>>>>>>> Stashed changes
 				<box>
 					<bottomPen lineWidth="1.0"/>
 				</box>
@@ -404,21 +438,33 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
+<<<<<<< Updated upstream
 				<reportElement x="95" y="249" width="111" height="17" uuid="ecf75417-2e03-4be7-ac4f-1eb96f56f990">
+=======
+				<reportElement x="97" y="249" width="111" height="17" uuid="ecf75417-2e03-4be7-ac4f-1eb96f56f990">
+>>>>>>> Stashed changes
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[$P{dateOperationsOn}]]></textFieldExpression>
 			</textField>
 			<staticText>
+<<<<<<< Updated upstream
 				<reportElement x="206" y="249" width="126" height="17" uuid="e370e67a-f301-4b0e-8fc1-13697ec2cd45"/>
+=======
+				<reportElement x="208" y="249" width="126" height="17" uuid="e370e67a-f301-4b0e-8fc1-13697ec2cd45"/>
+>>>>>>> Stashed changes
 				<textElement verticalAlignment="Middle">
 					<font size="8" isItalic="true"/>
 				</textElement>
 				<text><![CDATA[ (Date of bunkers received).]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
+<<<<<<< Updated upstream
 				<reportElement x="206" y="280" width="154" height="16" uuid="15255402-b035-438b-b206-1ba2158a3dbc">
+=======
+				<reportElement x="209" y="280" width="154" height="16" uuid="15255402-b035-438b-b206-1ba2158a3dbc">
+>>>>>>> Stashed changes
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
@@ -427,7 +473,11 @@
 				<textFieldExpression><![CDATA[$P{nameOfBunkerTanker}]]></textFieldExpression>
 			</textField>
 			<staticText>
+<<<<<<< Updated upstream
 				<reportElement x="202" y="278" width="153" height="16" uuid="eed00bac-ed9f-480e-9176-869db8813c05"/>
+=======
+				<reportElement x="205" y="278" width="153" height="16" uuid="eed00bac-ed9f-480e-9176-869db8813c05"/>
+>>>>>>> Stashed changes
 				<box>
 					<bottomPen lineWidth="1.0"/>
 				</box>
@@ -470,7 +520,11 @@
 				<text><![CDATA[(Location).]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
+<<<<<<< Updated upstream
 				<reportElement x="321" y="379" width="146" height="15" uuid="13a98fec-2571-421c-b962-57f3e972a1d2">
+=======
+				<reportElement x="326" y="380" width="146" height="15" uuid="13a98fec-2571-421c-b962-57f3e972a1d2">
+>>>>>>> Stashed changes
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
@@ -520,12 +574,19 @@
 				</textElement>
 				<text><![CDATA[or e-mail address:]]></text>
 			</staticText>
+<<<<<<< Updated upstream
 			<textField isBlankWhenNull="true">
 				<reportElement x="89" y="420" width="144" height="16" uuid="1c8648d5-98f8-4877-9a40-3a21443eaa60">
+=======
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="95" y="420" width="144" height="16" uuid="1c8648d5-98f8-4877-9a40-3a21443eaa60">
+>>>>>>> Stashed changes
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.tabStopWidth" value="px"/>
 				</reportElement>
 				<textElement verticalAlignment="Middle">
 					<font size="10"/>
+					<paragraph tabStopWidth="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{agentEmail}]]></textFieldExpression>
 			</textField>
@@ -626,7 +687,11 @@ Email Address: bsd@mpa.gov.sg
 				<text><![CDATA[Address]]></text>
 			</staticText>
 			<staticText>
+<<<<<<< Updated upstream
 				<reportElement x="247" y="227" width="51" height="17" uuid="e8e11ce0-c55e-4a70-8219-229524b41ac9"/>
+=======
+				<reportElement x="298" y="227" width="63" height="17" uuid="e8e11ce0-c55e-4a70-8219-229524b41ac9"/>
+>>>>>>> Stashed changes
 				<textElement verticalAlignment="Middle">
 					<font size="10"/>
 				</textElement>

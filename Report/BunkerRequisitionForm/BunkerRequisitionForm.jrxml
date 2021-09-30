@@ -195,7 +195,7 @@ We have been nominated to supply you the following grade(s) for bunker:]]></text
 					<bottomPen lineWidth="0.25"/>
 					<rightPen lineWidth="0.25"/>
 				</box>
-				<textElement textAlignment="Center">
+				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{waterContentPercentage}]]></textFieldExpression>
@@ -208,7 +208,7 @@ We have been nominated to supply you the following grade(s) for bunker:]]></text
 					<bottomPen lineWidth="0.25"/>
 					<rightPen lineWidth="0.25"/>
 				</box>
-				<textElement textAlignment="Center">
+				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{sulphurContentPercentage}]]></textFieldExpression>
@@ -221,7 +221,7 @@ We have been nominated to supply you the following grade(s) for bunker:]]></text
 					<bottomPen lineWidth="0.25"/>
 					<rightPen lineWidth="0.25"/>
 				</box>
-				<textElement textAlignment="Center">
+				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{flashPointCelsius}]]></textFieldExpression>
@@ -234,7 +234,7 @@ We have been nominated to supply you the following grade(s) for bunker:]]></text
 					<bottomPen lineWidth="0.25"/>
 					<rightPen lineWidth="0.25"/>
 				</box>
-				<textElement textAlignment="Center">
+				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{density}]]></textFieldExpression>
@@ -247,7 +247,7 @@ We have been nominated to supply you the following grade(s) for bunker:]]></text
 					<bottomPen lineWidth="0.25"/>
 					<rightPen lineWidth="0.25"/>
 				</box>
-				<textElement textAlignment="Center">
+				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{viscosity}]]></textFieldExpression>
@@ -260,7 +260,7 @@ We have been nominated to supply you the following grade(s) for bunker:]]></text
 					<bottomPen lineWidth="0.25"/>
 					<rightPen lineWidth="0.25"/>
 				</box>
-				<textElement textAlignment="Center" verticalAlignment="Top">
+				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{isBlendedInAdvance}]]></textFieldExpression>
@@ -273,7 +273,7 @@ We have been nominated to supply you the following grade(s) for bunker:]]></text
 					<bottomPen lineWidth="0.25"/>
 					<rightPen lineWidth="0.25"/>
 				</box>
-				<textElement textAlignment="Center">
+				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{productName}]]></textFieldExpression>
@@ -399,21 +399,21 @@ ISO 14596 ISO 8754]]></text>
 				<text><![CDATA[We will supply]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="143" y="259" width="68" height="13" isPrintInFirstWholeBand="true" uuid="733264d9-771b-4021-9c99-bda6f6be2f48"/>
+				<reportElement x="163" y="259" width="68" height="13" isPrintInFirstWholeBand="true" uuid="733264d9-771b-4021-9c99-bda6f6be2f48"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
 				<text><![CDATA[first, followed by]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="290" y="259" width="208" height="13" isPrintInFirstWholeBand="true" uuid="eac82680-4566-4e55-a8d1-05b347c1b559"/>
+				<reportElement x="310" y="259" width="208" height="13" isPrintInFirstWholeBand="true" uuid="eac82680-4566-4e55-a8d1-05b347c1b559"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
 				<text><![CDATA[. The approximate delivery temperature is ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="487" y="259" width="15" height="13" isPrintInFirstWholeBand="true" uuid="b69976be-c5aa-4779-8f4e-51ca48fd8589"/>
+				<reportElement x="507" y="259" width="15" height="13" isPrintInFirstWholeBand="true" uuid="b69976be-c5aa-4779-8f4e-51ca48fd8589"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
@@ -484,16 +484,16 @@ tonnes per hour]]></text>
 				<reportElement x="25" y="489" width="115" height="1" isPrintInFirstWholeBand="true" uuid="5d3de387-ea06-45d7-ad05-55f6a88c938a"/>
 			</line>
 			<line>
-				<reportElement x="209" y="269" width="80" height="1" isPrintInFirstWholeBand="true" uuid="49d78792-319f-4a01-9502-e8d9a1f86390"/>
+				<reportElement x="228" y="269" width="78" height="1" isPrintInFirstWholeBand="true" uuid="49d78792-319f-4a01-9502-e8d9a1f86390"/>
 			</line>
 			<line>
-				<reportElement x="440" y="269" width="47" height="1" isPrintInFirstWholeBand="true" uuid="54c6cdf7-0f9f-48de-af7e-2349d5011d78"/>
+				<reportElement x="460" y="269" width="47" height="1" isPrintInFirstWholeBand="true" uuid="54c6cdf7-0f9f-48de-af7e-2349d5011d78"/>
 			</line>
 			<line>
 				<reportElement x="187" y="291" width="86" height="1" isPrintInFirstWholeBand="true" uuid="04eedeb5-9c19-4fe3-8e3b-4715d3028ac5"/>
 			</line>
 			<line>
-				<reportElement x="57" y="269" width="82" height="1" isPrintInFirstWholeBand="true" uuid="a07aa3ae-7855-401b-b645-ccb3de7142a2"/>
+				<reportElement x="53" y="269" width="110" height="1" isPrintInFirstWholeBand="true" uuid="a07aa3ae-7855-401b-b645-ccb3de7142a2"/>
 			</line>
 			<line>
 				<reportElement x="380" y="326" width="80" height="1" isPrintInFirstWholeBand="true" uuid="b99ba52b-2025-461b-bb9b-90cc1385f4aa"/>
@@ -511,7 +511,7 @@ tonnes per hour]]></text>
 				<textFieldExpression><![CDATA[$P{allowLineClearing}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="62" y="258" width="76" height="13" uuid="f4bdbc84-a0fc-4d14-bb7a-686302143afe">
+				<reportElement x="53" y="258" width="108" height="13" uuid="f4bdbc84-a0fc-4d14-bb7a-686302143afe">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center">
@@ -716,9 +716,12 @@ tonnes per hour]]></text>
 				<text><![CDATA[Signature of Chief Engineer]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="381" y="696" width="169" height="12" isPrintInFirstWholeBand="true" uuid="c4699b79-b70e-4ffc-a134-da64fec5c74a"/>
+				<reportElement x="381" y="696" width="182" height="12" isPrintInFirstWholeBand="true" uuid="c4699b79-b70e-4ffc-a134-da64fec5c74a">
+					<property name="com.jaspersoft.studio.unit.tabStopWidth" value="px"/>
+				</reportElement>
 				<textElement>
 					<font size="8"/>
+					<paragraph tabStopWidth="0"/>
 				</textElement>
 				<text><![CDATA[Signature of Bunker Surveyor (when engaged)]]></text>
 			</staticText>
@@ -855,7 +858,7 @@ tonnes per hour]]></text>
 				<reportElement x="375" y="490" width="175" height="1" isPrintInFirstWholeBand="true" uuid="cb52b725-2614-4fed-906a-c290073fe9e6"/>
 			</line>
 			<textField isBlankWhenNull="true">
-				<reportElement x="444" y="258" width="39" height="13" uuid="4f261c58-2d80-4273-b303-c11ae3127035">
+				<reportElement x="464" y="258" width="39" height="13" uuid="4f261c58-2d80-4273-b303-c11ae3127035">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center">
@@ -919,7 +922,7 @@ Note 3 - Witnessing of custody transfer sampling is complusory.
 ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="238" y="257" width="15" height="13" isPrintInFirstWholeBand="true" uuid="5e29899a-3dfa-476b-9d7a-102c860e498b"/>
+				<reportElement x="258" y="257" width="15" height="13" isPrintInFirstWholeBand="true" uuid="5e29899a-3dfa-476b-9d7a-102c860e498b"/>
 				<textElement textAlignment="Center">
 					<font size="8"/>
 				</textElement>

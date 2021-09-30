@@ -56,10 +56,18 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
+<<<<<<< Updated upstream
 		<band height="802" splitType="Stretch">
 			<staticText>
 				<reportElement x="281" y="480" width="272" height="255" uuid="aa9e5ca5-0c72-42f5-8bca-8acfd01aaa2e"/>
 				<box>
+=======
+		<band height="788" splitType="Stretch">
+			<staticText>
+				<reportElement x="280" y="493" width="272" height="285" uuid="9c3e0f4f-d20f-4879-a9f4-e85b5771e9c4"/>
+				<box>
+					<leftPen lineWidth="1.0"/>
+>>>>>>> Stashed changes
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
@@ -675,27 +683,46 @@
 				<text><![CDATA[Declaration that bunker fuel supplied conforms with MARPOL Annex VI]]></text>
 			</staticText>
 			<staticText>
+<<<<<<< Updated upstream
 				<reportElement x="280" y="450" width="272" height="30" uuid="5e9c1b7e-3901-4a9b-b931-e1b4ca14a793">
 					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+=======
+				<reportElement x="281" y="458" width="294" height="38" uuid="5e9c1b7e-3901-4a9b-b931-e1b4ca14a793">
+					<property name="com.jaspersoft.studio.unit.tabStopWidth" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+>>>>>>> Stashed changes
 				</reportElement>
 				<box>
-					<rightPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
 				</box>
 				<textElement textAlignment="Left">
+<<<<<<< Updated upstream
 					<font size="6" isBold="false" isUnderline="false"/>
 					<paragraph leftIndent="5"/>
+=======
+					<font size="8" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="0" tabStopWidth="0"/>
+>>>>>>> Stashed changes
 				</textElement>
 				<text><![CDATA[ We acknowledge receipt of the above product and confirm its intended use
  and that the following samples were jointly taken by the continuous drip
  sampler at the vessel's manifold sealed and numbered:]]></text>
 			</staticText>
 			<staticText>
+<<<<<<< Updated upstream
 				<reportElement x="2" y="460" width="278" height="120" uuid="974a4c62-749b-4022-8cac-cb8e39d76b16">
 					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+=======
+				<reportElement x="2" y="470" width="312" height="151" uuid="974a4c62-749b-4022-8cac-cb8e39d76b16">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+>>>>>>> Stashed changes
 				</reportElement>
 				<box>
 					<leftPen lineWidth="1.0"/>
-					<rightPen lineWidth="1.0"/>
+					<rightPen lineWidth="0.0"/>
 				</box>
 				<textElement textAlignment="Left">
 					<font size="6" isBold="false" isUnderline="false"/>
@@ -704,12 +731,18 @@
 				<text><![CDATA[ We declare that the bunker fuel supplied conforms with Regulation 18.3 of
  this Annex and that the sulphur content of the fuel oil supplied does not
  exceed:
- Please mark (x) in the applicable boxes below.
+ Please mark (x) in the applicable box(es) below.
             the limit value given by regulation 14.1 of this Annex; 
             the limit value given by regulation 14.4 of this Annex; or
+<<<<<<< Updated upstream
             the purchasers limit value of__________(%m/m), as completed 
    by the fuel oil supplier's representativeand on the basis of the purchaser's 
    noticication that the fuel oil is intended to be used:
+=======
+            the purchaser's limit value of__________(%m/m), as completed 
+   by the fuel oil supplier's representative and on the basis of the purchaser's 
+   notification that the fuel oil is intended to be used:
+>>>>>>> Stashed changes
  1. In combination with an equivalent means of compliance in accordance with Regulation 4 of this Annex; or
  2. is subject to a relevant exemption for a ship to conduct trials for sulphur
  oxides emission reduction and control technology research in accordance 
@@ -927,7 +960,11 @@
 				<text><![CDATA[For]]></text>
 			</staticText>
 			<staticText>
+<<<<<<< Updated upstream
 				<reportElement x="280" y="590" width="270" height="20" uuid="ddfdc89a-726e-46e8-a053-e5e642ff045a">
+=======
+				<reportElement x="280" y="636" width="283" height="22" uuid="ddfdc89a-726e-46e8-a053-e5e642ff045a">
+>>>>>>> Stashed changes
 					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
@@ -987,7 +1024,11 @@
 				<text><![CDATA[Very Unsatisfied]]></text>
 			</staticText>
 			<staticText>
+<<<<<<< Updated upstream
 				<reportElement x="281" y="638" width="36" height="10" uuid="71d7c87f-0c87-44ca-9730-dd18e68a537e"/>
+=======
+				<reportElement x="281" y="681" width="69" height="10" uuid="71d7c87f-0c87-44ca-9730-dd18e68a537e"/>
+>>>>>>> Stashed changes
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="4" isBold="false"/>
 				</textElement>
@@ -1109,7 +1150,11 @@
 				<text><![CDATA[Static Text]]></text>
 			</staticText>
 			<staticText>
+<<<<<<< Updated upstream
 				<reportElement x="2" y="725" width="90" height="10" uuid="14c4b851-6482-472d-8dec-2afb6aaa9743">
+=======
+				<reportElement x="2" y="734" width="140" height="12" uuid="14c4b851-6482-472d-8dec-2afb6aaa9743">
+>>>>>>> Stashed changes
 					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
@@ -1174,6 +1219,36 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$P{bdnNumber}]]></textFieldExpression>
 			</textField>
+<<<<<<< Updated upstream
+=======
+			<image>
+				<reportElement x="73" y="637" width="129" height="65" uuid="86407b51-489e-4354-acf7-fea0cef3e16c"/>
+				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64($P{cargoOfficerSignature}.getBytes()))]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="44" y="620" width="207" height="14" uuid="315ddd07-9e48-43c0-aaee-41c666676d4f"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[T($P{companyName})]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="52" y="699" width="177" height="30" uuid="16287411-9ff7-42e1-a202-0682b8e1ea71"/>
+				<textElement textAlignment="Left">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[LEN($P{cargoOfficerSignedAt})>=1?T($P{bunkerTankersName})+"\nSB " +T($P{sbNo}) + "\n" +T($P{cargoOfficerSignedAt}):""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="118" y="734" width="109" height="12" uuid="0e6d82b3-3cce-4cfd-9602-843c37375462">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{isNoteOfProtestIssue}]]></textFieldExpression>
+			</textField>
+>>>>>>> Stashed changes
 			<textField isBlankWhenNull="true">
 				<reportElement x="150" y="423" width="120" height="15" uuid="cd42d6cc-4cc4-451a-9ead-635b1ff62ed1">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
@@ -1210,8 +1285,13 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$P{sulphurContentLimit}=="3"? $P{limitValue} : ""]]></textFieldExpression>
 			</textField>
+<<<<<<< Updated upstream
 			<textField isBlankWhenNull="true">
 				<reportElement x="443" y="293" width="117" height="15" uuid="f33715e2-cd38-422e-92b2-83a0f195eab4">
+=======
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="443" y="302" width="117" height="15" uuid="f33715e2-cd38-422e-92b2-83a0f195eab4">
+>>>>>>> Stashed changes
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$P{nextPort}]]></textFieldExpression>
@@ -1234,14 +1314,24 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$P{density}]]></textFieldExpression>
 			</textField>
+<<<<<<< Updated upstream
 			<textField isBlankWhenNull="true">
 				<reportElement x="443" y="262" width="117" height="15" uuid="5643f391-ee24-455e-b1e2-4959872ac1b3">
+=======
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="443" y="271" width="117" height="15" uuid="5643f391-ee24-455e-b1e2-4959872ac1b3">
+>>>>>>> Stashed changes
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$P{etdAt}]]></textFieldExpression>
 			</textField>
+<<<<<<< Updated upstream
 			<textField isBlankWhenNull="true">
 				<reportElement x="443" y="143" width="117" height="15" uuid="e5b02689-e283-421f-9670-7c0b4b0c9529">
+=======
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="443" y="162" width="117" height="15" uuid="e5b02689-e283-421f-9670-7c0b4b0c9529">
+>>>>>>> Stashed changes
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$P{vesselsName}]]></textFieldExpression>
@@ -1263,20 +1353,35 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$P{isMSDSReceived}]]></textFieldExpression>
 			</textField>
+<<<<<<< Updated upstream
 			<textField isBlankWhenNull="true">
 				<reportElement x="160" y="203" width="118" height="15" uuid="bd6f0b6a-d68f-4e0f-bb86-1744a94b9a01">
+=======
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="160" y="215" width="118" height="15" uuid="bd6f0b6a-d68f-4e0f-bb86-1744a94b9a01">
+>>>>>>> Stashed changes
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$P{sbNo}]]></textFieldExpression>
 			</textField>
+<<<<<<< Updated upstream
 			<textField isBlankWhenNull="true">
 				<reportElement x="443" y="202" width="118" height="15" uuid="a8198c3e-0aae-4faa-af8b-9912f227661c">
+=======
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="443" y="214" width="118" height="15" uuid="a8198c3e-0aae-4faa-af8b-9912f227661c">
+>>>>>>> Stashed changes
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$P{vesselGrt}]]></textFieldExpression>
 			</textField>
+<<<<<<< Updated upstream
 			<textField isBlankWhenNull="true">
 				<reportElement x="443" y="172" width="117" height="15" uuid="ad671292-5136-4ac5-a7eb-75ad650cb055">
+=======
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="443" y="187" width="117" height="15" uuid="ad671292-5136-4ac5-a7eb-75ad650cb055">
+>>>>>>> Stashed changes
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$P{vesselsIMOno}]]></textFieldExpression>
@@ -1287,26 +1392,45 @@
 				</reportElement>
 				<textFieldExpression><![CDATA[$P{ownerOperator}]]></textFieldExpression>
 			</textField>
+<<<<<<< Updated upstream
 			<textField isBlankWhenNull="true">
 				<reportElement x="160" y="233" width="118" height="15" uuid="9a066eae-85c6-41ca-9e57-245538567a34">
+=======
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="160" y="243" width="118" height="15" uuid="9a066eae-85c6-41ca-9e57-245538567a34">
+>>>>>>> Stashed changes
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$P{alongsideVessel}]]></textFieldExpression>
 			</textField>
+<<<<<<< Updated upstream
 			<textField isBlankWhenNull="true">
 				<reportElement x="160" y="263" width="118" height="15" uuid="6b30a25c-038a-4ebc-a87e-c55ea415179f">
+=======
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="160" y="272" width="118" height="15" uuid="6b30a25c-038a-4ebc-a87e-c55ea415179f">
+>>>>>>> Stashed changes
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$P{commencedPumpingAt}]]></textFieldExpression>
 			</textField>
+<<<<<<< Updated upstream
 			<textField isBlankWhenNull="true">
 				<reportElement x="160" y="293" width="118" height="15" uuid="3e6f2add-d0a6-4d69-a67a-cc85ed6c4c24">
+=======
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="160" y="302" width="118" height="15" uuid="3e6f2add-d0a6-4d69-a67a-cc85ed6c4c24">
+>>>>>>> Stashed changes
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$P{completedPumpingAt}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
+<<<<<<< Updated upstream
 				<reportElement x="151" y="363" width="100" height="15" uuid="00b25208-f50a-4100-b6f9-be14704f0415">
+=======
+				<reportElement x="151" y="357" width="129" height="15" uuid="00b25208-f50a-4100-b6f9-be14704f0415">
+>>>>>>> Stashed changes
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
@@ -1323,32 +1447,57 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$P{metricTonsDelivered}]]></textFieldExpression>
 			</textField>
+<<<<<<< Updated upstream
 			<textField isBlankWhenNull="true">
 				<reportElement x="160" y="114" width="118" height="15" uuid="7e331375-38ef-496f-94f3-e93fdba0a2a1">
+=======
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="160" y="137" width="118" height="15" uuid="7e331375-38ef-496f-94f3-e93fdba0a2a1">
+>>>>>>> Stashed changes
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$P{port}]]></textFieldExpression>
 			</textField>
+<<<<<<< Updated upstream
 			<textField isBlankWhenNull="true">
 				<reportElement x="160" y="142" width="118" height="15" uuid="4d14ad03-6dad-4b55-b94f-fa5a22e0aa6c">
+=======
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="160" y="161" width="118" height="15" uuid="4d14ad03-6dad-4b55-b94f-fa5a22e0aa6c">
+>>>>>>> Stashed changes
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$P{deliveryLocation}]]></textFieldExpression>
 			</textField>
+<<<<<<< Updated upstream
 			<textField isBlankWhenNull="true">
 				<reportElement x="443" y="82" width="117" height="15" uuid="02fd4710-cd36-4345-91b9-967353992c40">
+=======
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="443" y="109" width="117" height="15" uuid="02fd4710-cd36-4345-91b9-967353992c40">
+>>>>>>> Stashed changes
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$P{bunkerMeteringTicketNumber}]]></textFieldExpression>
 			</textField>
+<<<<<<< Updated upstream
 			<textField isBlankWhenNull="true">
 				<reportElement x="160" y="173" width="118" height="15" uuid="f55117d1-3f99-4c07-82b0-97cee055b41e">
+=======
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="160" y="188" width="118" height="15" uuid="f55117d1-3f99-4c07-82b0-97cee055b41e">
+>>>>>>> Stashed changes
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$P{bunkerTankersName}]]></textFieldExpression>
 			</textField>
+<<<<<<< Updated upstream
 			<textField isBlankWhenNull="true">
 				<reportElement x="443" y="112" width="117" height="15" uuid="b349d697-32cb-451c-96b0-c8b8a02b88a2">
+=======
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="443" y="135" width="117" height="15" uuid="b349d697-32cb-451c-96b0-c8b8a02b88a2">
+>>>>>>> Stashed changes
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$P{dateBDN}]]></textFieldExpression>
@@ -1436,13 +1585,56 @@
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
+<<<<<<< Updated upstream
 					<font size="4"/>
+=======
+					<font size="6" isBold="false"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="331" y="595" width="83" height="15" uuid="49ba4330-de81-471e-9f78-0a9c8602b6f5"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[LEN($P{otherSeal2} )==0? "(To Specify)":$P{otherSeal2}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="440" y="596" width="93" height="14" uuid="58677804-8e57-4be0-b3f7-9f6303b87377"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[LEN($P{otherCounterSeal2} )==0? "(To Specify)":$P{otherCounterSeal2}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="350" y="671" width="118" height="68" uuid="3bc12a16-1e1b-4b3b-817b-7dab2759c630"/>
+				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64($P{chiefEngineerSignature}.getBytes()))]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="290" y="742" width="254" height="46" uuid="be8e1eeb-a633-496d-8346-4be43550b312"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font isBold="true"/>
+>>>>>>> Stashed changes
 				</textElement>
 				<textFieldExpression><![CDATA[$P{sulphurContentLimit}=="1"?"X":""]]></textFieldExpression>
 			</textField>
+<<<<<<< Updated upstream
 			<textField textAdjust="StretchHeight">
 				<reportElement x="18" y="499" width="5" height="5" uuid="6a374da5-1c7c-43ac-97bf-f89924d9a138">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+=======
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="143" y="526" width="25" height="11" uuid="1acff286-3189-451a-879d-ef847429b71b">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[EXACT($P{sulphurContentLimit},"3")?$P{limitValue} : ""]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="23" y="508" width="8" height="8" uuid="8d77570e-3034-49a3-a844-f0cd3467b3e8">
+>>>>>>> Stashed changes
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
@@ -1450,8 +1642,14 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$P{sulphurContentLimit}=="2"?"X": ""]]></textFieldExpression>
 			</textField>
+<<<<<<< Updated upstream
 			<textField textAdjust="StretchHeight">
 				<reportElement x="18" y="506" width="5" height="5" uuid="8b522e81-4a11-421e-9fbe-8f1118297b30">
+=======
+			<textField textAdjust="ScaleFont">
+				<reportElement x="23" y="518" width="8" height="8" uuid="6a374da5-1c7c-43ac-97bf-f89924d9a138">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+>>>>>>> Stashed changes
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
@@ -1464,7 +1662,24 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="4"/>
 				</textElement>
+<<<<<<< Updated upstream
 				<textFieldExpression><![CDATA[$P{sulphurContentLimit}=="3"?"X": ""]]></textFieldExpression>
+=======
+				<textFieldExpression><![CDATA[EXACT($P{sulphurContentLimit},"2")?"X":""]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="23" y="528" width="8" height="8" uuid="8b522e81-4a11-421e-9fbe-8f1118297b30"/>
+				<box>
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="4"/>
+				</textElement>
+				<textFieldExpression><![CDATA[EXACT($P{sulphurContentLimit},"3")?"X":""]]></textFieldExpression>
+>>>>>>> Stashed changes
 			</textField>
 			<staticText>
 				<reportElement x="179" y="40" width="61" height="18" uuid="21d682e6-4ee7-445d-a0b1-19c03bd16c42"/>
@@ -1479,6 +1694,51 @@
 				</reportElement>
 				<textFieldExpression><![CDATA[$P{companyLicenseNo}]]></textFieldExpression>
 			</textField>
+<<<<<<< Updated upstream
+=======
+			<frame>
+				<reportElement x="0" y="80" width="290" height="47" uuid="00fde800-0a5c-4e4a-9c9b-a8a64832319b">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+				</reportElement>
+				<textField textAdjust="StretchHeight">
+					<reportElement x="0" y="0" width="290" height="24" uuid="9973c280-a4ab-42f4-b4a1-b4273f9c457e"/>
+					<textElement verticalAlignment="Middle">
+						<font size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[T($P{companyName})]]></textFieldExpression>
+				</textField>
+				<frame>
+					<reportElement x="0" y="24" width="290" height="23" uuid="eebeb081-f1a1-4e05-9641-05c9f7c0c538"/>
+					<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+						<reportElement x="0" y="0" width="130" height="23" uuid="d66391c4-ca06-486b-8eef-b1de9fa03dba">
+							<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						</reportElement>
+						<textElement verticalAlignment="Middle">
+							<font size="8"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{companyAddress}]]></textFieldExpression>
+					</textField>
+				</frame>
+			</frame>
+			<frame>
+				<reportElement x="2" y="563" width="278" height="215" uuid="fc605abd-a806-427a-b155-b1bf27860d75">
+					<property name="ShowOutOfBoundContent" value="false"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+			</frame>
+			<frame>
+				<reportElement x="280" y="458" width="272" height="35" uuid="6b1ba612-f037-49a4-a651-55c7171f501e"/>
+				<box>
+					<leftPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+			</frame>
+>>>>>>> Stashed changes
 		</band>
 	</title>
 </jasperReport>

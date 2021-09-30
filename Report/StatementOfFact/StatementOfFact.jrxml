@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="StatementOfFact" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0ba4def3-8e7b-4256-8897-46515297c62f">
+	<parameter name="date" class="java.lang.String"/>
+	<parameter name="time" class="java.lang.String"/>
+	<parameter name="bdnRef" class="java.lang.String"/>
+	<parameter name="bargeName" class="java.lang.String"/>
+	<parameter name="location" class="java.lang.String"/>
+	<parameter name="terminalOrVessel" class="java.lang.String"/>
+	<parameter name="operationDate" class="java.lang.String"/>
+	<parameter name="sbNo" class="java.lang.String"/>
+	<parameter name="productName" class="java.lang.String"/>
+	<parameter name="cargoOfficerFullName" class="java.lang.String"/>
+	<parameter name="chiefEngineerFullName" class="java.lang.String"/>
+	<parameter name="cargoOfficerSignature" class="java.lang.String"/>
+	<parameter name="chiefEngineerSignature" class="java.lang.String"/>
+	<parameter name="chiefEngineerConfirmedAt" class="java.lang.String"/>
+	<parameter name="cargoOfficerConfirmedAt" class="java.lang.String"/>
+	<parameter name="vesselsIMOno" class="java.lang.String"/>
+	<parameter name="balanceQtyNotRequiredCheck2" class="java.lang.Integer"/>
+	<parameter name="balanceQtyNotRequiredCheck3" class="java.lang.Integer"/>
+	<parameter name="vesselCheck1" class="java.lang.Integer"/>
+	<parameter name="vesselCheck2" class="java.lang.Integer"/>
+	<parameter name="vesselCheck3" class="java.lang.Integer"/>
+	<parameter name="insufficientTimeCheck" class="java.lang.Integer"/>
+	<parameter name="delayCheck1" class="java.lang.Integer"/>
+	<parameter name="delayCheck2" class="java.lang.Integer"/>
+	<parameter name="delayCheck3" class="java.lang.Integer"/>
+	<parameter name="otherCheck" class="java.lang.Integer"/>
+	<parameter name="bargeAlongside" class="java.lang.String"/>
+	<parameter name="surveyorOnboard" class="java.lang.String"/>
+	<parameter name="receivingRateMt" class="java.lang.String"/>
+	<parameter name="highFreeboardMetre" class="java.lang.String"/>
+	<parameter name="other" class="java.lang.String"/>
+	<parameter name="remarks" class="java.lang.String"/>
+	<parameter name="balanceQtyNotRequiredCheck1" class="java.lang.Integer"/>
+	<parameter name="cancelReason" class="java.lang.String"/>
+	<parameter name="oilSpillLocation" class="java.lang.String"/>
+	<parameter name="bargeOrAnchorage" class="java.lang.String"/>
+	<parameter name="delayCheck4" class="java.lang.Integer"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<title>
+		<band height="79" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+			<staticText>
+				<reportElement x="0" y="0" width="110" height="20" uuid="bce18305-fd02-4cb5-b86a-6e47b52d6deb">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="20" width="110" height="20" uuid="e245a0a4-2ca5-4557-98f6-10e721663a7d">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[BDN Ref]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="40" width="110" height="20" uuid="c5e3654c-f932-43f4-af5c-160bc7edbfc3">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Barge's Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="0" width="110" height="20" uuid="29ea535b-1096-4dcf-8bd6-243a6a366358">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Time]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="20" width="110" height="20" uuid="b56eb2b2-8b1e-4863-89f1-314a4754afd0">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Location]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="40" width="110" height="20" uuid="e2cb363d-7c88-4609-8bbb-5016e9759325">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Terminal / Vessel]]></text>
+			</staticText>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="110" y="0" width="170" height="20" uuid="eb81263f-6ce2-4400-bd67-dd0cd3d8c7be">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{date}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="390" y="0" width="170" height="20" uuid="6789755f-fad7-46b8-a899-1d1abe018fc4">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{time}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="390" y="40" width="170" height="20" uuid="194988f9-325a-4a35-a970-43bf5afbef38">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{terminalOrVessel}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="110" y="40" width="170" height="20" uuid="f129df3f-cb6e-4bc6-b127-30485b85e7af">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{bargeName}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="110" y="20" width="170" height="20" uuid="9f76e868-e01a-4115-94ea-af8fa86a1262">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{bdnRef}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="390" y="20" width="170" height="20" uuid="c577ba01-5f5c-46e2-872b-41b34a55b549">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{location}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<summary>
+		<band height="637">
+			<staticText>
+				<reportElement x="0" y="0" width="410" height="30" uuid="920c30c2-1fa4-48bd-890c-434f3695429f"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Attention: Master / Chief Enginneer of MT / MV]]></text>
+			</staticText>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="220" y="0" width="190" height="30" uuid="592696d5-3c7f-48fd-828b-ff33ede1a826"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{terminalOrVessel}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="410" y="0" width="150" height="30" uuid="c8dbfded-8ef0-4278-8801-717cd6b682e7"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[(name of Vessel receiving bunkers)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="30" width="70" height="30" uuid="6fc97dbc-004a-40ba-b2af-bb1c2f21e101"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Dear Sir,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="60" width="560" height="30" uuid="22c59e39-9939-41ea-8bc2-12bbc54f343b"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[STATEMENT OF FACTS AFTER BUNKERING OPERATION ON]]></text>
+			</staticText>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="300" y="60" width="260" height="30" uuid="f91cb855-6909-4991-bdc9-a9cb1fd6299e"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{operationDate}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="100" width="560" height="30" uuid="bfacc136-4766-4da1-8837-36279a07f4d3"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[On behalf of my principal(s), I , Cargo Officer of M.T.]]></text>
+			</staticText>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="240" y="100" width="260" height="30" uuid="0c7f7648-8f0f-4bfc-a611-ae9c63502786"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{bargeName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="131" width="560" height="20" uuid="4c8404c8-851b-4520-a398-502094caf5cd"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[hereby notify of the following:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="151" width="560" height="20" uuid="62e1a60a-57a1-45c7-8b10-cd0661da5641"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[BUNKER DELIVERY / GRADE:]]></text>
+			</staticText>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="150" y="150" width="300" height="21" uuid="01d5fe82-aa14-4032-99e6-bbcd70b384f6"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{productName}]]></textFieldExpression>
+			</textField>
+			<frame>
+				<reportElement x="3" y="182" width="15" height="13" uuid="dcf0d1a7-4b7c-46e1-bb26-40c0e475a5e6"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.75" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.75" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<image vAlign="Middle">
+					<reportElement x="0" y="0" width="15" height="13" uuid="ec9c7fe3-0de5-4751-a230-6f5e8e65fade">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<printWhenExpression><![CDATA[$P{balanceQtyNotRequiredCheck1}==1]]></printWhenExpression>
+					</reportElement>
+					<imageExpression><![CDATA["checkmark.png"]]></imageExpression>
+				</image>
+			</frame>
+			<frame>
+				<reportElement x="3" y="200" width="15" height="13" uuid="1d847cd2-0370-4a53-87c0-0a28bea5e732"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.75" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.75" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<image vAlign="Middle">
+					<reportElement x="0" y="0" width="15" height="13" uuid="2e309317-ea06-4938-8a97-36a4a2147aa8">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<printWhenExpression><![CDATA[$P{balanceQtyNotRequiredCheck2}==1]]></printWhenExpression>
+					</reportElement>
+					<imageExpression><![CDATA["checkmark.png"]]></imageExpression>
+				</image>
+			</frame>
+			<frame>
+				<reportElement x="3" y="218" width="15" height="13" uuid="8cb0de36-32d2-42bd-a096-b81378a1ae68"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.75" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.75" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<image vAlign="Middle">
+					<reportElement x="0" y="0" width="15" height="13" uuid="6e426990-030f-4313-aeaa-91a157b04322">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<printWhenExpression><![CDATA[$P{balanceQtyNotRequiredCheck3}==1]]></printWhenExpression>
+					</reportElement>
+					<imageExpression><![CDATA["checkmark.png"]]></imageExpression>
+				</image>
+			</frame>
+			<frame>
+				<reportElement x="3" y="234" width="15" height="13" uuid="8a6e0f6f-02a0-4582-a844-6db6f71cdcf8"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.75" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.75" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<image vAlign="Middle">
+					<reportElement x="0" y="0" width="15" height="13" uuid="4f5fbd49-f80a-46a5-816c-d64f545b1e85">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<printWhenExpression><![CDATA[$P{vesselCheck1}==1]]></printWhenExpression>
+					</reportElement>
+					<imageExpression><![CDATA["checkmark.png"]]></imageExpression>
+				</image>
+			</frame>
+			<frame>
+				<reportElement x="3" y="250" width="15" height="13" uuid="8cf9b6d6-848b-4287-b8a4-dce2c95d3aba"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.75" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.75" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<image vAlign="Middle">
+					<reportElement x="0" y="0" width="15" height="13" uuid="4aa4dcd6-4aa1-458c-a958-79af62e6733d">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<printWhenExpression><![CDATA[$P{vesselCheck2}==1]]></printWhenExpression>
+					</reportElement>
+					<imageExpression><![CDATA["checkmark.png"]]></imageExpression>
+				</image>
+			</frame>
+			<frame>
+				<reportElement x="3" y="268" width="15" height="13" uuid="316fa3af-0200-4e80-b362-f3a42a17377b"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.75" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.75" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<image vAlign="Middle">
+					<reportElement x="0" y="0" width="15" height="13" uuid="2a2c959f-6247-4fbb-a923-14fcee3d7730">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<printWhenExpression><![CDATA[$P{vesselCheck3}==1]]></printWhenExpression>
+					</reportElement>
+					<imageExpression><![CDATA["checkmark.png"]]></imageExpression>
+				</image>
+			</frame>
+			<frame>
+				<reportElement x="3" y="284" width="15" height="13" uuid="1ab6de36-2f92-4d9c-9c55-77634982b342"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.75" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.75" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<image vAlign="Middle">
+					<reportElement x="0" y="0" width="15" height="13" uuid="791d474e-ec31-440c-a336-97753a8dc893">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<printWhenExpression><![CDATA[$P{insufficientTimeCheck}==1]]></printWhenExpression>
+					</reportElement>
+					<imageExpression><![CDATA["checkmark.png"]]></imageExpression>
+				</image>
+			</frame>
+			<frame>
+				<reportElement x="3" y="302" width="15" height="13" uuid="8be0de23-a9b3-441a-a3f0-c3279feb7a30"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.75" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.75" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<image vAlign="Middle">
+					<reportElement x="0" y="0" width="15" height="13" uuid="f8987e59-b903-47fe-81a6-0f7322862c3d">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<printWhenExpression><![CDATA[$P{delayCheck1}==1]]></printWhenExpression>
+					</reportElement>
+					<imageExpression><![CDATA["checkmark.png"]]></imageExpression>
+				</image>
+			</frame>
+			<frame>
+				<reportElement x="3" y="319" width="15" height="13" uuid="75a7cfd7-eddc-4aa4-82c4-ab0dda058500"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.75" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.75" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<image vAlign="Middle">
+					<reportElement x="0" y="0" width="15" height="13" uuid="7c57ee97-8b3c-4f07-9266-0ccc747aae1e">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<printWhenExpression><![CDATA[$P{delayCheck2}==1]]></printWhenExpression>
+					</reportElement>
+					<imageExpression><![CDATA["checkmark.png"]]></imageExpression>
+				</image>
+			</frame>
+			<frame>
+				<reportElement x="3" y="336" width="15" height="13" uuid="efd7b3d7-6e13-4444-a676-8ba8cbd187ea">
+					<property name="ShowOutOfBoundContent" value="true"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.75" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.75" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<image vAlign="Middle">
+					<reportElement x="0" y="0" width="15" height="13" uuid="796a097e-0f85-4f84-95c1-1156790ea415">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<printWhenExpression><![CDATA[$P{delayCheck3}==1]]></printWhenExpression>
+					</reportElement>
+					<imageExpression><![CDATA["checkmark.png"]]></imageExpression>
+				</image>
+			</frame>
+			<frame>
+				<reportElement x="3" y="374" width="15" height="13" uuid="510bd362-cd65-456b-af69-fb1e7afd7bde"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.75" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.75" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<image vAlign="Middle">
+					<reportElement x="1" y="1" width="14" height="12" uuid="789ee713-475f-4422-a640-4dbadee7a4ba">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<printWhenExpression><![CDATA[$P{otherCheck}==1]]></printWhenExpression>
+					</reportElement>
+					<imageExpression><![CDATA["checkmark.png"]]></imageExpression>
+				</image>
+			</frame>
+			<staticText>
+				<reportElement x="30" y="181" width="530" height="16" uuid="a78b32dd-d352-44bd-a577-e5a01b1e4776"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Balance quantity not required, vessel has sufficient bunkers to fulfill her voyage(s).]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="198" width="530" height="16" uuid="7a09bc81-60c9-43e2-8d02-44a45fe2756b"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Balance quantity not required, due to pilot onboard for vessel to sail.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="215" width="530" height="16" uuid="e7ec317d-2291-40f9-b8e5-866f6dc3db62"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Balance quantity not required, vessel has insufficient ullage to receive full nominated quantity.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="232" width="530" height="16" uuid="fa285c3d-6cf9-44bb-bae8-562bcb626888"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Vessel refused to take bunker fuel due to wrong grade in the nomination.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="249" width="530" height="16" uuid="8bd6dbc8-bb06-483e-be9a-6292a10084df"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Vessel cancelled nomination. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="266" width="530" height="16" uuid="158d2802-f66b-4a17-8b66-a9e78d9cd049"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Vessel oil spill on 		, while topping up and balance quantifies not required.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="283" width="530" height="16" uuid="56283bf5-85f7-4155-bae3-214f1ed46da4"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Insufficient time to supply at berth and will continue supply at anchorage.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="300" width="530" height="16" uuid="0e9728be-8f7b-4751-9f3a-613cd8d51fcd"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Delay due to change of ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="317" width="530" height="16" uuid="52423722-75ac-42b0-a402-6568abac76b9"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Delay due to awaiting surveyor. (Barge's alongside                                    and surveyor onboard                                     )]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="335" width="530" height="16" uuid="a7abe80e-3166-4171-8b1b-4c213edeb58c"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Delay due to vessel's requested slow receiving rate (                                    ) mt per hour]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="373" width="529" height="16" uuid="80975e3c-cb18-4eab-9d9a-7fe82bc960a2"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Others:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="392" width="530" height="16" uuid="c46ead30-22fe-457c-88cc-a40324e4dfeb"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Remarks:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="427" width="108" height="16" uuid="3821de2b-2e6d-44e7-9a7d-3ab493817997"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Yours truly,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="611" width="186" height="20" uuid="8fcaee64-bab6-44af-8495-84bbec81c565"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Full name in block letters]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="591" width="186" height="20" uuid="2db8c93b-5ec0-4eae-ae50-b77415d66bc5"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="497" width="186" height="20" uuid="36356847-9387-4e1d-9e6b-1bf0ceaacb85"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Full name in block letters]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="477" width="186" height="20" uuid="28e4fc72-e01e-48bd-863a-eee373e3ee91"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="477" width="186" height="20" uuid="a7bbb7d6-c3d6-4b23-9a7a-a29038fd66cb"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<image>
+				<reportElement x="210" y="431" width="129" height="65" uuid="161a9685-7a61-4504-ac50-232fa95428a7"/>
+				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64($P{cargoOfficerSignature}.getBytes()))]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="200" y="497" width="190" height="20" uuid="6343d2f8-6c64-4e62-a072-3440ac235b68"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Cargo Officer Signature & Stamp]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="477" width="190" height="20" uuid="add0fcf1-05e4-4f25-bd49-a2a367d81ce2"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="404" y="477" width="156" height="20" uuid="7360eb0d-af73-41e0-8902-39a649b32ddd"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="404" y="497" width="156" height="20" uuid="87287418-342e-4a53-af00-c949c0c23873"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Date / Time]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="611" width="190" height="20" uuid="16c0228d-fb03-4252-b61a-d5c78232e44b"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Master / Ch. Engineer Signature & Stamp]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="591" width="190" height="20" uuid="d33c6c76-47e7-47a1-937e-72de14e2f8c8"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="405" y="591" width="156" height="20" uuid="0324c720-8c64-4f84-927e-ac865dc18651"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="405" y="611" width="156" height="20" uuid="0a33869a-d84e-4601-97fe-528b3ea4f262"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Date / Time]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="404" y="477" width="156" height="20" uuid="6bf6e55d-0bbc-431c-bb32-1b2d0da17e81"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{cargoOfficerConfirmedAt}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="210" y="546" width="129" height="65" uuid="f4b69477-088e-4f2a-a3d6-a6652e5fafdb"/>
+				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64($P{chiefEngineerSignature}.getBytes()))]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="405" y="591" width="156" height="20" uuid="87572738-ed46-4c95-84fa-d6b06898498b"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{chiefEngineerConfirmedAt}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="10" y="591" width="170" height="20" uuid="91371ded-15c1-42de-9afa-5fdb833a5d81"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{chiefEngineerFullName}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="10" y="477" width="170" height="20" uuid="29bde762-f0ec-4f44-ae26-38faef7a1ed4"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{cargoOfficerFullName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="527" width="559" height="16" uuid="b4a3e9c7-3b84-44a9-8a94-2f3f1891a459"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[ACKNOWLEDGED RECEIPT]]></text>
+			</staticText>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="233" y="583" width="157" height="28" uuid="fb68627c-338b-40da-969b-496d4edad19b"/>
+				<textElement textAlignment="Left">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[LEN($P{chiefEngineerConfirmedAt})>=1?$P{terminalOrVessel}+ "\nIMO:" +$P{vesselsIMOno} +"\n" +$P{chiefEngineerConfirmedAt}: ""]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="258" y="467" width="132" height="30" uuid="32e2d875-440d-45a1-ad4d-5fcb57a66209"/>
+				<textElement textAlignment="Left">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[LEN($P{cargoOfficerConfirmedAt})>=1?T($P{bargeName})+"\nSB " +T($P{sbNo}) + "\n" +T($P{cargoOfficerConfirmedAt}):""]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="259" y="318" width="92" height="14" uuid="08027311-237d-4dae-9fce-d36ea21417d4"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{bargeAlongside}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="457" y="318" width="100" height="14" uuid="c77a9d17-052f-490e-8c25-79d91736c575"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{surveyorOnboard}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="265" y="336" width="95" height="14" uuid="d9043ba5-1093-418c-84e8-1e4e3a1ec95e"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{receivingRateMt}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="68" y="374" width="490" height="14" uuid="8cfd2731-71ae-40df-bee9-2b91388fabc5"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{other}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="73" y="393" width="488" height="14" uuid="1aa93965-31a0-4176-bfcc-1ef6b87c3f65">
+					<printWhenExpression><![CDATA[LEN($P{remarks})==0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="76" y="395" width="482" height="14" uuid="e2a0bdf0-ad93-4237-8be0-e3e3d3169bcd"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{remarks}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="160" y="250" width="360" height="15" uuid="97b02ff5-0d12-4a8d-ad66-b182fce3841a"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{cancelReason}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="110" y="267" width="79" height="15" uuid="e36aa383-4b8d-44f6-a80b-bf38d7d78cb4"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{oilSpillLocation}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="140" y="301" width="79" height="15" uuid="16c01fa7-7173-44b0-bf63-b2a7ee883f8f"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{bargeOrAnchorage}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="30" y="353" width="530" height="16" uuid="47ed6ad4-56f0-40d9-b8c7-861c2268fcf8"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Delay due to vessel's High freeboard (                                            ) metres]]></text>
+			</staticText>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="202" y="354" width="116" height="13" uuid="592b1f82-2f9c-463a-b564-b47b8711957e"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{highFreeboardMetre}]]></textFieldExpression>
+			</textField>
+			<frame>
+				<reportElement x="3" y="355" width="15" height="13" uuid="71429f37-b589-4d79-be61-d667309ad885">
+					<property name="ShowOutOfBoundContent" value="false"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.75" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.75" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<image vAlign="Middle">
+					<reportElement x="0" y="0" width="15" height="13" uuid="32889db7-7312-47cb-8151-110e573bbd75">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<printWhenExpression><![CDATA[$P{delayCheck4}==1]]></printWhenExpression>
+					</reportElement>
+					<imageExpression><![CDATA["checkmark.png"]]></imageExpression>
+				</image>
+			</frame>
+		</band>
+	</summary>
+</jasperReport>
